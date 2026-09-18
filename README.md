@@ -6,7 +6,11 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 **Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-**Status:** paper scope, module interfaces, boundary acceptance matrix and input preflight are established. The RF model and Figure 3 comparison are not implemented yet. The preflight explicitly lists missing microwave data; it does not invent constant replacements. Ten tests pass (three input-contract tests and seven auxiliary static tests), not ten RF validation cases.
+**Status:** A01 implemented the modular uniform-line Eq.(1)–(4) solver and S11. B01–B09 analytical boundary tests pass; the full suite has 20 passing tests. This is analytical-limit verification, not Figure 3 reproduction. Original FEM arrays remain unavailable; bandwidth extraction and digitized comparison remain pending.
+
+[第一步学习与结果](docs/A01_learning_zh.md) · [A01 boundary](experiments/A01_analytic_limits/BOUNDARY.md) · [A01 results](experiments/A01_analytic_limits/RESULTS.md)
+
+Run `python scripts/run_a01.py` for the DC-limit table; `python -m unittest discover -s tests -v` for the full suite.
 
 Start with [论文复现边界](docs/BOUNDARIES.md), [模块接口与状态](docs/MODULES.md), [七天主线计划](docs/learning_plan_zh.md), and [A00 preflight](experiments/A00_paper_baseline/RESULTS.md).
 

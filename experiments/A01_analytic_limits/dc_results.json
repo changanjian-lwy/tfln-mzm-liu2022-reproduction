@@ -1,0 +1,57 @@
+{
+  "scope": "A01_DC_limit_only",
+  "provenance": "simulation_with_declared_idealizations",
+  "parameters": {
+    "Vg_V": 1,
+    "Zg_ohm": 50,
+    "Z0_ohm": 50,
+    "length_m": 0.006,
+    "alpha_Np_per_m": 0,
+    "n_m": 2.25,
+    "n_g": 2.25,
+    "frequency_Hz": 0
+  },
+  "source_note": "Vg/Zg/L/loads from paper; constant Z0, zero loss and matching indices are ideal-limit assumptions; f=0 is a limit test, not a change to the Figure 3 f0 convention",
+  "rows": [
+    {
+      "load_ohm": 20,
+      "rho2": -0.42857142857142855,
+      "Vavg_dc_V": 0.2857142857142857,
+      "imaginary_residual_V": 0.0,
+      "divider_reference_V": 0.2857142857142857,
+      "absolute_error_V": 0.0
+    },
+    {
+      "load_ohm": 40,
+      "rho2": -0.1111111111111111,
+      "Vavg_dc_V": 0.4444444444444444,
+      "imaginary_residual_V": 0.0,
+      "divider_reference_V": 0.4444444444444444,
+      "absolute_error_V": 0.0
+    },
+    {
+      "load_ohm": 50,
+      "rho2": 0.0,
+      "Vavg_dc_V": 0.5,
+      "imaginary_residual_V": 0.0,
+      "divider_reference_V": 0.5,
+      "absolute_error_V": 0.0
+    },
+    {
+      "load_ohm": 80,
+      "rho2": 0.23076923076923078,
+      "Vavg_dc_V": 0.6153846153846154,
+      "imaginary_residual_V": 0.0,
+      "divider_reference_V": 0.6153846153846154,
+      "absolute_error_V": 0.0
+    },
+    {
+      "load_ohm": "open",
+      "rho2": 1.0,
+      "Vavg_dc_V": 1.0,
+      "imaginary_residual_V": 0.0,
+      "divider_reference_V": 1,
+      "absolute_error_V": 0.0
+    }
+  ]
+}
