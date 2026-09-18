@@ -1,0 +1,283 @@
+{
+  "pdf_sha256": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+  "doi": "10.1109/LPT.2022.3178214",
+  "sources": {
+    "p2_2.jpeg": {
+      "sha256": "1558d1694d0e525e06be0c1d736b9d181ef54b95386037aada7f4efb47d7574f",
+      "width": 1505,
+      "height": 1250
+    },
+    "p3_0.png": {
+      "sha256": "ba0d0b95b1ff9d313d1bd4928536e9de75e44464f859ddc50f398fe19936291e",
+      "width": 1250,
+      "height": 1404
+    }
+  },
+  "calibration": [
+    {
+      "panel": "fig2a",
+      "image": "p2_2.jpeg",
+      "pixel_axes": [
+        120,
+        687,
+        526,
+        106
+      ],
+      "physical_axes": [
+        0,
+        200,
+        0,
+        1.5
+      ],
+      "unit": "dB/mm"
+    },
+    {
+      "panel": "fig2c",
+      "image": "p2_2.jpeg",
+      "pixel_axes": [
+        495,
+        1035,
+        1150,
+        732
+      ],
+      "physical_axes": [
+        0,
+        200,
+        0,
+        100
+      ],
+      "unit": "ohm"
+    },
+    {
+      "panel": "fig3a_inset",
+      "image": "p3_0.png",
+      "pixel_axes": [
+        650,
+        1107,
+        258,
+        24
+      ],
+      "physical_axes": [
+        0,
+        50,
+        0.2,
+        1
+      ],
+      "unit": "V"
+    },
+    {
+      "panel": "fig3b",
+      "image": "p3_0.png",
+      "pixel_axes": [
+        195,
+        1111,
+        858,
+        522
+      ],
+      "physical_axes": [
+        0,
+        200,
+        -12,
+        6
+      ],
+      "unit": "dB"
+    },
+    {
+      "panel": "fig3c",
+      "image": "p3_0.png",
+      "pixel_axes": [
+        195,
+        1111,
+        1320,
+        974
+      ],
+      "physical_axes": [
+        0,
+        200,
+        -50,
+        0
+      ],
+      "unit": "dB"
+    }
+  ],
+  "method": "Per-column unique contiguous color cluster; masks in script; no model or interpolation",
+  "uncertainty": "2px axis localization plus half stroke height; not author error bars",
+  "quality": [
+    {
+      "panel": "fig2a",
+      "series": "this_work",
+      "retained": 560,
+      "missing_columns": 0,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 0.35273368606704025,
+      "strict_threshold_common_points": 560,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0017857142857143349
+    },
+    {
+      "panel": "fig2c",
+      "series": "Z0",
+      "retained": 469,
+      "missing_columns": 54,
+      "ambiguous_columns": 10,
+      "max_retained_gap_GHz": 6.666666666666671,
+      "strict_threshold_common_points": 464,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.11961722488038617
+    },
+    {
+      "panel": "fig3a_inset",
+      "series": "20",
+      "retained": 442,
+      "missing_columns": 4,
+      "ambiguous_columns": 4,
+      "max_retained_gap_GHz": 0.21881838074398274,
+      "strict_threshold_common_points": 442,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3a_inset",
+      "series": "40",
+      "retained": 409,
+      "missing_columns": 41,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 0.7658643326039325,
+      "strict_threshold_common_points": 406,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0017094017094017033
+    },
+    {
+      "panel": "fig3a_inset",
+      "series": "50",
+      "retained": 163,
+      "missing_columns": 284,
+      "ambiguous_columns": 3,
+      "max_retained_gap_GHz": 4.814004376367613,
+      "strict_threshold_common_points": 102,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0017094017094017588
+    },
+    {
+      "panel": "fig3a_inset",
+      "series": "80",
+      "retained": 349,
+      "missing_columns": 101,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 2.078774617067836,
+      "strict_threshold_common_points": 334,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0017094017094018144
+    },
+    {
+      "panel": "fig3a_inset",
+      "series": "open",
+      "retained": 415,
+      "missing_columns": 34,
+      "ambiguous_columns": 1,
+      "max_retained_gap_GHz": 0.875273522975931,
+      "strict_threshold_common_points": 415,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3b",
+      "series": "20",
+      "retained": 849,
+      "missing_columns": 1,
+      "ambiguous_columns": 59,
+      "max_retained_gap_GHz": 0.6550218340611309,
+      "strict_threshold_common_points": 849,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3b",
+      "series": "40",
+      "retained": 907,
+      "missing_columns": 2,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 0.21834061135373872,
+      "strict_threshold_common_points": 907,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3b",
+      "series": "50",
+      "retained": 894,
+      "missing_columns": 0,
+      "ambiguous_columns": 15,
+      "max_retained_gap_GHz": 0.4366812227074206,
+      "strict_threshold_common_points": 894,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0267857142857153
+    },
+    {
+      "panel": "fig3b",
+      "series": "80",
+      "retained": 906,
+      "missing_columns": 3,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 0.21834061135373872,
+      "strict_threshold_common_points": 906,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0267857142857153
+    },
+    {
+      "panel": "fig3b",
+      "series": "open",
+      "retained": 908,
+      "missing_columns": 1,
+      "ambiguous_columns": 0,
+      "max_retained_gap_GHz": 0.21834061135373872,
+      "strict_threshold_common_points": 908,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3c",
+      "series": "20",
+      "retained": 830,
+      "missing_columns": 1,
+      "ambiguous_columns": 78,
+      "max_retained_gap_GHz": 0.6550218340611593,
+      "strict_threshold_common_points": 830,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.0
+    },
+    {
+      "panel": "fig3c",
+      "series": "40",
+      "retained": 878,
+      "missing_columns": 22,
+      "ambiguous_columns": 9,
+      "max_retained_gap_GHz": 0.8733624454148554,
+      "strict_threshold_common_points": 878,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.07225433526011571
+    },
+    {
+      "panel": "fig3c",
+      "series": "50",
+      "retained": 824,
+      "missing_columns": 62,
+      "ambiguous_columns": 23,
+      "max_retained_gap_GHz": 3.275109170305683,
+      "strict_threshold_common_points": 817,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.3612716763005821
+    },
+    {
+      "panel": "fig3c",
+      "series": "80",
+      "retained": 885,
+      "missing_columns": 22,
+      "ambiguous_columns": 2,
+      "max_retained_gap_GHz": 1.9650655021834211,
+      "strict_threshold_common_points": 883,
+      "strict_median_difference": 0.0,
+      "strict_max_difference": 0.14450867052023142
+    }
+  ]
+}

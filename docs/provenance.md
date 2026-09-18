@@ -38,7 +38,7 @@ Never label generated values as experimental measurements. PDF page numbers belo
 
 The inspected paper includes Eq.(1)–(4), Figure 2 FEM curves and Figure 3 calculated curves. No numerical FEM arrays or field-overlap dataset were found in the downloaded PDF. Z0(f) is not exactly 50 Ω: Figure 2(c) includes oscillations. Do not invent its samples or replace it by 50 Ω without the `assumption` label. Figure 2(a) uses dB/mm; conversion to amplitude attenuation requires α[Np/m] = loss[dB/mm] × 1000 × ln(10)/20.
 
-Figure 3 spans 0–200 GHz. It is calculated; Figures 5–7 contain experimental results and, in Figure 7, modeled extrapolation. No curve samples have been digitized yet. Visual inspection of legends is not a digitized dataset. Later samples must record source panel, load, frequency, ordinate, axis calibration, extraction tool/method, uncertainty and a source-image fingerprint. Avoid presenting sub-pixel precision as accurate data.
+Figure 3 spans 0–200 GHz. It is calculated; Figures 5–7 contain experimental results and, in Figure 7, modeled extrapolation. A03 has digitized Figure 2(a,c), Figure 3(a inset,b,c); see data/digitized/liu2022 for source hashes, masks and estimated uncertainty. Visual inspection of legends alone is not a digitized dataset. Samples must record source panel, load, frequency, ordinate, axis calibration, extraction tool/method, uncertainty and a source-image fingerprint. Avoid presenting sub-pixel precision as accurate data.
 
 ## Source inventory
 

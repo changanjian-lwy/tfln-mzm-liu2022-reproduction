@@ -1,3 +1,3 @@
-# Digitized paper curves (pending Day 5)
+# Digitized paper curves
 
-There are currently no digitized samples. Future files must include panel, load, frequency_GHz, ordinate, ordinate_unit, uncertainty, provenance, and extraction metadata. Distinguish digitized author calculations from digitized author measurements. Original source images and PDFs stay outside Git.
+Liu 2022 calculated curves are available in [liu2022/](liu2022/README.md). They are raster readouts with explicit gaps and extraction uncertainty, not experimental measurements or original FEM arrays. See A03 for the extraction record and A04 for the first independent comparison.
