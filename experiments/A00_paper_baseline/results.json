@@ -1,0 +1,14 @@
+{
+  "experiment_id": "A00_paper_baseline",
+  "scope": "figure3_reproduction",
+  "status": "BLOCKED_BY_MISSING_DATA",
+  "missing": [
+    "characteristic_impedance",
+    "rf_attenuation",
+    "microwave_index"
+  ],
+  "nonpaper_inputs": [
+    "reference_frequency"
+  ],
+  "physics_validated": false
+}

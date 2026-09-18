@@ -1,3 +1,5 @@
+> 定位更新：本文是辅助 C 的静态物理背景，不是论文主线第一天的验收。主线从 docs/BOUNDARIES.md 开始。
+
 # 第一天：从 Pockels effect 到静态 MZM
 
 来源：EEK5103 Lecture 4（2026）PDF 第 21–22 页；Lecture 3 第 27–33 页提供 MZI 干涉背景。这里用自己的推导和代码，不包含课件截图。

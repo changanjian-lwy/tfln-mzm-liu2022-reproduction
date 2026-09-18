@@ -1,4 +1,4 @@
-# Traveling-wave reproduction specification (Days 2–6, not implemented yet)
+# Traveling-wave reproduction specification (main track, RF implementation pending)
 
 Primary source: Liu et al., DOI [10.1109/LPT.2022.3178214](https://doi.org/10.1109/LPT.2022.3178214), PDF p.2 (journal p.855), equations (1)–(4); Figure 3 on PDF p.3 (p.856). Equations below were visually checked against the local PDF. Optical propagation subscript is written consistently as `o` here.
 

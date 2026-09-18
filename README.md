@@ -1,16 +1,18 @@
-# TFLN Mach–Zehnder Modulator: from Pockels Effect to Traveling-Wave Response
+# TFLN Modulator: Liu 2022 Analytical Reproduction
 
 An independent, one-week PIC learning and reproducibility project based on EEK5103 and:
 
 Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator With Ultra-Flat Frequency Response*, IEEE Photonics Technology Letters **34**(16), 854–857 (2022). [DOI: 10.1109/LPT.2022.3178214](https://doi.org/10.1109/LPT.2022.3178214).
 
-**Status: Day 1 complete.** The static model is implemented and checked. Equations (1)–(4), Figure 3 reproduction, and bandwidth sweeps are planned work, not claimed results. This repository contains no new experimental measurements and is not affiliated with the paper's authors.
+**Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-[中文入门与七天计划](docs/learning_plan_zh.md) · [Day 1 物理推导](docs/day01_zh.md) · [Source and parameter ledger](docs/provenance.md) · [Paper reproduction specification](docs/paper_model_spec.md)
+**Status:** paper scope, module interfaces, boundary acceptance matrix and input preflight are established. The RF model and Figure 3 comparison are not implemented yet. The preflight explicitly lists missing microwave data; it does not invent constant replacements. Ten tests pass (three input-contract tests and seven auxiliary static tests), not ten RF validation cases.
 
-![Ideal static simulation](figures/day01_static_mzm.png)
+Start with [论文复现边界](docs/BOUNDARIES.md), [模块接口与状态](docs/MODULES.md), [七天主线计划](docs/learning_plan_zh.md), and [A00 preflight](experiments/A00_paper_baseline/RESULTS.md).
 
-## Reproduce Day 1
+[Source and parameter ledger](docs/provenance.md) · [Paper equations and conventions](docs/paper_model_spec.md) · [Optional static MZM explanation](docs/day01_zh.md)
+
+## Run the auxiliary static example
 
 Python 3.11 or newer and Git are sufficient to start. Tested environment versions are recorded in `requirements-lock.txt` and `docs/environment.md`.
 
@@ -27,7 +29,7 @@ For the exact recorded dependency versions, install `requirements-lock.txt` befo
 
 The notebook also runs all explanatory cells; the script regenerates the figure, simulation data, and summary. The checked-in notebook includes executed results so it can be read without installing Jupyter.
 
-## Day 1 benchmark
+## Auxiliary static benchmark
 
 Using the Lecture 4 p.22 single-arm example (1550 nm, n_e=2.2, r33=30 pm/V, gap=10 µm, L=2 cm):
 
@@ -44,6 +46,8 @@ The finite extension will vary length, RF loss and microwave–optical group-vel
 
 ## Layout
 
+- `configs/`: source-labelled paper baseline; unknown inputs remain explicit.
+- `experiments/`: per-experiment boundary, configuration report and conclusion.
 - `src/tfln_mzm/`: reusable physics, all input quantities in SI units.
 - `notebooks/`: guided learning with equations and executed examples.
 - `scripts/`: deterministic figure and data generation.

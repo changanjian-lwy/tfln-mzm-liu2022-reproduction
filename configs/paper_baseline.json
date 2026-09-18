@@ -1,0 +1,16 @@
+{
+  "experiment_id": "A00_paper_baseline",
+  "track": "A",
+  "scope": "figure3_reproduction",
+  "parameters": {
+    "length": {"value": 0.006, "unit": "m", "evidence": "paper_explicit", "source": "Fig.1(a), journal p.855"},
+    "source_impedance": {"value": 50.0, "unit": "ohm", "evidence": "paper_explicit", "source": "Section II, journal p.855"},
+    "source_voltage": {"value": 1.0, "unit": "V", "evidence": "paper_explicit", "source": "Figure 3 setup, journal p.855"},
+    "loads": {"value": [20, 40, 50, 80, "open"], "unit": "ohm", "evidence": "paper_explicit", "source": "Fig.3(a,b), journal p.856"},
+    "reference_frequency": {"value": 1000000.0, "unit": "Hz", "evidence": "assumption", "source": "Project convention: paper allows DC or MHz reference; exact Figure 3 f0 not stated"},
+    "optical_group_index": {"value": 2.25, "unit": "1", "evidence": "paper_explicit", "source": "Approximate optical group index reported on journal p.857; not an exact dispersion array"},
+    "characteristic_impedance": {"value": null, "unit": "ohm", "evidence": "unknown", "source": "Fig.2(c): digitization pending; no raw FEM array supplied"},
+    "rf_attenuation": {"value": null, "unit": "Np/m", "evidence": "unknown", "source": "Fig.2(a): digitization and dB/mm conversion pending"},
+    "microwave_index": {"value": null, "unit": "1", "evidence": "unknown", "source": "No full frequency-dependent FEM array in inspected PDF"}
+  }
+}
