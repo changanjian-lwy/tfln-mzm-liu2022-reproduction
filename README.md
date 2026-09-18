@@ -6,7 +6,13 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 **Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-**Status:** A01 implemented the modular uniform-line Eq.(1)–(4) solver and S11. B01–B09 analytical boundary tests pass; the full suite has 20 passing tests. This is analytical-limit verification, not Figure 3 reproduction. Original FEM arrays remain unavailable; bandwidth extraction and digitized comparison remain pending.
+**Status:** A01 analytical limits and A02 frequency-response/bandwidth logic are implemented; all 25 tests pass. A02 compares five terminations under explicitly assumed constant impedance, matched velocity and a square-root loss law. It is a qualitative mechanism study, not Figure 3 quantitative reproduction. Original FEM arrays remain unavailable; digitized comparison is next.
+
+[A02 boundary](experiments/track_A_reproduction/A02_frequency_response/BOUNDARY.md) · [A02 results](experiments/track_A_reproduction/A02_frequency_response/RESULTS.md)
+
+![A02 assumed-input simulation](experiments/track_A_reproduction/A02_frequency_response/response.png)
+
+Run `python scripts/run_a02.py` to regenerate this figure and the bandwidth/censor report.
 
 [第一步学习与结果](docs/A01_learning_zh.md) · [A01 boundary](experiments/track_A_reproduction/A01_analytic_limits/BOUNDARY.md) · [A01 results](experiments/track_A_reproduction/A01_analytic_limits/RESULTS.md)
 

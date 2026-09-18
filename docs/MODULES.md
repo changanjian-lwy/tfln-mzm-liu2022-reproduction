@@ -8,9 +8,9 @@
 | microwave.py | f、Z0(f)、α(f)、nm(f)、L → 复传播常数 | 可替换常数假设/数字化输入，标签保留 | 已实现实数有效参数传播与损耗换算 |
 | termination.py | Zg、Z0、ZL → ρ1、ρ2、S11 | Eq.(2)(3)；S11 是另行推导 | 已实现并通过极限/ABCD 对照 |
 | interaction.py | 微波参数、ng、Vg → 复 Vavg | Eq.(1)，独立积分校验 | 已实现并通过原文独立积分对照 |
-| response.py | 复 Vavg、f0 → M(f)、带宽及 censored | Eq.(4) 幅值约定；零归一化应拒绝 | Eq.(4) 已实现；带宽提取待 A02 |
+| response.py | 复 Vavg、f0 → M(f)、带宽及 censored | Eq.(4) 幅值约定；零归一化应拒绝 | Eq.(4)、首次 −3 dB 提取及未穿越标记已实现 |
 | validation.py | 冻结配置、候选结果、参考点 → 逐项判据 | 不反向修改模型以获得通过 | 边界测试已在 tests/test_traveling_wave.py；曲线比较待实现 |
-| experiments/ + scripts/ | 配置 → 原始输出、图、判据报告 | 单变量实验，保留父版本 | A00、A01 已归档 |
+| experiments/ + scripts/ | 配置 → 原始输出、图、判据报告 | 单变量实验，保留父版本 | A00、A01、A02 已归档 |
 | static.py + 01_static_mzm.ipynb | 课件参数 → 静态干涉 | 辅助 C，不计入论文主线验收 | 已通过七项检查 |
 
 装配顺序：来源配置 → 微波传播/终端 → 电光相互作用 → 响应提取 → 独立验证 → 展示。

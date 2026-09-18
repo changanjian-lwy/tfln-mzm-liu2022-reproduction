@@ -1,0 +1,115 @@
+{
+  "grade": "QUALITATIVE_ONLY",
+  "provider_evidence": "assumption",
+  "parameters": {
+    "length_m": 0.006,
+    "z0": 50,
+    "zg": 50,
+    "n_m": 2.25,
+    "n_g": 2.25,
+    "vg": 1
+  },
+  "f0_Hz": 1000000.0,
+  "loss_law": "0.05 sqrt(f/GHz) dB/mm",
+  "frequency_range_Hz": [
+    1000000.0,
+    200000000000.0
+  ],
+  "grid_points": [
+    2001,
+    4001
+  ],
+  "results": [
+    {
+      "load": "20 ohm",
+      "reference_voltage_abs_V": 0.28579212000631393,
+      "bandwidth": {
+        "bandwidth_hz": null,
+        "censored": true,
+        "lower_bound_hz": 200000000000.0,
+        "status": "above_scan_limit",
+        "events": []
+      },
+      "refinement_shift_Hz": null,
+      "grid_check_pass": true
+    },
+    {
+      "load": "40 ohm",
+      "reference_voltage_abs_V": 0.4442624344551539,
+      "bandwidth": {
+        "bandwidth_hz": null,
+        "censored": true,
+        "lower_bound_hz": 200000000000.0,
+        "status": "above_scan_limit",
+        "events": []
+      },
+      "refinement_shift_Hz": null,
+      "grid_check_pass": true
+    },
+    {
+      "load": "50 ohm",
+      "reference_voltage_abs_V": 0.4997270463809432,
+      "bandwidth": {
+        "bandwidth_hz": null,
+        "censored": true,
+        "lower_bound_hz": 200000000000.0,
+        "status": "above_scan_limit",
+        "events": []
+      },
+      "refinement_shift_Hz": null,
+      "grid_check_pass": true
+    },
+    {
+      "load": "80 ohm",
+      "reference_voltage_abs_V": 0.614922780281127,
+      "bandwidth": {
+        "bandwidth_hz": 63462743750.19069,
+        "censored": false,
+        "lower_bound_hz": null,
+        "status": "downcrossing",
+        "events": [
+          {
+            "frequency_hz": 63462743750.19069,
+            "bracket_hz": [
+              63450682750.0,
+              63500682500.0
+            ],
+            "kind": "downcrossing"
+          },
+          {
+            "frequency_hz": 70543825353.70941,
+            "bracket_hz": [
+              70500647500.0,
+              70550647250.0
+            ],
+            "kind": "downcrossing"
+          }
+        ]
+      },
+      "refinement_shift_Hz": 846000.7024536133,
+      "grid_check_pass": true
+    },
+    {
+      "load": "open",
+      "reference_voltage_abs_V": 0.9989085661880235,
+      "bandwidth": {
+        "bandwidth_hz": 4112128379.4086633,
+        "censored": false,
+        "lower_bound_hz": null,
+        "status": "downcrossing",
+        "events": [
+          {
+            "frequency_hz": 4112128379.4086633,
+            "bracket_hz": [
+              4100979500.0,
+              4150979250.0
+            ],
+            "kind": "downcrossing"
+          }
+        ]
+      },
+      "refinement_shift_Hz": 54100.42820978165,
+      "grid_check_pass": true
+    }
+  ]
+}
