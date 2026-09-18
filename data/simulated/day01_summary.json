@@ -1,0 +1,17 @@
+{
+  "provenance": "simulation_from_lecture_parameters",
+  "parameters_SI": {
+    "wavelength_m": 1.55e-06,
+    "n_e": 2.2,
+    "r33_m_per_v": 3e-11,
+    "gap_m": 1e-05,
+    "length_m": 0.02,
+    "overlap": 1.0
+  },
+  "single_arm_Vpi_V": 2.4261207112446774,
+  "push_pull_gap_Vpi_V": 1.2130603556223387,
+  "delta_n_at_single_arm_Vpi": -3.875e-05,
+  "single_arm_VpiL_V_cm": 4.852241422489355,
+  "quadrature_slope_per_V": 0.6474518433953057,
+  "boundary": "Ideal balanced lossless static model, no traveling-wave or device-field solution"
+}

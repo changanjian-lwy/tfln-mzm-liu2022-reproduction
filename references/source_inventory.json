@@ -1,0 +1,51 @@
+[
+  {
+    "filename": "0811EEK5103 Part I_Lecture 1_2026.pdf",
+    "category": "lecture",
+    "pages": 45,
+    "sha256": "222ee9da218df26d37b76edafd201146f5bc34d95559ec0c883863b2f48b58d4",
+    "redistributed": false
+  },
+  {
+    "filename": "0818EEK5103 Part I_Lecture 2_2026.pdf",
+    "category": "lecture",
+    "pages": 48,
+    "sha256": "f5a464f4e03576a2e5a050c2c9e5b205a5f502876735f7c9688cde86ecb074d7",
+    "redistributed": false
+  },
+  {
+    "filename": "0825EEK5103 Part I_Lecture 3_2026.pdf",
+    "category": "lecture",
+    "pages": 36,
+    "sha256": "40151ace5a4bbd0b04aea8a3fb2a5ed96880d64ceb6f10b81d999b31570b2c6c",
+    "redistributed": false
+  },
+  {
+    "filename": "0901EEK5103 Part I_Lecture 4_2026.pdf",
+    "category": "lecture",
+    "pages": 23,
+    "sha256": "3d429e97dcec75d10ea1e0563b74e1728fa568ba74601ec9689aaa51d164a32d",
+    "redistributed": false
+  },
+  {
+    "filename": "0908EEK5103 Part I_Lecture 5_2026.pdf",
+    "category": "lecture",
+    "pages": 27,
+    "sha256": "d441ccf99e2043081794e3d6c1bd898accc616bd4c4b1f1babfb26c0c756a953",
+    "redistributed": false
+  },
+  {
+    "filename": "EEK5103 Part I_Lecture 6_2026.pdf",
+    "category": "lecture",
+    "pages": 25,
+    "sha256": "f5e3172447b06637ebef5c67362533028d0a417e1c0e79b61cfa58e020487871",
+    "redistributed": false
+  },
+  {
+    "filename": "reference_tfln_lpt2022.pdf",
+    "category": "paper",
+    "pages": 4,
+    "sha256": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+    "redistributed": false
+  }
+]

@@ -1,0 +1,6 @@
+load_ohm,Vg_V,gap_voltage_V,provenance
+20,1.0,0.2857142857142857,derived_dc_limit
+40,1.0,0.4444444444444444,derived_dc_limit
+50,1.0,0.5,derived_dc_limit
+80,1.0,0.6153846153846154,derived_dc_limit
+inf,1.0,1.0,derived_dc_limit
