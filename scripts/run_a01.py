@@ -18,5 +18,5 @@ result={'scope':'A01_DC_limit_only','provenance':'simulation_with_declared_ideal
         'parameters':{'Vg_V':1,'Zg_ohm':50,'Z0_ohm':50,'length_m':.006,'alpha_Np_per_m':0,'n_m':2.25,'n_g':2.25,'frequency_Hz':0},
         'source_note':'Vg/Zg/L/loads from paper; constant Z0, zero loss and matching indices are ideal-limit assumptions; f=0 is a limit test, not a change to the Figure 3 f0 convention',
         'rows':rows}
-(root/'experiments/A01_analytic_limits/dc_results.json').write_text(json.dumps(result,indent=2)+'\n')
+(root/'experiments/track_A_reproduction/A01_analytic_limits/dc_results.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))
