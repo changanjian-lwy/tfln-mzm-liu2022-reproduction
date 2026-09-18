@@ -1,0 +1,82 @@
+{
+  "scope": "diagnosis_only_no_fit",
+  "cross_panel_reference": [
+    {
+      "load": "20",
+      "points": 425,
+      "divider_V": 0.2857142857142857,
+      "implied_reference_median_V": 0.30584605099181345,
+      "p05_V": 0.3046498668058954,
+      "p95_V": 0.3088933233901121,
+      "median_vertical_uncertainty_V": 0.011654037773697846,
+      "equivalent_normalization_offset_dB": 0.5914184343579951
+    },
+    {
+      "load": "40",
+      "points": 393,
+      "divider_V": 0.4444444444444444,
+      "implied_reference_median_V": 0.4449443236194562,
+      "p05_V": 0.44019425033716136,
+      "p95_V": 0.4498925226019887,
+      "median_vertical_uncertainty_V": 0.015458528442343102,
+      "equivalent_normalization_offset_dB": 0.009763774762233297
+    },
+    {
+      "load": "50",
+      "points": 151,
+      "divider_V": 0.5,
+      "implied_reference_median_V": 0.49287253410941306,
+      "p05_V": 0.4809419342032867,
+      "p95_V": 0.5010502561537633,
+      "median_vertical_uncertainty_V": 0.016158059779691453,
+      "equivalent_normalization_offset_dB": -0.12470774136072771
+    },
+    {
+      "load": "80",
+      "points": 337,
+      "divider_V": 0.6153846153846154,
+      "implied_reference_median_V": 0.6008755895246906,
+      "p05_V": 0.5933295552693054,
+      "p95_V": 0.6081821106313218,
+      "median_vertical_uncertainty_V": 0.02419700217040623,
+      "equivalent_normalization_offset_dB": -0.20724146915589825
+    },
+    {
+      "load": "open",
+      "points": 401,
+      "divider_V": 1,
+      "implied_reference_median_V": 0.9499309268646471,
+      "p05_V": 0.9287202211616933,
+      "p95_V": 0.9648846877857982,
+      "median_vertical_uncertainty_V": 0.04204665487800312,
+      "equivalent_normalization_offset_dB": -0.4461594557418468
+    }
+  ],
+  "phase_bounds": [
+    {
+      "load": "20",
+      "points": 716,
+      "outside_nominal": 179,
+      "outside_sampled_uncertainty_envelope": 37
+    },
+    {
+      "load": "40",
+      "points": 760,
+      "outside_nominal": 752,
+      "outside_sampled_uncertainty_envelope": 652
+    },
+    {
+      "load": "50",
+      "points": 724,
+      "outside_nominal": 275,
+      "outside_sampled_uncertainty_envelope": 58
+    },
+    {
+      "load": "80",
+      "points": 764,
+      "outside_nominal": 437,
+      "outside_sampled_uncertainty_envelope": 329
+    }
+  ],
+  "uncertainty_note": "reference estimates propagate vertical readout only; phase envelope samples source frequency/ordinate errors but is not a certified interval or complete input-model uncertainty"
+}

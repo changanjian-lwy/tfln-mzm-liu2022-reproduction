@@ -9,6 +9,7 @@ Read `docs/BOUNDARIES.md` before running a new experiment. Every experiment owns
 | A: paper reproduction | [A02 frequency response](track_A_reproduction/A02_frequency_response/RESULTS.md) | QUALITATIVE_ONLY; B10–B12 pass | Assumed provider, first crossing, censoring and convergence |
 | A: paper reproduction | [A03 digitization](track_A_reproduction/A03_digitization/RESULTS.md) | Partial extraction complete | Raster curves with explicit gaps |
 | A: paper reproduction | [A04 independent comparison](track_A_reproduction/A04_digitized_comparison/RESULTS.md) | PARTIAL_COMPARISON_FAIL | Some EO curves agree; S11 unresolved |
+| A: paper reproduction | [A05 convention audit](track_A_reproduction/A05_convention_audit/RESULTS.md) | DIAGNOSTIC_ONLY | Normalization contributor identified; phase-only S11 correction ruled out for many samples |
 | B: extensions | Length, RF loss and mismatch scans | Planned | Separate from paper baseline |
 
 Auxiliary static learning material is in `docs/learning/`, `notebooks/01_static_mzm.ipynb` and `data/simulated/day01_*`. It does not earn a Track A result grade.
