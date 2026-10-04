@@ -218,6 +218,33 @@
      "scripts/run_a07.py"
     ]
    }
+  },
+  {
+   "id": "A08_c06_matched_provider",
+   "dir": "experiments/track_A_reproduction/A08_c06_matched_provider",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "f714833",
+   "documents": {
+    "experiments/track_A_reproduction/A08_c06_matched_provider/BOUNDARY.md": "109dc13e01a553a6747c040a9901a0da81085294a22c09b5f200d17ae00287bd",
+    "experiments/track_A_reproduction/A08_c06_matched_provider/INPUTS.md": "cb5b1207952a3bad0c6f07914b867623b3bcfd74ef9102bcd592454159d12130",
+    "experiments/track_A_reproduction/A08_c06_matched_provider/RESULTS.md": "4efc1382386feb8f76519a576b9a668a7ac693bb634373fbdb3c614bac8593ee"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "data/digitized/liu2022/a06_curves.csv": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/results.json": "08b372c7a1f8b1e36696a5d7da26c206a50aeaca0cff5f73e4c7b9eb58bed1c5"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A08_c06_matched_provider/results.json": "b3f24c439b3160198e53993fe1cb46b87d5dc870cd0e699638c7395cdb6d2d7d",
+    "experiments/track_A_reproduction/A08_c06_matched_provider/matched_provider.png": "be7e7f082ad9a0dca2d7fb8fe32182a32f3e4e7c480cea26c9302f81df7644ad"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a08.py"
+    ]
+   }
   }
  ]
 }

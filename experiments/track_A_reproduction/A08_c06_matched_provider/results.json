@@ -1,0 +1,252 @@
+{
+  "grade": "DIAGNOSTIC_ONLY",
+  "branch": "C-06b matched provider: Z0=Zg=ZL=50 ohm; loss independent of BCB; nm frequency independent",
+  "ng": 2.2501190476190476,
+  "loss_fit_outside_coverage": {
+    "a_dB_per_mm_per_sqrtGHz": 0.03087674411336149,
+    "b_dB_per_mm_per_GHz": 0.0019057707532098365,
+    "fit_rms_dB_per_mm": 0.012089284039879432,
+    "coverage_GHz": [
+      1.4109347442680775,
+      198.58906525573192
+    ]
+  },
+  "compared_points": 350,
+  "star": {
+    "BCB_um": 1.5000048297512687,
+    "nm": 2.249972706155633,
+    "fig2b_bw_GHz": 202.5996984545797,
+    "matched_response_dB_at_fig2b_bw": -2.356478136084079,
+    "interval_dB": [
+      -2.3692677799062043,
+      -2.303662823206903
+    ],
+    "matched_first_crossing_GHz_long_extrapolation": 285.6046714392535
+  },
+  "points_response_dB": {
+    "min": -2.498177145628365,
+    "median": -2.3800866259993385,
+    "max": -2.343389541686335,
+    "median_interval_width_dB": 0.06924842879623938
+  },
+  "criteria": {
+    "1_star_values_from_A06": true,
+    "2_points_le_205GHz": true,
+    "3_all_finite": true,
+    "4_star_interval_contains_-3dB": false,
+    "4_fraction_points_contain_-3dB": 0.0,
+    "4_matched_provider_explains": false
+  },
+  "reported_only_matched_bw_by_BCB": [
+    {
+      "BCB_um": 0.0871287128712871,
+      "nm": 2.2859523809523807,
+      "matched_bw_GHz": 233.5898889520867,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.1663366336633663,
+      "nm": 2.283333333333333,
+      "matched_bw_GHz": 238.83280251342532,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.2455445544554455,
+      "nm": 2.2807142857142857,
+      "matched_bw_GHz": 244.1012921411404,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.3247524752475247,
+      "nm": 2.278095238095238,
+      "matched_bw_GHz": 249.35395451447278,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.403960396039604,
+      "nm": 2.275714285714286,
+      "matched_bw_GHz": 254.07268503219947,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.4831683168316831,
+      "nm": 2.2733333333333334,
+      "matched_bw_GHz": 258.69065931515433,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.5623762376237624,
+      "nm": 2.2710714285714286,
+      "matched_bw_GHz": 262.93625351258436,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.6415841584158416,
+      "nm": 2.2689285714285714,
+      "matched_bw_GHz": 266.78403769799536,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.7207920792079208,
+      "nm": 2.266785714285714,
+      "matched_bw_GHz": 270.4134643251288,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.8,
+      "nm": 2.2647619047619045,
+      "matched_bw_GHz": 273.5947192377605,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.8950495049504951,
+      "nm": 2.262380952380952,
+      "matched_bw_GHz": 276.9691205578942,
+      "censored": false
+    },
+    {
+      "BCB_um": 0.9742574257425742,
+      "nm": 2.260595238095238,
+      "matched_bw_GHz": 279.19724388450265,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.0534653465346535,
+      "nm": 2.258690476190476,
+      "matched_bw_GHz": 281.2509731639657,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.1326732673267326,
+      "nm": 2.2570238095238095,
+      "matched_bw_GHz": 282.7490279649703,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.2118811881188118,
+      "nm": 2.255238095238095,
+      "matched_bw_GHz": 284.0211789720397,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.2910891089108911,
+      "nm": 2.253690476190476,
+      "matched_bw_GHz": 284.8300760978623,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.623762376237624,
+      "nm": 2.2473809523809525,
+      "matched_bw_GHz": 285.14887655350026,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.702970297029703,
+      "nm": 2.245952380952381,
+      "matched_bw_GHz": 284.55199741882404,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.7821782178217822,
+      "nm": 2.24452380952381,
+      "matched_bw_GHz": 283.71676966807325,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.8613861386138617,
+      "nm": 2.243333333333333,
+      "matched_bw_GHz": 282.84478105514387,
+      "censored": false
+    },
+    {
+      "BCB_um": 1.9405940594059403,
+      "nm": 2.242142857142857,
+      "matched_bw_GHz": 281.81921729164225,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.01980198019802,
+      "nm": 2.240952380952381,
+      "matched_bw_GHz": 280.6469838971324,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.099009900990099,
+      "nm": 2.2397619047619046,
+      "matched_bw_GHz": 279.3357077562532,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.1782178217821784,
+      "nm": 2.238809523809524,
+      "matched_bw_GHz": 278.19207748871645,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.257425742574257,
+      "nm": 2.237619047619048,
+      "matched_bw_GHz": 276.65151691856175,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.3366336633663365,
+      "nm": 2.236666666666667,
+      "matched_bw_GHz": 275.33580559179404,
+      "censored": false
+    },
+    {
+      "BCB_um": 2.415841584158416,
+      "nm": 2.2357142857142858,
+      "matched_bw_GHz": 273.9511193167042,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.287128712871287,
+      "nm": 2.2267857142857146,
+      "matched_bw_GHz": 258.46294195285816,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.366336633663366,
+      "nm": 2.2261904761904763,
+      "matched_bw_GHz": 257.31885734501896,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.4455445544554455,
+      "nm": 2.2254761904761904,
+      "matched_bw_GHz": 255.9347685479174,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.5247524752475248,
+      "nm": 2.2248809523809525,
+      "matched_bw_GHz": 254.7730163795581,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.603960396039604,
+      "nm": 2.224285714285714,
+      "matched_bw_GHz": 253.60453518099166,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.6831683168316833,
+      "nm": 2.223809523809524,
+      "matched_bw_GHz": 252.66542620972245,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.762376237623762,
+      "nm": 2.2232142857142856,
+      "matched_bw_GHz": 251.48676277516816,
+      "censored": false
+    },
+    {
+      "BCB_um": 3.8415841584158414,
+      "nm": 2.2227380952380953,
+      "matched_bw_GHz": 250.5404608726753,
+      "censored": false
+    }
+  ]
+}
