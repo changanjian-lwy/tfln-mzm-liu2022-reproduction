@@ -161,6 +161,37 @@
      "scripts/run_a05.py"
     ]
    }
+  },
+  {
+   "id": "A06_fig2b_fig3a_main_digitization",
+   "dir": "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization",
+   "grade": "PARTIAL_EXTRACTION_COMPLETE",
+   "layer": null,
+   "recorded_commit": "b84ed7a",
+   "documents": {
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/BOUNDARY.md": "15ff55d035d9064dc41dd672914f904108be4b9e45bf043329c02fa7d53e083b",
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/INPUTS.md": "18293dffe9fe6d4a90243caea500d13840433c251e73faa0129130319bc56921",
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/RESULTS.md": "c5abc0be9790a11e24052e9d2272a2ea1b83e29a3fc63bb4446b9a420e9391f0"
+   },
+   "inputs": {},
+   "outputs": {
+    "data/digitized/liu2022/a06_curves.csv": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+    "data/digitized/liu2022/a06_metadata.json": "d1bc91480fda2af313049748391e6845ccd6e7794f3586b098c0d9c9c6ea609b",
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/digitized_preview.png": "510d3b712c06b42f0f0d03d8787ab0fb16e73471dea9b90b73f2610f6ba73788",
+    "experiments/track_A_reproduction/A06_fig2b_fig3a_main_digitization/results.json": "08b372c7a1f8b1e36696a5d7da26c206a50aeaca0cff5f73e4c7b9eb58bed1c5"
+   },
+   "local_inputs": {
+    "p2_2.jpeg": "1558d1694d0e525e06be0c1d736b9d181ef54b95386037aada7f4efb47d7574f",
+    "p3_0.png": "ba0d0b95b1ff9d313d1bd4928536e9de75e44464f859ddc50f398fe19936291e"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/digitize_a06.py",
+     "--images",
+     "{images}"
+    ]
+   }
   }
  ]
 }

@@ -1,0 +1,45 @@
+{
+  "grade": "PARTIAL_EXTRACTION_COMPLETE",
+  "scope": "raster readout only; no model comparison",
+  "a06_curves_sha256": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+  "criteria": {
+    "2_optical_index_line_2.250pm0.001": true,
+    "3_fig2b_retained_ge_70pct": true,
+    "4_strict_median_le_1px": true,
+    "6_fig3a_main_usable_series": [
+      "20",
+      "40",
+      "open"
+    ]
+  },
+  "derived": {
+    "optical_index_dashed_line": {
+      "rows": [
+        314,
+        315,
+        316,
+        317
+      ],
+      "value": 2.2501190476190476,
+      "uncertainty": 0.0004761904761904762
+    },
+    "star_nm_at_100GHz": {
+      "x_pixel": 1044.3756097560977,
+      "y_pixel": 316.1146341463415,
+      "pixels": 410,
+      "BCB_um": 1.5000048297512687,
+      "value": 2.249972706155633,
+      "uncertainty_value": 0.0004761904761904745,
+      "uncertainty_BCB_um": 0.015841584158415842
+    },
+    "star_bw3dB_50ohm_GHz": {
+      "x_pixel": 1043.5883905013193,
+      "y_pixel": 227.80211081794195,
+      "pixels": 379,
+      "BCB_um": 1.49376942971342,
+      "value": 202.5996984545797,
+      "uncertainty_value": 0.2857142857142857,
+      "uncertainty_BCB_um": 0.015841584158415842
+    }
+  }
+}

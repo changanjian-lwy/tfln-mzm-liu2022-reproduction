@@ -9,3 +9,5 @@
   - 本段时间**不推送、不合并到远端**。理由：仓库公开，推送不可撤回；推送本身不推进实验。所有工作本地提交在 `governance-v2`，用户回来后决定合并与推送。
   - 按实验索引的 P2 队列推进，不触碰 SC-01/02/03（FEM、馈线网络、测量对照）。
   - 每个实验：BOUNDARY 单独提交 → 运行 → INPUTS/RESULTS → 登记证据清单 → `check_evidence.py --replay` → 提交。
+- 14:40–15:20 A06（数字化 Fig.2(b) 与 Fig.3(a) 主图）。边界先提交 `b84ed7a`。定标自检：作者的"Optical index"虚线读数 2.2501。结果：nm(100 GHz)=2.2500、50 Ω 带宽 202.6 GHz（都在 BCB 1.5 µm）；Fig.3(a) 主图 20/40/开路可用、50/80 Ω 被遮挡。发现 C-06：Fig.2(b) 的 202.6 GHz 与 Fig.3(b) 50 Ω 在 142 GHz 处跌破 −3 dB 不一致。
+  - 顺手修正：`check_evidence.py --replay` 改为把栅格复制到临时目录再重放，不再往本地栅格目录写 overlay；新增 `scripts/register_evidence.py`（只追加，拒绝覆盖已登记实验）。

@@ -1,0 +1,253 @@
+{
+  "doi": "10.1109/LPT.2022.3178214",
+  "sources": {
+    "p2_2.jpeg": "1558d1694d0e525e06be0c1d736b9d181ef54b95386037aada7f4efb47d7574f",
+    "p3_0.png": "ba0d0b95b1ff9d313d1bd4928536e9de75e44464f859ddc50f398fe19936291e"
+  },
+  "calibration": {
+    "fig2b": {
+      "image": "p2_2.jpeg",
+      "x_px": [
+        855,
+        1360
+      ],
+      "x_phys": [
+        0,
+        4
+      ],
+      "y_px": [
+        526,
+        106
+      ],
+      "rows": [
+        110,
+        522
+      ]
+    },
+    "fig2b_series": [
+      {
+        "series": "nm_at_100GHz",
+        "colour": "blue",
+        "y_physical": [
+          2.2,
+          2.3
+        ],
+        "unit": "1",
+        "columns": [
+          866,
+          1356
+        ],
+        "excluded": [
+          [
+            1031,
+            1059
+          ],
+          [
+            1165,
+            1244
+          ]
+        ]
+      },
+      {
+        "series": "bw3dB_50ohm_GHz",
+        "colour": "red",
+        "y_physical": [
+          160,
+          220
+        ],
+        "unit": "GHz",
+        "columns": [
+          859,
+          1349
+        ],
+        "excluded": [
+          [
+            1028,
+            1057
+          ],
+          [
+            1186,
+            1264
+          ]
+        ]
+      }
+    ],
+    "fig3a_main": {
+      "image": "p3_0.png",
+      "x_px": [
+        195,
+        1111
+      ],
+      "x_phys": [
+        0,
+        200
+      ],
+      "y_px": [
+        400,
+        101
+      ],
+      "y_phys": [
+        0,
+        1.5
+      ],
+      "rows": [
+        296,
+        397
+      ],
+      "columns": [
+        432,
+        1108
+      ]
+    }
+  },
+  "method": "A03 per-column unique contiguous colour cluster; stars and annotations masked; no interpolation",
+  "uncertainty": "2px axis localization plus half stroke height; not author error bars",
+  "quality": [
+    {
+      "missing_columns": 2,
+      "ambiguous_columns": 0,
+      "masked_columns": 109,
+      "panel": "fig2b",
+      "series": "nm_at_100GHz",
+      "retained": 380,
+      "eligible_columns": 382,
+      "retained_fraction": 0.9947643979057592,
+      "strict_common_points": 380,
+      "strict_median_difference_px": 0.0,
+      "excluded_column_ranges": [
+        [
+          1031,
+          1059
+        ],
+        [
+          1165,
+          1244
+        ]
+      ],
+      "max_retained_gap_um": 0.6415841584158417
+    },
+    {
+      "missing_columns": 0,
+      "ambiguous_columns": 0,
+      "masked_columns": 109,
+      "panel": "fig2b",
+      "series": "bw3dB_50ohm_GHz",
+      "retained": 382,
+      "eligible_columns": 382,
+      "retained_fraction": 1.0,
+      "strict_common_points": 382,
+      "strict_median_difference_px": 0.0,
+      "excluded_column_ranges": [
+        [
+          1028,
+          1057
+        ],
+        [
+          1186,
+          1264
+        ]
+      ],
+      "max_retained_gap_um": 0.6336633663366338
+    },
+    {
+      "missing_columns": 0,
+      "ambiguous_columns": 2,
+      "masked_columns": 0,
+      "panel": "fig3a_main",
+      "series": "20",
+      "retained": 675,
+      "eligible_columns": 677,
+      "retained_fraction": 0.9970457902511078,
+      "strict_common_points": 675,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.4366812227074206,
+      "usable_for_scoring": true
+    },
+    {
+      "missing_columns": 190,
+      "ambiguous_columns": 0,
+      "masked_columns": 0,
+      "panel": "fig3a_main",
+      "series": "40",
+      "retained": 487,
+      "eligible_columns": 677,
+      "retained_fraction": 0.7193500738552437,
+      "strict_common_points": 443,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 4.803493449781655,
+      "usable_for_scoring": true
+    },
+    {
+      "missing_columns": 610,
+      "ambiguous_columns": 0,
+      "masked_columns": 0,
+      "panel": "fig3a_main",
+      "series": "50",
+      "retained": 67,
+      "eligible_columns": 677,
+      "retained_fraction": 0.09896602658788774,
+      "strict_common_points": 2,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 14.62882096069869,
+      "usable_for_scoring": false
+    },
+    {
+      "missing_columns": 672,
+      "ambiguous_columns": 0,
+      "masked_columns": 0,
+      "panel": "fig3a_main",
+      "series": "80",
+      "retained": 5,
+      "eligible_columns": 677,
+      "retained_fraction": 0.007385524372230428,
+      "strict_common_points": 0,
+      "strict_median_difference_px": null,
+      "max_retained_gap_GHz": 84.06113537117903,
+      "usable_for_scoring": false
+    },
+    {
+      "missing_columns": 145,
+      "ambiguous_columns": 0,
+      "masked_columns": 0,
+      "panel": "fig3a_main",
+      "series": "open",
+      "retained": 532,
+      "eligible_columns": 677,
+      "retained_fraction": 0.7858197932053176,
+      "strict_common_points": 532,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 4.148471615720524,
+      "usable_for_scoring": true
+    }
+  ],
+  "derived": {
+    "optical_index_dashed_line": {
+      "rows": [
+        314,
+        315,
+        316,
+        317
+      ],
+      "value": 2.2501190476190476,
+      "uncertainty": 0.0004761904761904762
+    },
+    "star_nm_at_100GHz": {
+      "x_pixel": 1044.3756097560977,
+      "y_pixel": 316.1146341463415,
+      "pixels": 410,
+      "BCB_um": 1.5000048297512687,
+      "value": 2.249972706155633,
+      "uncertainty_value": 0.0004761904761904745,
+      "uncertainty_BCB_um": 0.015841584158415842
+    },
+    "star_bw3dB_50ohm_GHz": {
+      "x_pixel": 1043.5883905013193,
+      "y_pixel": 227.80211081794195,
+      "pixels": 379,
+      "BCB_um": 1.49376942971342,
+      "value": 202.5996984545797,
+      "uncertainty_value": 0.2857142857142857,
+      "uncertainty_BCB_um": 0.015841584158415842
+    }
+  }
+}
