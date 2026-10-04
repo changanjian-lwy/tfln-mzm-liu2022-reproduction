@@ -1,0 +1,83 @@
+{
+  "grade": "DIAGNOSTIC_ONLY",
+  "scope": "Fig.3(c) 40/80-ohm label assignment; L1 inputs of A04/A05; readout unchanged",
+  "dc_limit_dB": {
+    "40": -19.084850188786497,
+    "80": -12.736441951743487
+  },
+  "assignments": {
+    "original": {
+      "40": {
+        "assumed_load_ohm": 40.0,
+        "points": 760,
+        "outside_nominal": 752,
+        "outside_envelope": 652,
+        "outside_nominal_fraction": 0.9894736842105263,
+        "low_freq_points": 2,
+        "low_freq_outside_nominal": 2,
+        "A04_metrics": {
+          "scored": 760,
+          "MAE_dB": 8.428262753779148,
+          "within_readout_fraction": 0.0,
+          "nonfinite": 0
+        },
+        "all_finite": true
+      },
+      "80": {
+        "assumed_load_ohm": 80.0,
+        "points": 764,
+        "outside_nominal": 437,
+        "outside_envelope": 329,
+        "outside_nominal_fraction": 0.5719895287958116,
+        "low_freq_points": 3,
+        "low_freq_outside_nominal": 3,
+        "A04_metrics": {
+          "scored": 760,
+          "MAE_dB": 6.392667560127734,
+          "within_readout_fraction": 0.07236842105263158,
+          "nonfinite": 0
+        },
+        "all_finite": true
+      }
+    },
+    "swapped": {
+      "40": {
+        "assumed_load_ohm": 80.0,
+        "points": 760,
+        "outside_nominal": 71,
+        "outside_envelope": 2,
+        "outside_nominal_fraction": 0.09342105263157895,
+        "low_freq_points": 2,
+        "low_freq_outside_nominal": 1,
+        "A04_metrics": {
+          "scored": 760,
+          "MAE_dB": 2.471703573737611,
+          "within_readout_fraction": 0.34342105263157896,
+          "nonfinite": 0
+        },
+        "all_finite": true
+      },
+      "80": {
+        "assumed_load_ohm": 40.0,
+        "points": 764,
+        "outside_nominal": 416,
+        "outside_envelope": 125,
+        "outside_nominal_fraction": 0.5445026178010471,
+        "low_freq_points": 3,
+        "low_freq_outside_nominal": 0,
+        "A04_metrics": {
+          "scored": 760,
+          "MAE_dB": 4.484034417960437,
+          "within_readout_fraction": 0.20526315789473684,
+          "nonfinite": 0
+        },
+        "all_finite": true
+      }
+    }
+  },
+  "criteria": {
+    "1_reproduces_A05_A04_archives": true,
+    "2_all_finite": true,
+    "3_swap_supported": false
+  }
+}

@@ -16,6 +16,7 @@ Evidence check (gate G1): `python scripts/check_evidence.py --replay` regenerate
 | A | [A07 C-06 bandwidth definition](track_A_reproduction/A07_c06_bandwidth_definition/RESULTS.md) | L1 | DIAGNOSTIC_ONLY | Boundary committed first (`42f09e0`) | 50 ohm first −3 dB crossing: model 141.82 vs Fig.3(b) 141.78 GHz; ripple-insensitive definitions are compatible with Fig.2(b)'s 202.6 GHz |
 | A | [A08 C-06 matched provider](track_A_reproduction/A08_c06_matched_provider/RESULTS.md) | L1 + C-06b | DIAGNOSTIC_ONLY | Boundary committed first (`f714833`) | A matched 50-ohm line with Fig.2(a) loss gives −2.3 to −2.5 dB at the Fig.2(b) bandwidths, so it cannot explain that curve |
 | A | [A09 qualitative statements](track_A_reproduction/A09_qualitative_statements/RESULTS.md) | L1 | QUALITATIVE_ONLY | Boundary committed first (`c4445e9`) | Initial-rise/drop statement reproduced; roll-off similarity undecidable for the model (Z0 gap at 10 GHz); the S11 statement fails on the author's own figure as written; new conflict C-07 (possible 40/80-ohm legend swap in Fig.3(c)) |
+| A | [A10 C-07 Fig.3(c) legend swap](track_A_reproduction/A10_c07_fig3c_legend_swap/RESULTS.md) | L1 | DIAGNOSTIC_ONLY | Boundary committed first (`fc54cde`) | A simple 40/80 swap is not supported by the predeclared rule; the curve labelled 40 ohm is, however, consistent with an 80-ohm load (outside-bound points 99% → 9.3%, MAE 8.43 → 2.47 dB) |
 | B | Termination, length, RF loss and mismatch scans | L0/L1 | Planned | — | Separate from paper baseline |
 
 P1 finding that applies to A00–A05: each experiment's BOUNDARY.md and RESULTS.md entered Git in the same commit, so "criteria fixed before results" rests on the documents' own statements, not on Git history. These experiments predate the v2 rules and are not rewritten. Their INPUTS.md files are retrospective records written on 2026-10-04.
@@ -26,7 +27,7 @@ Order follows the minimum evidence list in [SOURCE_COVERAGE_MATRIX.md](../docs/S
 
 1. ~~Digitize Fig.2(b) and the full Fig.3(a)~~ — done in A06.
 1b. ~~C-06 definition diagnostic~~ — A07. 1c. ~~C-06 matched-provider diagnostic~~ — A08 (ruled out under Fig.2(a) loss).
-2. ~~Qualitative statements~~ — A09. 2b. C-07 legend-swap diagnostic for Fig.3(c) (A10).
+2. ~~Qualitative statements~~ — A09. 2b. ~~C-07 legend-swap diagnostic~~ — A10.
 3. C-02 reference-frequency branches, `SENSITIVITY_ONLY`.
 4. C-03 microwave-index branches, using the Fig.2(b) value once item 1 exists, `SENSITIVITY_ONLY`.
 5. Track B single-variable scans with a frozen Track A parent.

@@ -271,6 +271,33 @@
      "scripts/run_a09.py"
     ]
    }
+  },
+  {
+   "id": "A10_c07_fig3c_legend_swap",
+   "dir": "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "fc54cde",
+   "documents": {
+    "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap/BOUNDARY.md": "e889e90a853c055a4ad79b72c734d21cfcb8d9dc6f7cffdc87d11d49a7d31ae1",
+    "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap/INPUTS.md": "18fc126ca5531f62313ff839bac176881a71ebaef123d87cd07aec85b3e9dc0d",
+    "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap/RESULTS.md": "2a5783c7c2fc5ccdcc54f0ec4f243d93529cf921fa31839b51db9920656b03b4"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A05_convention_audit/results.json": "8816ec296e9adb19b0062e17dc43477c190fab8782a5330d7817e01122ecfe4e",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap/results.json": "5b4a497ab4762a7a0b66535d144f2ed0613570f3001830573bb330cc9f53271c",
+    "experiments/track_A_reproduction/A10_c07_fig3c_legend_swap/legend_swap.png": "2a90782c02d7e0cc347e6886d7f7fdaa09acde59f4e9ce84bddad031070959a8"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a10.py"
+    ]
+   }
   }
  ]
 }
