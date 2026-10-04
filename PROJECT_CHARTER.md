@@ -55,7 +55,7 @@
 | P3 执行 | 小检查 → 运行 → 对照 → 诊断 | 逐级通过 G0–G4；首个不通过即停止该候选 |
 | P4 验收与讲解 | 汇总结论、局限和讲解材料 | 用户验收；未完成项明确留在范围外 |
 
-P1 已于 2026-10-04 完成，结果见 [实验索引](experiments/README.md)。
+P1 已于 2026-10-04 完成，结果见 [实验索引](experiments/README.md)。同日 P2/P3 完成 A06–A14 与 B01–B04（授权范围内、不含 FEM）；Q2 的逐系列结论见 [Figure 3 逐系列结论](docs/FIGURE3_STATUS.md)，讲解提纲见 [docs/learning/session_2026-10-04_zh.md](docs/learning/session_2026-10-04_zh.md)。P4（用户验收）待用户回来后进行。
 
 ## 6. 历史结果如何处理
 
