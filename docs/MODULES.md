@@ -9,10 +9,14 @@
 | termination.py | Zg、Z0、ZL → ρ1、ρ2、S11 | Eq.(2)(3)；S11 是另行推导 | 已实现并通过极限/ABCD 对照 |
 | interaction.py | 微波参数、ng、Vg → 复 Vavg | Eq.(1)，独立积分校验 | 已实现并通过原文独立积分对照 |
 | response.py | 复 Vavg、f0 → M(f)、带宽及 censored | Eq.(4) 幅值约定；零归一化应拒绝 | Eq.(4)、首次 −3 dB 提取及未穿越标记已实现 |
-| validation.py | 冻结配置、候选结果、参考点 → 逐项判据 | 不反向修改模型以获得通过 | 边界测试已在 tests/test_traveling_wave.py；曲线比较待实现 |
-| experiments/ + scripts/ | 配置 → 原始输出、图、判据报告 | 单变量实验，保留父版本 | A00、A01、A02 已归档 |
+| digitized.py | 数字化曲线、查询频率、最大缺口 → 插值值与支持掩码 | 不外推、不跨越长缺口（A04 取 1 GHz） | 已实现（A03/A04） |
+| validation.py | 冻结配置、候选结果、参考点 → 逐项判据 | 不反向修改模型以获得通过 | 未单独成模块：边界测试在 tests/，A04 判据在 scripts/run_a04.py；新判据须在 BOUNDARY 中写死后再实现 |
+| experiments/ + scripts/ | 配置 → 原始输出、图、判据报告 | 单变量实验，保留父版本 | A00–A05 已归档并登记在 EVIDENCE_MANIFEST.json |
+| scripts/check_evidence.py | 证据清单 → 哈希核对；--replay 在临时副本重跑 | 只核对证据完整性，不验证物理 | 已实现；G1 关卡的一部分 |
 | static.py + 01_static_mzm.ipynb | 课件参数 → 静态干涉 | 辅助 C，不计入论文主线验收 | 已通过七项检查 |
 
 装配顺序：来源配置 → 微波传播/终端 → 电光相互作用 → 响应提取 → 独立验证 → 展示。
 
 同一输入角色一次只采用一个数据提供者。常数 Z0=50 Ω 和数字化 Z0(f) 不得同时混入同一基线；换提供者必须建新配置并记录改变。接口校验通过只表示配置格式完整，不表示物理正确；缺失清单为空也不意味着 Figure 3 已复现。
+
+每个实验只声明一个模型保真层级（L0 解析理想、L1 数字化输入、L2 FEM 输入、L3 网络增强，见 BOUNDARIES 第 4 节）。L2/L3 需要新的提供者模块，但它们必须输出与 microwave.py 相同的接口（f、Z0、α、nm），使 interaction/termination/response 不因换层而改动。

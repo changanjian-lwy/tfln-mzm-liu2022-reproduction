@@ -1,6 +1,6 @@
 # 工具与日常工作方式
 
-主线入口是 README → BOUNDARIES → 实验索引 → 当前实验的 BOUNDARY/RESULTS。
+主线入口是 README → 立项书 → BOUNDARIES（v2）→ 来源覆盖矩阵 → 实验索引 → 当前实验的 BOUNDARY/INPUTS/RESULTS。
 
 ## 会使用什么工具
 
@@ -42,9 +42,12 @@ references/                      引文与源文件指纹
 
 ## 每一步怎么留证据
 
-1. 先确定父实验和本次问题，写 BOUNDARY.md。
-2. 锁定输入来源、变量和验收条件。
-3. 运行模型与相应测试，写 RESULTS.md，包括失败和不能证明的内容。
-4. 检查差异，提交并同步 GitHub；这是一项实际执行动作，不是自动后台同步。
+按 BOUNDARIES 第 7 节的 G0–G4 逐级放行（2026-10-04 起）：
+
+1. G0：按 `experiments/EXPERIMENT_TEMPLATE.md` 写 BOUNDARY.md，回答运行前五问，判据带数字，**单独提交**后再运行。
+2. G1：`python -m unittest discover -s tests` 与 `python scripts/check_evidence.py --replay` 都通过，并先复现父实验的关键数字。
+3. G2/G3：运行模型，检查收敛、有限性、被动性和支持区间；写 INPUTS.md（命令、哈希、环境、偏离）。
+4. G4：写 RESULTS.md，包括失败和不能证明的内容；把新输出登记进 `experiments/EVIDENCE_MANIFEST.json`。
+5. 本地提交。推送到 GitHub 是对外发布，须先经用户同意（立项书第 0 节）。
 
 论文 PDF、课件 PDF、虚拟环境和个人课程作业留在本地。公开仓库只放原创代码、说明、引用及允许分享的数据。后续数字化曲线同时保留来源和不确定度。

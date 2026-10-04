@@ -1,0 +1,166 @@
+{
+ "schema": "tfln-evidence/v1",
+ "created": "2026-10-04",
+ "rule": "Registered documents, inputs and outputs are read-only evidence. A changed hash is a failure, never a reason to rewrite this file. New experiments append entries; A03 local_inputs are recorded but stay outside Git.",
+ "experiments": [
+  {
+   "id": "A00_paper_baseline",
+   "dir": "experiments/track_A_reproduction/A00_paper_baseline",
+   "grade": "BLOCKED_BY_MISSING_DATA",
+   "layer": null,
+   "recorded_commit": "ecf20af",
+   "documents": {
+    "experiments/track_A_reproduction/A00_paper_baseline/BOUNDARY.md": "8174e49432e4f4f4828d51fc3e63a9d43f13dc7870cda9bc114d2cd578fd771e",
+    "experiments/track_A_reproduction/A00_paper_baseline/RESULTS.md": "a5fe6f7da483dfb6b24fd97addc0965c7df44f80232559a3e74ede3ec72d9a7d",
+    "experiments/track_A_reproduction/A00_paper_baseline/INPUTS.md": "a9ff8275f01a158347ead63c012cab55ff9ebe1185f2b1a3da4b372953e1403e"
+   },
+   "inputs": {
+    "configs/paper_baseline.json": "b2553ee542fc8b1c3341d25ed75713cbe2ac3078fc656b01b3fb476721a9c00c"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A00_paper_baseline/results.json": "f80b2da2d37b0e61eb6461bd032d66410d1fcc10bfb778399f94c940c3a748bb"
+   },
+   "replay": {
+    "kind": "preflight",
+    "config": "configs/paper_baseline.json",
+    "output": "experiments/track_A_reproduction/A00_paper_baseline/results.json"
+   }
+  },
+  {
+   "id": "A01_analytic_limits",
+   "dir": "experiments/track_A_reproduction/A01_analytic_limits",
+   "grade": "ANALYTIC_LIMIT_PASS",
+   "layer": "L0",
+   "recorded_commit": "ecf20af",
+   "documents": {
+    "experiments/track_A_reproduction/A01_analytic_limits/BOUNDARY.md": "d2d25d4c74e5cd39ffbf29d48716e7b6afe8fb1cf302c7d9e8e002263a09d3bd",
+    "experiments/track_A_reproduction/A01_analytic_limits/RESULTS.md": "27c6f7d105f73fe3a11c5cf0af73a444d397692d5ec06acfae5a7c5d1f4a3c6a",
+    "experiments/track_A_reproduction/A01_analytic_limits/INPUTS.md": "42202f75ae9d750bed9d6b55dcbe511ded65bd00faceb6743091988c06018851"
+   },
+   "inputs": {},
+   "outputs": {
+    "experiments/track_A_reproduction/A01_analytic_limits/dc_results.json": "ff6143eb1aeac76dd91b88358cfb1321e50e1e9852a902531bf2c7d5cfe05198"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a01.py"
+    ]
+   }
+  },
+  {
+   "id": "A02_frequency_response",
+   "dir": "experiments/track_A_reproduction/A02_frequency_response",
+   "grade": "QUALITATIVE_ONLY",
+   "layer": "L0",
+   "recorded_commit": "35d831b",
+   "documents": {
+    "experiments/track_A_reproduction/A02_frequency_response/BOUNDARY.md": "dfe3141c11f9ad76653f12e25073f86b9fed63045de6c4482f2eea78ee05e58a",
+    "experiments/track_A_reproduction/A02_frequency_response/RESULTS.md": "8ed4bc024f0582db26ee7928abc7d71a9419a7777a3154efafe5d191d9936041",
+    "experiments/track_A_reproduction/A02_frequency_response/INPUTS.md": "7133aedec3904c4420021d46531ebf2c573dce52428e3829677e4b5ccc03f546"
+   },
+   "inputs": {},
+   "outputs": {
+    "experiments/track_A_reproduction/A02_frequency_response/curves.csv": "f4a0f2f2613e712d2d1682cb6ac1701932261efd30c84c782be2f9301e823dcb",
+    "experiments/track_A_reproduction/A02_frequency_response/response.png": "90ea442f1cf1ed25d2524166c89948fbc55eafbaf9afef7fc34747b970775d5c",
+    "experiments/track_A_reproduction/A02_frequency_response/results.json": "4145ea6076ae800c4fe0f1101b76f27e2fc10fcbaf29633fabe0df8ac026bd01"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a02.py"
+    ]
+   }
+  },
+  {
+   "id": "A03_digitization",
+   "dir": "experiments/track_A_reproduction/A03_digitization",
+   "grade": "PARTIAL_EXTRACTION_COMPLETE",
+   "layer": null,
+   "recorded_commit": "8741206",
+   "documents": {
+    "experiments/track_A_reproduction/A03_digitization/BOUNDARY.md": "ef45ff2813697c761f8a13357bb27fac09fae19d3a1ce87866bbef45620dc8f5",
+    "experiments/track_A_reproduction/A03_digitization/RESULTS.md": "60239026ef5b0cb3169b29b046c6adbaf800d581f25f36508fdfeb3ab153c1ab",
+    "experiments/track_A_reproduction/A03_digitization/INPUTS.md": "1b0a91f5de696a755e7f65b028dc6ad99b96059438cf73100bf29fde27bbb4dd",
+    "data/digitized/README.md": "e5612cd3905d057d9ceb7e9875d097360d9d657d7581958519b766439a2647f8",
+    "data/digitized/liu2022/README.md": "0a66502d79820906c8ff4f055fb418c669b5a7c19c09659d198e0ff0615e2fde"
+   },
+   "inputs": {},
+   "local_inputs": {
+    "pdf": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+    "p2_2.jpeg": "1558d1694d0e525e06be0c1d736b9d181ef54b95386037aada7f4efb47d7574f",
+    "p3_0.png": "ba0d0b95b1ff9d313d1bd4928536e9de75e44464f859ddc50f398fe19936291e"
+   },
+   "outputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "data/digitized/liu2022/metadata.json": "529c2e9c9b8984c920b07a91be08b9307467c124b1e249dc88a51f3152808fd5",
+    "experiments/track_A_reproduction/A03_digitization/digitized_preview.png": "36d9d369e8d87df8cf7e867087d0b690e418e7089c5f6b8e862892911fded61c"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/digitize_a03.py",
+     "--images",
+     "{images}"
+    ]
+   }
+  },
+  {
+   "id": "A04_digitized_comparison",
+   "dir": "experiments/track_A_reproduction/A04_digitized_comparison",
+   "grade": "PARTIAL_COMPARISON_FAIL",
+   "layer": "L1",
+   "recorded_commit": "8741206",
+   "documents": {
+    "experiments/track_A_reproduction/A04_digitized_comparison/BOUNDARY.md": "679b1c90c1a3b2eb83e7f55cae153399b68ae8b637689606aaf165bce5ecadc6",
+    "experiments/track_A_reproduction/A04_digitized_comparison/RESULTS.md": "303692f865227637463a5826c33029ece0ba427727aebf58b5d156beea27f3ba",
+    "experiments/track_A_reproduction/A04_digitized_comparison/INPUTS.md": "1066ffdd827193121aadafd86c56acce4e10dff4825ba18a15bf725ffc8a1934"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A04_digitized_comparison/comparison.csv": "63f501a927d2df03db27c8d01ada2bf3c97908f40be35fd16ebb01415742d500",
+    "experiments/track_A_reproduction/A04_digitized_comparison/comparison.png": "c8090b704a22420f669b4fa2e1e0e1ea1ddfd0703cf76e6fa5392c562e225251",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results_before_axis_tick_QA.json": "4947ba0fb05126b2a2a0e42a278c0082eb67c2c60a504667f84b9a054da3dd94"
+   },
+   "static_only": [
+    "experiments/track_A_reproduction/A04_digitized_comparison/results_before_axis_tick_QA.json"
+   ],
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a04.py"
+    ]
+   }
+  },
+  {
+   "id": "A05_convention_audit",
+   "dir": "experiments/track_A_reproduction/A05_convention_audit",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "be41c24",
+   "documents": {
+    "experiments/track_A_reproduction/A05_convention_audit/BOUNDARY.md": "e44a186db27e2a2bf414cb3732d03a84a6537c38e63cb6e83076fc7975a50012",
+    "experiments/track_A_reproduction/A05_convention_audit/RESULTS.md": "9322a59b56b702a60bf87c8c4925ca81f60d84ce6108283768f1268be3baf018",
+    "experiments/track_A_reproduction/A05_convention_audit/INPUTS.md": "8f2efdcac770fe54d25dab95a096fbafa6dc44cb16a7d7fd483e81044406a828"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A04_digitized_comparison/comparison.csv": "63f501a927d2df03db27c8d01ada2bf3c97908f40be35fd16ebb01415742d500"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A05_convention_audit/phase_bounds.csv": "c3756c35b61068b92bd8172f50851546e8332e5d960f01e172e1100cd0d044e7",
+    "experiments/track_A_reproduction/A05_convention_audit/results.json": "8816ec296e9adb19b0062e17dc43477c190fab8782a5330d7817e01122ecfe4e",
+    "experiments/track_A_reproduction/A05_convention_audit/normalization_diagnostic.json": "097d8f60b4d387309b1f3e9d61235abb0d020299c09c2ae4c3843fa3c6ec5c6c"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a05.py"
+    ]
+   }
+  }
+ ]
+}
