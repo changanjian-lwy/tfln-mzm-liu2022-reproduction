@@ -13,6 +13,7 @@ Evidence check (gate G1): `python scripts/check_evidence.py --replay` regenerate
 | A | [A04 independent comparison](track_A_reproduction/A04_digitized_comparison/RESULTS.md) | L1 | PARTIAL_COMPARISON_FAIL | Citable; replay identical | Some EO curves agree; S11 unresolved |
 | A | [A05 convention audit](track_A_reproduction/A05_convention_audit/RESULTS.md) | L1 | DIAGNOSTIC_ONLY | Citable; replay identical | Normalization contributor identified; phase-only S11 correction ruled out for many samples |
 | A | [A06 Fig.2(b) + Fig.3(a) main digitization](track_A_reproduction/A06_fig2b_fig3a_main_digitization/RESULTS.md) | data | PARTIAL_EXTRACTION_COMPLETE | First experiment under v2 rules; boundary committed first (`b84ed7a`) | nm(100 GHz)=2.2500 and 50-ohm bandwidth 202.6 GHz at BCB 1.5 um; new conflict C-06 |
+| A | [A07 C-06 bandwidth definition](track_A_reproduction/A07_c06_bandwidth_definition/RESULTS.md) | L1 | DIAGNOSTIC_ONLY | Boundary committed first (`42f09e0`) | 50 ohm first −3 dB crossing: model 141.82 vs Fig.3(b) 141.78 GHz; ripple-insensitive definitions are compatible with Fig.2(b)'s 202.6 GHz |
 | B | Termination, length, RF loss and mismatch scans | L0/L1 | Planned | — | Separate from paper baseline |
 
 P1 finding that applies to A00–A05: each experiment's BOUNDARY.md and RESULTS.md entered Git in the same commit, so "criteria fixed before results" rests on the documents' own statements, not on Git history. These experiments predate the v2 rules and are not rewritten. Their INPUTS.md files are retrospective records written on 2026-10-04.
@@ -22,7 +23,7 @@ P1 finding that applies to A00–A05: each experiment's BOUNDARY.md and RESULTS.
 Order follows the minimum evidence list in [SOURCE_COVERAGE_MATRIX.md](../docs/SOURCE_COVERAGE_MATRIX.md) §4. Numbers are assigned when each BOUNDARY.md is committed.
 
 1. ~~Digitize Fig.2(b) and the full Fig.3(a)~~ — done in A06.
-1b. C-06 diagnostic: under which input/definition does the model give ~203 GHz instead of ~142 GHz for 50 ohm?
+1b. ~~C-06 definition diagnostic~~ — A07. 1c. C-06 provider diagnostic: reproduce the Fig.2(b) bandwidth-vs-BCB curve with a matched 50-ohm line (A08).
 2. Turn the paper's three qualitative statements (initial rise for ZL<Z0, similar high-frequency roll-off, S11 below −10 dB near Z0) into predeclared checks on the L1 model.
 3. C-02 reference-frequency branches, `SENSITIVITY_ONLY`.
 4. C-03 microwave-index branches, using the Fig.2(b) value once item 1 exists, `SENSITIVITY_ONLY`.

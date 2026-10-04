@@ -11,3 +11,4 @@
   - 每个实验：BOUNDARY 单独提交 → 运行 → INPUTS/RESULTS → 登记证据清单 → `check_evidence.py --replay` → 提交。
 - 14:40–15:20 A06（数字化 Fig.2(b) 与 Fig.3(a) 主图）。边界先提交 `b84ed7a`。定标自检：作者的"Optical index"虚线读数 2.2501。结果：nm(100 GHz)=2.2500、50 Ω 带宽 202.6 GHz（都在 BCB 1.5 µm）；Fig.3(a) 主图 20/40/开路可用、50/80 Ω 被遮挡。发现 C-06：Fig.2(b) 的 202.6 GHz 与 Fig.3(b) 50 Ω 在 142 GHz 处跌破 −3 dB 不一致。
   - 顺手修正：`check_evidence.py --replay` 改为把栅格复制到临时目录再重放，不再往本地栅格目录写 overlay；新增 `scripts/register_evidence.py`（只追加，拒绝覆盖已登记实验）。
+- 15:25–15:50 A07（C-06 带宽定义诊断，L1）。边界先提交 `42f09e0`。运行前发现脚本 Hz/GHz 单位混用，修正后才运行。结果：50 Ω 首次下穿，模型 141.82 GHz、Fig.3(b) 读数 141.78 GHz；D2/D3 下都截尾，与 Fig.2(b) 的 202.6 GHz 相容。

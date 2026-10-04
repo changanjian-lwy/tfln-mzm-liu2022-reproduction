@@ -1,0 +1,128 @@
+{
+  "grade": "DIAGNOSTIC_ONLY",
+  "scope": "L1 provider of A04, 50 ohm only; bandwidth definitions D1-D3",
+  "fig2b_star_GHz": 202.5996984545797,
+  "explain_threshold_GHz": 195.0,
+  "A04_mae_recomputed_dB": 0.07029790232494389,
+  "A04_mae_archived_dB": 0.07029790232494389,
+  "model_fine_grid": {
+    "D1_first": {
+      "value_GHz": 141.81663453203078,
+      "censored": false,
+      "bracket_GHz": [
+        141.8,
+        141.82500000000002
+      ],
+      "bracket_in_gap": false,
+      "kind": "downcrossing",
+      "event_count": 5
+    },
+    "D2_stays_below": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 197.775,
+      "final_dB": -1.9067009215467037
+    },
+    "D3_smoothed_first": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 190.35000000000002,
+      "event_count": 0,
+      "smoothed_min_dB": -2.802379139241117,
+      "smoothed_min_at_GHz": 160.32500000000002
+    }
+  },
+  "model_coarse_grid": {
+    "D1_first": {
+      "value_GHz": 141.81664064109998,
+      "censored": false,
+      "bracket_GHz": [
+        141.8,
+        141.85
+      ],
+      "bracket_in_gap": false,
+      "kind": "downcrossing",
+      "event_count": 5
+    },
+    "D2_stays_below": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 197.75,
+      "final_dB": -1.9082869367219701
+    },
+    "D3_smoothed_first": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 190.35000000000002,
+      "event_count": 0,
+      "smoothed_min_dB": -2.8026602776600966,
+      "smoothed_min_at_GHz": 160.20000000000002
+    }
+  },
+  "target_fig3b_50": {
+    "D1_first": {
+      "value_GHz": 141.7758369723435,
+      "censored": false,
+      "bracket_GHz": [
+        141.70305676855895,
+        141.92139737991266
+      ],
+      "bracket_in_gap": false,
+      "kind": "downcrossing",
+      "event_count": 5
+    },
+    "D2_stays_below": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 197.81659388646287,
+      "final_dB": -1.875
+    },
+    "D3_smoothed_first": {
+      "value_GHz": null,
+      "censored": true,
+      "lower_bound_GHz": 194.5414847161572,
+      "event_count": 0,
+      "smoothed_min_dB": -2.7726190476190475,
+      "smoothed_min_at_GHz": 162.00873362445415
+    }
+  },
+  "target_readout_sensitivity_D1": {
+    "plus_uncertainty": {
+      "value_GHz": 142.13973799126637,
+      "censored": false,
+      "bracket_GHz": [
+        141.92139737991266,
+        142.13973799126637
+      ],
+      "bracket_in_gap": false,
+      "kind": "threshold_contact",
+      "event_count": 4
+    },
+    "minus_uncertainty": {
+      "value_GHz": 132.31441048034935,
+      "censored": false,
+      "bracket_GHz": [
+        132.09606986899564,
+        132.31441048034935
+      ],
+      "bracket_in_gap": false,
+      "kind": "threshold_contact",
+      "event_count": 8
+    }
+  },
+  "criteria": {
+    "1_A04_mae_reproduced": true,
+    "2_grid_events_equal": true,
+    "2_grid_shift_le_0.1GHz": {
+      "D1_first": 6.109069204285333e-06,
+      "D2_stays_below": null,
+      "D3_smoothed_first": null
+    },
+    "3_nonfinite_zero": true,
+    "4_definition_explains_C06": {
+      "D2_stays_below": true,
+      "D3_smoothed_first": true
+    },
+    "2_grid_shift_pass": true
+  }
+}

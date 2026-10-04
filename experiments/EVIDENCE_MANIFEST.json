@@ -192,6 +192,32 @@
      "{images}"
     ]
    }
+  },
+  {
+   "id": "A07_c06_bandwidth_definition",
+   "dir": "experiments/track_A_reproduction/A07_c06_bandwidth_definition",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "42f09e0",
+   "documents": {
+    "experiments/track_A_reproduction/A07_c06_bandwidth_definition/BOUNDARY.md": "eef793dc3b82944eab3dda637134e1ae512e5805c8b8f3de4fe1603895c75fc0",
+    "experiments/track_A_reproduction/A07_c06_bandwidth_definition/INPUTS.md": "46c2d8266584c962d0587cad1709f5b94bb65067c7be67289b4b180d042e5b31",
+    "experiments/track_A_reproduction/A07_c06_bandwidth_definition/RESULTS.md": "f6d74eb826be065b80d6539bfe077573816252452675f9e30619de56c79aad33"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A07_c06_bandwidth_definition/results.json": "5430b89c6a36fec9ee712ffa8866d244f77b7f0c55efc31568d0f347e28f7c26",
+    "experiments/track_A_reproduction/A07_c06_bandwidth_definition/bandwidth_definitions.png": "92314af1823745ea99bff25d6ed8b0e33afa40f16b689f4474cbe107c85a7f89"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a07.py"
+    ]
+   }
   }
  ]
 }
