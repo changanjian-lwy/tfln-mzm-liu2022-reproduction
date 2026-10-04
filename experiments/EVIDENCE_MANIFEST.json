@@ -352,6 +352,32 @@
      "scripts/run_a11.py"
     ]
    }
+  },
+  {
+   "id": "A12_c01_complex_z0",
+   "dir": "experiments/track_A_reproduction/A12_c01_complex_z0",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "224ef3a",
+   "documents": {
+    "experiments/track_A_reproduction/A12_c01_complex_z0/BOUNDARY.md": "e13c1c46ed8933acc2f92ffb356d6433ce4e59292e6cd60ee5e09d6b8f5f8976",
+    "experiments/track_A_reproduction/A12_c01_complex_z0/INPUTS.md": "2504e9a06625450978eb53135632738196a4418b516c08bc2bc828fbcbf52270",
+    "experiments/track_A_reproduction/A12_c01_complex_z0/RESULTS.md": "dd804aa5130fbb0c1b7f740c630720f258cbca52c88545b4cb15a6debba07486"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A12_c01_complex_z0/results.json": "30c6e307f8b402f1b979a17551b153054316f83440fa087ae071ff20e2e396e1",
+    "experiments/track_A_reproduction/A12_c01_complex_z0/complex_z0.png": "9644d99a7cedadccdb23e029f5aee8024bc442a3f822228bbc90f489cd8e4ae4"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a12.py"
+    ]
+   }
   }
  ]
 }

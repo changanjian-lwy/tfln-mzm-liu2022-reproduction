@@ -1,0 +1,408 @@
+{
+  "grade": "DIAGNOSTIC_ONLY",
+  "scope": "C-01b complex Z0 from G=0; A04 inputs, scoring and criteria",
+  "criteria": {
+    "1_real_reproduces_A04": true,
+    "1_zero_loss_branches_equal_real_max_abs": 1.4210854715202004e-14,
+    "1_zero_loss_pass": true,
+    "2_all_finite": true,
+    "3_explains_S11": {
+      "C-01b-Re": false,
+      "C-01b-Abs": false
+    },
+    "3_material_effect": {
+      "C-01b-Re": false,
+      "C-01b-Abs": false
+    },
+    "3_max_abs_fig3c_MAE_change_dB": {
+      "C-01b-Re": 0.4180543889740198,
+      "C-01b-Abs": 0.421200770969933
+    }
+  },
+  "baseline_real": [
+    {
+      "panel": "fig3a_inset",
+      "load": "20",
+      "scored": 392,
+      "MAE": 0.008759323287599098,
+      "within_readout_fraction": 0.7474489795918368,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "40",
+      "scored": 360,
+      "MAE": 0.004062658125782355,
+      "within_readout_fraction": 0.95,
+      "diagnostic_pass": true,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "50",
+      "scored": 130,
+      "MAE": 0.006532436540794756,
+      "within_readout_fraction": 0.7923076923076923,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "80",
+      "scored": 310,
+      "MAE": 0.012760409871110262,
+      "within_readout_fraction": 0.4645161290322581,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "open",
+      "scored": 364,
+      "MAE": 0.03386587391985268,
+      "within_readout_fraction": 0.17032967032967034,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3b",
+      "load": "20",
+      "scored": 733,
+      "MAE": 0.7572075781772696,
+      "within_readout_fraction": 0.017735334242837655,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3b",
+      "load": "40",
+      "scored": 787,
+      "MAE": 0.06768222531359241,
+      "within_readout_fraction": 0.9796696315120712,
+      "diagnostic_pass": true,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3b",
+      "load": "50",
+      "scored": 784,
+      "MAE": 0.07029790232494389,
+      "within_readout_fraction": 0.9872448979591837,
+      "diagnostic_pass": true,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3b",
+      "load": "80",
+      "scored": 787,
+      "MAE": 0.12232325180672089,
+      "within_readout_fraction": 0.8526048284625158,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3b",
+      "load": "open",
+      "scored": 787,
+      "MAE": 0.42737954747898543,
+      "within_readout_fraction": 0.30241423125794153,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3c",
+      "load": "20",
+      "scored": 716,
+      "MAE": 2.295487079725651,
+      "within_readout_fraction": 0.24720670391061453,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3c",
+      "load": "40",
+      "scored": 760,
+      "MAE": 8.428262753779148,
+      "within_readout_fraction": 0.0,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3c",
+      "load": "50",
+      "scored": 718,
+      "MAE": 5.3841068127658005,
+      "within_readout_fraction": 0.22423398328690808,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    },
+    {
+      "panel": "fig3c",
+      "load": "80",
+      "scored": 760,
+      "MAE": 6.392667560127734,
+      "within_readout_fraction": 0.07236842105263158,
+      "diagnostic_pass": false,
+      "nonfinite": 0
+    }
+  ],
+  "branches": {
+    "C-01b-Re": [
+      {
+        "panel": "fig3a_inset",
+        "load": "20",
+        "MAE": 0.00891978940603561,
+        "MAE_change": 0.00016046611843651207,
+        "within_readout_fraction": 0.7142857142857143,
+        "within_change": -0.03316326530612246,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "40",
+        "MAE": 0.004043392346778533,
+        "MAE_change": -1.9265779003822467e-05,
+        "within_readout_fraction": 0.9138888888888889,
+        "within_change": -0.036111111111111094,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "50",
+        "MAE": 0.007686899275780236,
+        "MAE_change": 0.0011544627349854798,
+        "within_readout_fraction": 0.7307692307692307,
+        "within_change": -0.06153846153846154,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "80",
+        "MAE": 0.014106122117755925,
+        "MAE_change": 0.0013457122466456629,
+        "within_readout_fraction": 0.4096774193548387,
+        "within_change": -0.054838709677419384,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "open",
+        "MAE": 0.03604056061793897,
+        "MAE_change": 0.0021746866980862922,
+        "within_readout_fraction": 0.17582417582417584,
+        "within_change": 0.005494505494505503,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "20",
+        "MAE": 0.762198403436005,
+        "MAE_change": 0.0049908252587353985,
+        "within_readout_fraction": 0.010914051841746248,
+        "within_change": -0.006821282401091406,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "40",
+        "MAE": 0.06845630590604361,
+        "MAE_change": 0.0007740805924511956,
+        "within_readout_fraction": 0.97712833545108,
+        "within_change": -0.0025412960609911828,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3b",
+        "load": "50",
+        "MAE": 0.06915370003289459,
+        "MAE_change": -0.0011442022920492984,
+        "within_readout_fraction": 0.9757653061224489,
+        "within_change": -0.011479591836734748,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3b",
+        "load": "80",
+        "MAE": 0.12572310537859815,
+        "MAE_change": 0.003399853571877262,
+        "within_readout_fraction": 0.8475222363405337,
+        "within_change": -0.0050825921219821435,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "open",
+        "MAE": 0.43729615771317193,
+        "MAE_change": 0.009916610234186496,
+        "within_readout_fraction": 0.30749682337992373,
+        "within_change": 0.005082592121982199,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "20",
+        "MAE": 2.2496654552561908,
+        "MAE_change": -0.045821624469460254,
+        "within_readout_fraction": 0.2723463687150838,
+        "within_change": 0.025139664804469247,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "40",
+        "MAE": 8.51722883809288,
+        "MAE_change": 0.0889660843137321,
+        "within_readout_fraction": 0.0,
+        "within_change": 0.0,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "50",
+        "MAE": 4.966052423791781,
+        "MAE_change": -0.4180543889740198,
+        "within_readout_fraction": 0.2395543175487465,
+        "within_change": 0.01532033426183843,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "80",
+        "MAE": 6.400079763617592,
+        "MAE_change": 0.007412203489858271,
+        "within_readout_fraction": 0.07631578947368421,
+        "within_change": 0.00394736842105263,
+        "diagnostic_pass": false
+      }
+    ],
+    "C-01b-Abs": [
+      {
+        "panel": "fig3a_inset",
+        "load": "20",
+        "MAE": 0.008925527021150827,
+        "MAE_change": 0.00016620373355172822,
+        "within_readout_fraction": 0.7168367346938775,
+        "within_change": -0.030612244897959218,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "40",
+        "MAE": 0.004059645571488284,
+        "MAE_change": -3.0125542940708655e-06,
+        "within_readout_fraction": 0.9166666666666666,
+        "within_change": -0.033333333333333326,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "50",
+        "MAE": 0.00765296135657261,
+        "MAE_change": 0.0011205248157778536,
+        "within_readout_fraction": 0.7307692307692307,
+        "within_change": -0.06153846153846154,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "80",
+        "MAE": 0.014074918362191446,
+        "MAE_change": 0.0013145084910811834,
+        "within_readout_fraction": 0.4096774193548387,
+        "within_change": -0.054838709677419384,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3a_inset",
+        "load": "open",
+        "MAE": 0.03599474925111181,
+        "MAE_change": 0.0021288753312591335,
+        "within_readout_fraction": 0.17582417582417584,
+        "within_change": 0.005494505494505503,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "20",
+        "MAE": 0.7616819294323497,
+        "MAE_change": 0.004474351255080111,
+        "within_readout_fraction": 0.010914051841746248,
+        "within_change": -0.006821282401091406,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "40",
+        "MAE": 0.0683759637942562,
+        "MAE_change": 0.0006937384806637859,
+        "within_readout_fraction": 0.97712833545108,
+        "within_change": -0.0025412960609911828,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3b",
+        "load": "50",
+        "MAE": 0.06943921092202934,
+        "MAE_change": -0.0008586914029145437,
+        "within_readout_fraction": 0.9757653061224489,
+        "within_change": -0.011479591836734748,
+        "diagnostic_pass": true
+      },
+      {
+        "panel": "fig3b",
+        "load": "80",
+        "MAE": 0.12588034271753254,
+        "MAE_change": 0.003557090910811647,
+        "within_readout_fraction": 0.8462515883100381,
+        "within_change": -0.006353240152477735,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3b",
+        "load": "open",
+        "MAE": 0.43738063807973976,
+        "MAE_change": 0.010001090600754325,
+        "within_readout_fraction": 0.30749682337992373,
+        "within_change": 0.005082592121982199,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "20",
+        "MAE": 2.2507951927718337,
+        "MAE_change": -0.04469188695381732,
+        "within_readout_fraction": 0.2723463687150838,
+        "within_change": 0.025139664804469247,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "40",
+        "MAE": 8.515065077696777,
+        "MAE_change": 0.08680232391762921,
+        "within_readout_fraction": 0.0,
+        "within_change": 0.0,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "50",
+        "MAE": 4.9629060417958675,
+        "MAE_change": -0.421200770969933,
+        "within_readout_fraction": 0.2395543175487465,
+        "within_change": 0.01532033426183843,
+        "diagnostic_pass": false
+      },
+      {
+        "panel": "fig3c",
+        "load": "80",
+        "MAE": 6.402177660983271,
+        "MAE_change": 0.00951010085553694,
+        "within_readout_fraction": 0.075,
+        "within_change": 0.0026315789473684154,
+        "diagnostic_pass": false
+      }
+    ]
+  }
+}
