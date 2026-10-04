@@ -6,7 +6,7 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 **Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-**Status:** A01–A02 analytical model and bandwidth logic pass the current 40-test suite. A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
+**Status:** A01–A02 analytical model and bandwidth logic pass the current 38-test suite. A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
 
 [A05 cause audit](experiments/track_A_reproduction/A05_convention_audit/RESULTS.md): cross-panel reference differences explain part of the 20-ohm offset; phase-independent bounds rule out microwave-phase-only correction for many S11 samples. Full reproduction remains unresolved.
 
