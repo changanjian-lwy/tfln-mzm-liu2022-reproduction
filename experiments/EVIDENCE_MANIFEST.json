@@ -489,6 +489,34 @@
      "B04"
     ]
    }
+  },
+  {
+   "id": "A14_input_uncertainty_corners",
+   "dir": "experiments/track_A_reproduction/A14_input_uncertainty_corners",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "44bbc9b",
+   "documents": {
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/BOUNDARY.md": "03b102c0e1aaf20b892eba17babea57baff2711cd5d3e9d7c622690b44b70d62",
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/INPUTS.md": "3b4380367c745d856f53d3d30cfb5b02f2b824ab82b3c8ce6216ada464737845",
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/RESULTS.md": "13ab57f5c6ac0daefddc91b1f7a214a954ad946223da8e7988e2340719251cb5"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "data/digitized/liu2022/a06_curves.csv": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323",
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/results.json": "b71fc98e76bc6bb0cd274d40c8205e7f6f274b8b4c08d8cdeaccc832b21e819e"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/results.json": "e21d685f010ec1ed8f201c0b9c6066020f53bbb08b12870fde45a4461ff64e0c",
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/corner_envelopes.png": "1c9e87d0b3638d26a58159a40d983c63747f1aa201d59ee8f4553fd4d2a21b96"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a14.py"
+    ]
+   }
   }
  ]
 }
