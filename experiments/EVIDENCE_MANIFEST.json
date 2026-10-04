@@ -644,6 +644,31 @@
     ]
    },
    "replay_note": "observation_* are post-hoc (not criteria); regenerate with python scripts/b05_observation_peaking.py after run_b05.py"
+  },
+  {
+   "id": "B06_flat_covered_design_bo",
+   "dir": "experiments/track_B_extensions/B06_flat_covered_design_bo",
+   "grade": "NUMERICAL_FAIL",
+   "layer": "L1",
+   "recorded_commit": "7e6e136",
+   "documents": {
+    "experiments/track_B_extensions/B06_flat_covered_design_bo/BOUNDARY.md": "accd5935753b8897ab997f706123fcccff0c664ae85d499c2567de4cfb238bec",
+    "experiments/track_B_extensions/B06_flat_covered_design_bo/INPUTS.md": "0a985034dabc33815366bff0aab419295fefc8239c5d6de92bb8593912941403",
+    "experiments/track_B_extensions/B06_flat_covered_design_bo/RESULTS.md": "c961c0e5e39e4ca6b01ff45e17573512b11466cc02585bcb281b4c81604bbd33"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_B_extensions/B01_termination_sweep/sweep.csv": "90368de2db7d1a35368bda1d3e41feb5729f2b3039bc2a16264ec0c674721556"
+   },
+   "outputs": {
+    "experiments/track_B_extensions/B06_flat_covered_design_bo/results.json": "f4b77da989e3f07d53a436d804ec4566a8fbe4da7b89c7d4744d08a68b7e7130"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_b06.py"
+    ]
+   }
   }
  ]
 }

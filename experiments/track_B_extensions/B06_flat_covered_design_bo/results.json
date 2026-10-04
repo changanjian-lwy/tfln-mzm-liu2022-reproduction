@@ -1,0 +1,372 @@
+{
+  "grade": "NUMERICAL_FAIL",
+  "track": "B",
+  "parent": "B05 (A04 L1 provider)",
+  "authorization": "D9 / SC-04",
+  "changed": "ripple cap R replaces the -3 dB floor; L limited to 1-14.9 mm",
+  "criteria": {
+    "1_G1_parent": {
+      "B01_P50_max_diff_dB": 4.440892098500626e-16,
+      "B01_maxS11_max_diff_dB": 1.7763568394002505e-15,
+      "B01_loads": 61,
+      "pass": true
+    },
+    "2_freq_grid": {
+      "rows": [
+        {
+          "B_GHz": "50",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0004201680672268908,
+          "empty": false
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.00016160310277957336,
+          "empty": false
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.00022624434389140272,
+          "empty": false
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": false
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0004201680672268908,
+          "empty": false
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0001292824822236587,
+          "empty": false
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.06457940260397077,
+          "label_flip_fraction": 0.00022624434389140272,
+          "empty": false
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": false
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 9.696186166774402e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 3.2320620555914674e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 6.464124111182935e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.059697070989243706,
+          "label_flip_fraction": 0.0001292824822236587,
+          "empty": false
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": false
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 9.696186166774402e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.024221515211589217,
+          "label_flip_fraction": 3.2320620555914674e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 6.464124111182935e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0001292824822236587,
+          "empty": false
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 6.464124111182935e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.00029088558500323206,
+          "empty": false
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 1.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 1.5,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.0,
+          "empty": true
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 2.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 6.464124111182935e-05,
+          "empty": false
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 3.0,
+          "dJ_freq_dB": 0.0,
+          "label_flip_fraction": 0.00029088558500323206,
+          "empty": false
+        }
+      ],
+      "pass": false
+    },
+    "3_param_grid": {
+      "rows": [
+        {
+          "B_GHz": "50",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.04214196842892193
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.032580001795641245
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 2.0,
+          "dJ_param_dB": 0.0609538616401073
+        },
+        {
+          "B_GHz": "50",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.058491060346332446
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.04214196842892193
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.04192893884775195
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 2.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "75",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.058491060346332446
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.04859559171313288
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 2.0,
+          "dJ_param_dB": 0.05769076494005221
+        },
+        {
+          "B_GHz": "100",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.06011020279450374
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 1.5,
+          "dJ_param_dB": 1.5941264315057984
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 2.0,
+          "dJ_param_dB": 0.1790968530585304
+        },
+        {
+          "B_GHz": "125",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.0314931699670864
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 2.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "150",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 2.0,
+          "dJ_param_dB": 1.0165657967242332
+        },
+        {
+          "B_GHz": "175",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 1.0,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 1.5,
+          "dJ_param_dB": 0.0
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 2.0,
+          "dJ_param_dB": 1.0165657967242332
+        },
+        {
+          "B_GHz": "B_full",
+          "R_dB": 3.0,
+          "dJ_param_dB": 0.0
+        }
+      ],
+      "pass": false
+    },
+    "4_finite_passive": {
+      "nonfinite": 0,
+      "max_abs_S11": 0.6620555967722631,
+      "S11_exact_zero_points": 0,
+      "supported_points": {
+        "0.025": 6891,
+        "0.05": 3445
+      },
+      "B_full_GHz": 197.775,
+      "pass": true
+    }
+  }
+}
