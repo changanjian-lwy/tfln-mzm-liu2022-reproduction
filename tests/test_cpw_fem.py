@@ -51,6 +51,33 @@ class TestCPWLowFrequencyResistance(unittest.TestCase):
         self.assertLess(abs(r["gamma_rlgc"] / r["gamma_fem"] - 1), 0.05)
         self.assertGreater(r["Z0_pi"].real, 0)
 
+    def test_second_order_series_resistance_approaches_dc_value(self):
+        """Same check with second-order elements (A17b G1)."""
+        c = CPW(**TUNCER)
+        r = solve(c, build_mesh(c, 4.0, 1), 5e7, order=2)
+        g = 40.5 - 13.5
+        r_dc = 1 / (c.sigma * c.w_sig * 1e-6 * c.t_metal * 1e-6) + 1 / (c.sigma * 2 * g * 1e-6 * c.t_metal * 1e-6)
+        self.assertLess(abs(r["R"] / r_dc - 1), 0.02)
+        self.assertLess(abs(r["gamma_rlgc"] / r["gamma_fem"] - 1), 0.05)
+        self.assertGreater(r["n_dofs"], 5 * r["n_elements"])   # second-order space, not the default
+
+
+@unittest.skipUnless(HAVE_FEMWELL, "femwell not installed (see requirements-fem-lock.txt)")
+class TestCPWModeTracking(unittest.TestCase):
+    def test_complex_n_guess_returns_the_same_mode(self):
+        """femwell accepts a complex n_guess and, where the eigenproblem is well conditioned, keeps the mode.
+
+        At 50 MHz this check failed with second-order elements (neff moved 6e-3 with the shift): the E-field
+        formulation breaks down at low frequency, so the answer drifts with round-off (A17b BOUNDARY section 8).
+        """
+        c = CPW(**TUNCER)
+        mesh = build_mesh(c, 4.0, 1)
+        default = solve(c, mesh, 2e9, order=2)
+        self.assertGreater(abs(default["neff"].imag), 1e-3 * abs(default["neff"]))   # lossy, so genuinely complex
+        tracked = solve(c, mesh, 2e9, order=2, n_guess=default["neff"])
+        self.assertLess(abs(tracked["neff"] / default["neff"] - 1), 1e-5)
+        self.assertLess(abs(tracked["Z0_pi"] / default["Z0_pi"] - 1), 1e-4)
+
 
 if __name__ == "__main__":
     unittest.main()

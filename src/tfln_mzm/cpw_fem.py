@@ -72,8 +72,12 @@ def build_mesh(cpw,m,d):
     return from_meshio(mesh_from_OrderedDict(shapes,resolutions(m),default_resolution_max=100*m))
 
 
-def solve(cpw,mesh,f):
-    """Quasi-TEM mode at frequency f (Hz). Returns SI quantities for the full structure."""
+def solve(cpw,mesh,f,order=1,n_guess=None):
+    """Quasi-TEM mode at frequency f (Hz). Returns SI quantities for the full structure.
+
+    order is the femwell element order (1 or 2). n_guess (may be complex) sets the shift-invert target
+    k0^2 n_guess^2; None keeps femwell's default shift 1.1 k0^2 max(eps). Defaults reproduce A17.
+    """
     from femwell.maxwell.waveguide import compute_modes
     from skfem import Basis,ElementTriP0,Functional
     from skfem.helpers import inner
@@ -85,7 +89,8 @@ def solve(cpw,mesh,f):
     for name in ('metal_sig','metal_gnd'):
         eps[basis0.get_dofs(elements=name)]=1-1j*cpw.sigma/(omega*epsilon_0)
     t0=time.perf_counter()
-    mode=compute_modes(basis0,eps,wavelength=speed_of_light/f*1e6,num_modes=1,metallic_boundaries=False)[0]
+    mode=compute_modes(basis0,eps,wavelength=speed_of_light/f*1e6,num_modes=1,metallic_boundaries=False,
+                       order=order,n_guess=n_guess)[0]
     (et,et_b),(ez,ez_b)=mode.basis.split(mode.E)
     (ht,ht_b),(hz,hz_b)=mode.basis.split(mode.H)
 
@@ -141,4 +146,4 @@ def solve(cpw,mesh,f):
     return {'f_Hz':f,'neff':neff,'nm':neff.real,'alpha_Np_per_m':alpha,'alpha_dB_per_cm':20/np.log(10)*alpha/100,
             'Z0_pi':complex(p0/i2)/2,'Z0_rlgc':complex(np.sqrt(zs/ys)),'gamma_fem':gamma_fem,'gamma_rlgc':complex(np.sqrt(zs*ys)),
             'R':R,'L':L,'G':G,'C':C,'contour_to_conduction_current':float(abs(i_contour)/abs(i0)),
-            'n_elements':int(mesh.nelements),'solve_s':solve_s}
+            'n_elements':int(mesh.nelements),'n_dofs':int(mode.basis.N),'solve_s':solve_s}
