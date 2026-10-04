@@ -42,6 +42,6 @@ Order follows the minimum evidence list in [SOURCE_COVERAGE_MATRIX.md](../docs/S
 4. C-03: A06 supports nm(100 GHz) = 2.25; a dispersion branch has no paper source yet, so it is deferred.
 5. ~~Track B single-variable scans~~ — B01–B04.
 
-SC-01 stage 1 (A17, authorized 2026-10-04) ran and failed its convergence gate; how to continue is decision D8. Waiting for user authorization: SC-01 stage 2 (Liu cross-section, needs a T-rail geometry source), SC-02 feedline/pad network (L3), SC-03 measured Figure 6/7 comparison. Decisions are recorded in [docs/DECISIONS_PENDING.md](../docs/DECISIONS_PENDING.md); start from [HANDOFF.md](../HANDOFF.md).
+SC-01 stage 1 (A17, authorized 2026-10-04) ran and failed its convergence gate. Next: A17b, authorized by decision D8 (same thresholds, numerical method changes only); see HANDOFF.md §5. Waiting for user authorization: SC-01 stage 2 (Liu cross-section, needs a T-rail geometry source), SC-02 feedline/pad network (L3), SC-03 measured Figure 6/7 comparison. Decisions are recorded in [docs/DECISIONS_PENDING.md](../docs/DECISIONS_PENDING.md); start from [HANDOFF.md](../HANDOFF.md).
 
 Auxiliary static learning material is in `docs/learning/`, `notebooks/01_static_mzm.ipynb` and `data/simulated/day01_*`. It does not earn a Track A result grade.
