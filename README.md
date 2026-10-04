@@ -16,7 +16,7 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 [A03 extraction](experiments/track_A_reproduction/A03_digitization/RESULTS.md) · [A04 comparison and failures](experiments/track_A_reproduction/A04_digitized_comparison/RESULTS.md)
 
-Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step.
+Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step. Every registered experiment (A00–A16, B01–B04) can be regenerated and byte-compared in a temporary copy with `python scripts/check_evidence.py --replay`; the individual entry points are `scripts/run_a0*.py`, `scripts/run_a1*.py`, `scripts/run_b01.py` and `scripts/run_b02_b04.py --study B02|B03|B04` (A03/A06 digitization needs local paper rasters). Open decisions for the project owner are listed in [docs/DECISIONS_PENDING.md](docs/DECISIONS_PENDING.md).
 
 [A02 boundary](experiments/track_A_reproduction/A02_frequency_response/BOUNDARY.md) · [A02 results](experiments/track_A_reproduction/A02_frequency_response/RESULTS.md)
 
