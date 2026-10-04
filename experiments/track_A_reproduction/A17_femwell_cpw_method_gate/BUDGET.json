@@ -1,0 +1,1 @@
+{"wall_seconds": 2400, "per_solve_seconds": 180, "max_mesh_elements": 400000, "max_solves": 120, "max_new_disk_mb": 5, "max_rss_gb": 10}
