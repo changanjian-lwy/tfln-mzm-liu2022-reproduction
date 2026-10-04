@@ -13,11 +13,17 @@ class TestEvidenceManifest(unittest.TestCase):
     def test_registered_evidence_is_intact(self):
         self.assertEqual(check_evidence.static_check(), [])
 
-    def test_frozen_experiments_are_all_registered(self):
+    def test_finished_experiments_are_all_registered(self):
+        """An experiment with RESULTS.md must be registered; BOUNDARY-only folders are declared but not yet run."""
         registered = {e["id"] for e in check_evidence.load_manifest()["experiments"]}
-        on_disk = {p.name for track in ("track_A_reproduction", "track_B_extensions")
-                   for p in (ROOT/"experiments"/track).iterdir() if p.is_dir()}
-        self.assertEqual(on_disk - registered, set())
+        finished = {p.name for track in ("track_A_reproduction", "track_B_extensions")
+                    for p in (ROOT/"experiments"/track).iterdir() if p.is_dir() and (p/"RESULTS.md").exists()}
+        self.assertEqual(finished - registered, set())
+
+    def test_every_experiment_folder_has_a_boundary(self):
+        folders = [p for track in ("track_A_reproduction", "track_B_extensions")
+                   for p in (ROOT/"experiments"/track).iterdir() if p.is_dir()]
+        self.assertEqual([p.name for p in folders if not (p/"BOUNDARY.md").exists()], [])
 
     def test_changed_or_missing_files_are_reported(self):
         with tempfile.TemporaryDirectory() as tmp:
