@@ -17,6 +17,7 @@ Evidence check (gate G1): `python scripts/check_evidence.py --replay` regenerate
 | A | [A08 C-06 matched provider](track_A_reproduction/A08_c06_matched_provider/RESULTS.md) | L1 + C-06b | DIAGNOSTIC_ONLY | Boundary committed first (`f714833`) | A matched 50-ohm line with Fig.2(a) loss gives −2.3 to −2.5 dB at the Fig.2(b) bandwidths, so it cannot explain that curve |
 | A | [A09 qualitative statements](track_A_reproduction/A09_qualitative_statements/RESULTS.md) | L1 | QUALITATIVE_ONLY | Boundary committed first (`c4445e9`) | Initial-rise/drop statement reproduced; roll-off similarity undecidable for the model (Z0 gap at 10 GHz); the S11 statement fails on the author's own figure as written; new conflict C-07 (possible 40/80-ohm legend swap in Fig.3(c)) |
 | A | [A10 C-07 Fig.3(c) legend swap](track_A_reproduction/A10_c07_fig3c_legend_swap/RESULTS.md) | L1 | DIAGNOSTIC_ONLY | Boundary committed first (`fc54cde`) | A simple 40/80 swap is not supported by the predeclared rule; the curve labelled 40 ohm is, however, consistent with an 80-ohm load (outside-bound points 99% → 9.3%, MAE 8.43 → 2.47 dB) |
+| A | [A11 C-02 reference frequency](track_A_reproduction/A11_c02_reference_frequency/RESULTS.md) | L1 + low-f hold | SENSITIVITY_ONLY | Boundary committed first (`775d1e9`) | Of four fixed candidates, only f0′ = 1 GHz matches A05's implied offsets for all loads (≤0.13 dB); 20-ohm EO MAE 0.757 → 0.318 dB; marginal with respect to the low-frequency hold |
 | B | [B01 termination sweep](track_B_extensions/B01_termination_sweep/RESULTS.md) | L1 | SENSITIVITY_ONLY | Boundary committed first (`fff5290`) | 0–50 GHz ripple has a 1.0–1.1 dB floor for ZL 37–45 ohm; max S11 is lowest at 40 ohm; first −3 dB crossing jumps in steps with ZL |
 | B | Length, RF loss and mismatch scans | L0/L1 | Planned | — | Separate from paper baseline |
 
@@ -29,8 +30,8 @@ Order follows the minimum evidence list in [SOURCE_COVERAGE_MATRIX.md](../docs/S
 1. ~~Digitize Fig.2(b) and the full Fig.3(a)~~ — done in A06.
 1b. ~~C-06 definition diagnostic~~ — A07. 1c. ~~C-06 matched-provider diagnostic~~ — A08 (ruled out under Fig.2(a) loss).
 2. ~~Qualitative statements~~ — A09. 2b. ~~C-07 legend-swap diagnostic~~ — A10.
-3. C-02 reference-frequency branches, `SENSITIVITY_ONLY`.
-4. C-03 microwave-index branches, using the Fig.2(b) value once item 1 exists, `SENSITIVITY_ONLY`.
+3. ~~C-02 reference-frequency branches~~ — A11.
+4. C-03: A06 supports nm(100 GHz) = 2.25; a dispersion branch has no paper source yet, so it is deferred.
 5. Track B single-variable scans with a frozen Track A parent.
 
 Waiting for user authorization: SC-01 cross-section FEM (L2), SC-02 feedline/pad network (L3), SC-03 measured Figure 6/7 comparison.

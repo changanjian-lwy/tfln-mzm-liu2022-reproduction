@@ -1,0 +1,225 @@
+{
+  "grade": "SENSITIVITY_ONLY",
+  "scope": "Eq.(4) reference only; L1 provider of A04; low-frequency hold below the first Z0 sample",
+  "first_Z0_sample_GHz": 2.2222222222222223,
+  "first_Z0_sample_ohm": 46.291866028708135,
+  "reported_only_hold_sensitivity_1GHz_offsets_dB": {
+    "-2.63_ohm": {
+      "20": 0.41114964494707573,
+      "40": -0.06342392952506198,
+      "50": -0.14518005104705228,
+      "80": -0.26209907384883424,
+      "open": -0.46658638896423243
+    },
+    "+2.63_ohm": {
+      "20": 0.5038633822965779,
+      "40": -0.021636843122551132,
+      "50": -0.10519519009280637,
+      "80": -0.2152644518732894,
+      "open": -0.3583053085457983
+    }
+  },
+  "loss_fit": {
+    "a_dB_per_mm_per_sqrtGHz": 0.03087674411336149,
+    "b_dB_per_mm_per_GHz": 0.0019057707532098365,
+    "fit_rms_dB_per_mm": 0.012089284039879432,
+    "coverage_GHz": [
+      1.4109347442680775,
+      198.58906525573192
+    ]
+  },
+  "tolerance_dB": 0.15,
+  "criteria": {
+    "1_DC_reproduces_A04": true,
+    "2_finite_nonzero": true,
+    "3_compatible_candidates": [
+      "1.0000_GHz"
+    ]
+  },
+  "candidates": {
+    "DC": {
+      "f0_GHz": 0.0,
+      "loads": {
+        "20": {
+          "offset_dB": 0.0,
+          "A05_implied_offset_dB": 0.5914184343579951,
+          "difference_dB": -0.5914184343579951,
+          "MAE_dB": 0.7572075781772696,
+          "within_readout_fraction": 0.017735334242837655,
+          "scored": 733
+        },
+        "40": {
+          "offset_dB": 0.0,
+          "A05_implied_offset_dB": 0.009763774762233297,
+          "difference_dB": -0.009763774762233297,
+          "MAE_dB": 0.06768222531359241,
+          "within_readout_fraction": 0.9796696315120712,
+          "scored": 787
+        },
+        "50": {
+          "offset_dB": 0.0,
+          "A05_implied_offset_dB": -0.12470774136072771,
+          "difference_dB": 0.12470774136072771,
+          "MAE_dB": 0.07029790232494389,
+          "within_readout_fraction": 0.9872448979591837,
+          "scored": 784
+        },
+        "80": {
+          "offset_dB": 0.0,
+          "A05_implied_offset_dB": -0.20724146915589825,
+          "difference_dB": 0.20724146915589825,
+          "MAE_dB": 0.12232325180672089,
+          "within_readout_fraction": 0.8526048284625158,
+          "scored": 787
+        },
+        "open": {
+          "offset_dB": 0.0,
+          "A05_implied_offset_dB": -0.4461594557418468,
+          "difference_dB": 0.4461594557418468,
+          "MAE_dB": 0.42737954747898543,
+          "within_readout_fraction": 0.30241423125794153,
+          "scored": 787
+        }
+      },
+      "compatible_with_A05": false
+    },
+    "0.5000_GHz": {
+      "f0_GHz": 0.5,
+      "loads": {
+        "20": {
+          "offset_dB": 0.13705365423682486,
+          "A05_implied_offset_dB": 0.5914184343579951,
+          "difference_dB": -0.45436478012117026,
+          "MAE_dB": 0.6201539239404451,
+          "within_readout_fraction": 0.034106412005457026,
+          "scored": 733
+        },
+        "40": {
+          "offset_dB": -0.04652336184848695,
+          "A05_implied_offset_dB": 0.009763774762233297,
+          "difference_dB": -0.05628713661072024,
+          "MAE_dB": 0.09641603808619163,
+          "within_readout_fraction": 0.8843710292249047,
+          "scored": 787
+        },
+        "50": {
+          "offset_dB": -0.07828364467631063,
+          "A05_implied_offset_dB": -0.12470774136072771,
+          "difference_dB": 0.04642409668441708,
+          "MAE_dB": 0.055277939535774985,
+          "within_readout_fraction": 0.9757653061224489,
+          "scored": 784
+        },
+        "80": {
+          "offset_dB": -0.12343892916178906,
+          "A05_implied_offset_dB": -0.20724146915589825,
+          "difference_dB": 0.0838025399941092,
+          "MAE_dB": 0.11549388028184163,
+          "within_readout_fraction": 0.8602287166454892,
+          "scored": 787
+        },
+        "open": {
+          "offset_dB": -0.19701655733771958,
+          "A05_implied_offset_dB": -0.4461594557418468,
+          "difference_dB": 0.2491428984041272,
+          "MAE_dB": 0.34727226856809684,
+          "within_readout_fraction": 0.4485387547649301,
+          "scored": 787
+        }
+      },
+      "compatible_with_A05": false
+    },
+    "1.0000_GHz": {
+      "f0_GHz": 1.0,
+      "loads": {
+        "20": {
+          "offset_dB": 0.4575989219511942,
+          "A05_implied_offset_dB": 0.5914184343579951,
+          "difference_dB": -0.1338195124068009,
+          "MAE_dB": 0.31806509035503977,
+          "within_readout_fraction": 0.15143246930422918,
+          "scored": 733
+        },
+        "40": {
+          "offset_dB": -0.04152820025097334,
+          "A05_implied_offset_dB": 0.009763774762233297,
+          "difference_dB": -0.051291975013206634,
+          "MAE_dB": 0.09267751261356245,
+          "within_readout_fraction": 0.9021601016518425,
+          "scored": 787
+        },
+        "50": {
+          "offset_dB": -0.12391355488165874,
+          "A05_implied_offset_dB": -0.12470774136072771,
+          "difference_dB": 0.0007941864790689673,
+          "MAE_dB": 0.08345649474933003,
+          "within_readout_fraction": 0.9477040816326531,
+          "scored": 784
+        },
+        "80": {
+          "offset_dB": -0.2368603900718165,
+          "A05_implied_offset_dB": -0.20724146915589825,
+          "difference_dB": -0.02961892091591825,
+          "MAE_dB": 0.19538640639292368,
+          "within_readout_fraction": 0.6734434561626429,
+          "scored": 787
+        },
+        "open": {
+          "offset_dB": -0.40849248362632373,
+          "A05_implied_offset_dB": -0.4461594557418468,
+          "difference_dB": 0.037666972115523056,
+          "MAE_dB": 0.31955754085924964,
+          "within_readout_fraction": 0.5717916137229987,
+          "scored": 787
+        }
+      },
+      "compatible_with_A05": true
+    },
+    "2.2222_GHz": {
+      "f0_GHz": 2.2222222222222223,
+      "loads": {
+        "20": {
+          "offset_dB": 1.7408867037163587,
+          "A05_implied_offset_dB": 0.5914184343579951,
+          "difference_dB": 1.1494682693583635,
+          "MAE_dB": 0.9836791255390885,
+          "within_readout_fraction": 0.0,
+          "scored": 733
+        },
+        "40": {
+          "offset_dB": 0.11001815056452355,
+          "A05_implied_offset_dB": 0.009763774762233297,
+          "difference_dB": 0.10025437580229025,
+          "MAE_dB": 0.07184552428507772,
+          "within_readout_fraction": 0.9377382465057179,
+          "scored": 787
+        },
+        "50": {
+          "offset_dB": -0.17948377111651478,
+          "A05_implied_offset_dB": -0.12470774136072771,
+          "difference_dB": -0.054776029755787076,
+          "MAE_dB": 0.1331098204084024,
+          "within_readout_fraction": 0.8316326530612245,
+          "scored": 784
+        },
+        "80": {
+          "offset_dB": -0.5753737449990095,
+          "A05_implied_offset_dB": -0.20724146915589825,
+          "difference_dB": -0.36813227584311126,
+          "MAE_dB": 0.5224549996678742,
+          "within_readout_fraction": 0.03430749682337993,
+          "scored": 787
+        },
+        "open": {
+          "offset_dB": -1.1390406092015812,
+          "A05_implied_offset_dB": -0.4461594557418468,
+          "difference_dB": -0.6928811534597344,
+          "MAE_dB": 0.8691924061611775,
+          "within_readout_fraction": 0.04955527318932656,
+          "scored": 787
+        }
+      },
+      "compatible_with_A05": false
+    }
+  }
+}

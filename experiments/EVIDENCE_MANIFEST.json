@@ -325,6 +325,33 @@
      "scripts/run_b01.py"
     ]
    }
+  },
+  {
+   "id": "A11_c02_reference_frequency",
+   "dir": "experiments/track_A_reproduction/A11_c02_reference_frequency",
+   "grade": "SENSITIVITY_ONLY",
+   "layer": "L1",
+   "recorded_commit": "775d1e9",
+   "documents": {
+    "experiments/track_A_reproduction/A11_c02_reference_frequency/BOUNDARY.md": "e06420955cce893ac2ea809cb0d2a47201f24f0d86cd9a1a2df1f80c1689d302",
+    "experiments/track_A_reproduction/A11_c02_reference_frequency/INPUTS.md": "6971884cbda70e6f8027a717663fa99f66c9c47e05418df3cbaf6a82ba512afe",
+    "experiments/track_A_reproduction/A11_c02_reference_frequency/RESULTS.md": "0233229b186aece61fcec0ee534ae404e5412f9ae5ca11d33bed869258d35a23"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A05_convention_audit/results.json": "8816ec296e9adb19b0062e17dc43477c190fab8782a5330d7817e01122ecfe4e",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A11_c02_reference_frequency/results.json": "c9fb647b04121aafdaf8118d0b785f7a664ed16d96b284b3737a5ba5583d1c6e",
+    "experiments/track_A_reproduction/A11_c02_reference_frequency/reference_frequency.png": "c0b3ebd32416e80429fb9b3b11838a4cba7cd8e71c01109da07875527e677e1f"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a11.py"
+    ]
+   }
   }
  ]
 }
