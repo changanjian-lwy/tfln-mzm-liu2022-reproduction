@@ -1,20 +1,20 @@
 # 交接文件
 
-更新：2026-10-04。写给下一个接手本项目的人（或 AI 会话）。先读本文，再读 [立项书](PROJECT_CHARTER.md) 和 [边界 v2](docs/BOUNDARIES.md)。
+更新：2026-10-04（21:35 后补充 A17）。写给下一个接手本项目的人（或 AI 会话）。先读本文，再读 [立项书](PROJECT_CHARTER.md) 和 [边界 v2](docs/BOUNDARIES.md)。
 
 ## 1. 现在在哪
 
 - 复现对象：Liu et al., IEEE PTL 34(16), 854–857 (2022)，容性加载 TFLN 调制器，公式 (1)–(4) 与 Figure 3。
-- 已完成：A00–A16（Track A）、B01–B04（Track B），共 21 个登记实验，全部可以逐字节重放。
+- 已完成：A00–A17（Track A）、B01–B04（Track B），共 22 个登记实验。其中 21 个可以逐字节重放；A17 只登记静态哈希，因为 FEM 求解有 10⁻⁴ 量级的运行间差异（结论与判定可复现）。
 - 一句话结论：只用论文 Fig.2 作输入、不拟合，40 Ω 的平均电压与 EO 响应、50 Ω 的 EO 响应（含首次 −3 dB 下穿，差 0.04 GHz）在读数精度内复现；S11 面板与开路负载没有复现。17 个可评分系列：4 个通过、5 个失败在输入读数精度内、8 个超出（其中 6 个未解释）。详见 [Figure 3 逐系列结论](docs/FIGURE3_STATUS.md)。
-- 阶段：P0–P3 完成；P4（用户验收）进行中。SC-01 第一阶段已授权、未开始。
+- 阶段：P0–P3 完成；P4（用户验收）进行中。SC-01 第一阶段（A17）已运行，结果 `NUMERICAL_FAIL`：femwell 还不能当作 L2 工具；怎么继续待用户决定（D8）。
 
 ## 2. 怎么上手
 
 ```sh
 python3 -m venv .venv && source .venv/bin/activate
 python -m pip install -r requirements-lock.txt && python -m pip install -e . --no-deps
-python -m unittest discover -s tests                 # 38 个测试
+python -m unittest discover -s tests                 # 42 个测试（装了 FEM 依赖时；否则 4 个跳过）
 python scripts/check_evidence.py --replay            # 重放全部登记实验（A03/A06 需本地栅格，见第 6 节）
 ```
 
@@ -38,16 +38,17 @@ python scripts/check_evidence.py --replay            # 重放全部登记实验�
 | D1 | 合并并推送 | 已决定（2026-10-04）：合并到 `main` 并推送 |
 | D2 | 主线 f0 | 已决定：保持 1 MHz；A11 的约 1 GHz 结果作为敏感性结论并列报告 |
 | D3 | Fig.3(c) "40 Ω" 曲线 | 已决定：按图例原样评分，结论中并列说明 A10 |
-| D5 | SC-01 截面 FEM | 已决定：只授权第一阶段（方法关卡）；第二阶段需先找到几何来源并向用户报告 |
+| D5 | SC-01 截面 FEM | 已决定：只授权第一阶段（方法关卡）；第二阶段需先找到几何来源并向用户报告。A17 已运行，未通过 |
 | D4 | 与 Fig.2(b) 比较时的带宽定义 | 待决；建议主线保持首次下穿，比较时两种定义都报 |
 | D6 | SC-02 馈线/焊盘网络 | 待决；建议在 SC-01 之后 |
 | D7 | SC-03 数字化测量图 Fig.6/7 | 待决；可做，但独立评分 |
+| D8 | A17 失败后 SC-01 如何继续 | 待决；建议开新尝试 A17b，判据不变，只改数值方法（低频模式追踪；二阶单元或角点加密） |
 
 ## 5. 下一步建议（按顺序）
 
-1. **SC-01 第一阶段（A17）**：安装 femwell（GPL-3.0，作为依赖使用，不复制代码），按其 `RF_CPW_transmission_line_tutorial` 复现 Tuncer 1994 的微波折射率与损耗。BOUNDARY 先写：网格收敛、外边界距离收敛、与参考数据的事前容差；从这一阶段起 `BUDGET.json` 生效（边界第 10 节）。通过后才能把 femwell 当作可信工具。
+1. **SC-01 第一阶段（A17，已运行）**：结果 `NUMERICAL_FAIL`，见 [A17 结果](experiments/track_A_reproduction/A17_femwell_cpw_method_gate/RESULTS.md)。G1 时发现教程的回路电流 ∮H·dl 不收敛，已改用传导电流（边界修订 `eb4c692`）。运行中 48 MHz 最细网格时本征问题崩溃，|Z0| 每次网格减半仍变约 1.1–1.3%。按规则不报与 Tuncer 参考点的比较。下一步由用户在 D8 中决定；若开 A17b，判据阈值、材料、几何与参考点都不能改。FEM 依赖见 `requirements-fem-lock.txt` 与 `docs/environment.md`。
 2. **第二阶段的准备（不运行）**：论文给出了非加载段截面（金厚 4 µm、信号线 80 µm、间隙 20 µm、600 nm TFLN / 300 nm 刻蚀、100 nm SiO2、BCB 1.5 µm、石英衬底、2 µm 键合层），但**没有给 T 形电极尺寸与周期**。先查引文 [8]、[10]（同一课题组前作）能否提供；再列出假设清单向用户报告。容性加载是沿传播方向的周期结构，需要加载段与非加载段分别求解再级联，单个截面不够。
-3. D4、D6、D7 由用户决定后再做。
+3. D4、D6、D7、D8 由用户决定后再做。第二阶段（Liu 截面）要等 SC-01 有一个通过的方法关卡。
 4. 课程方面（不在本仓库）：EEK5103 Part II 已开课，CA2 于 2026-11-03 开始、11-09 截止。
 
 ## 6. 容易踩的坑

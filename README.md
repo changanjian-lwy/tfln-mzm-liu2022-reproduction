@@ -6,7 +6,7 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 **Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-**Status:** A01–A02 analytical model and bandwidth logic pass the current 38-test suite. A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
+**Status:** A01–A02 analytical model and bandwidth logic pass the current 42-test suite (the 4 FEM tests skip without the optional FEM dependencies). A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
 
 [A05 cause audit](experiments/track_A_reproduction/A05_convention_audit/RESULTS.md): cross-panel reference differences explain part of the 20-ohm offset; phase-independent bounds rule out microwave-phase-only correction for many S11 samples. Full reproduction remains unresolved.
 
@@ -16,7 +16,7 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 [A03 extraction](experiments/track_A_reproduction/A03_digitization/RESULTS.md) · [A04 comparison and failures](experiments/track_A_reproduction/A04_digitized_comparison/RESULTS.md)
 
-Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step. Every registered experiment (A00–A16, B01–B04) can be regenerated and byte-compared in a temporary copy with `python scripts/check_evidence.py --replay`; the individual entry points are `scripts/run_a0*.py`, `scripts/run_a1*.py`, `scripts/run_b01.py` and `scripts/run_b02_b04.py --study B02|B03|B04` (A03/A06 digitization needs local paper rasters). Open decisions for the project owner are listed in [docs/DECISIONS_PENDING.md](docs/DECISIONS_PENDING.md).
+Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step. Every registered experiment except A17 (A00–A16, B01–B04) can be regenerated and byte-compared in a temporary copy; A17 (femwell, optional dependencies in `requirements-fem-lock.txt`) is hash-checked only because its FEM solves vary at the 1e-4 level between runs with `python scripts/check_evidence.py --replay`; the individual entry points are `scripts/run_a0*.py`, `scripts/run_a1*.py`, `scripts/run_b01.py` and `scripts/run_b02_b04.py --study B02|B03|B04` (A03/A06 digitization needs local paper rasters). Open decisions for the project owner are listed in [docs/DECISIONS_PENDING.md](docs/DECISIONS_PENDING.md).
 
 [A02 boundary](experiments/track_A_reproduction/A02_frequency_response/BOUNDARY.md) · [A02 results](experiments/track_A_reproduction/A02_frequency_response/RESULTS.md)
 

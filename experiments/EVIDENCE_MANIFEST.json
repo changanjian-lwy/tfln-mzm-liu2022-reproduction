@@ -569,6 +569,27 @@
      "scripts/run_a16.py"
     ]
    }
+  },
+  {
+   "id": "A17_femwell_cpw_method_gate",
+   "dir": "experiments/track_A_reproduction/A17_femwell_cpw_method_gate",
+   "grade": "NUMERICAL_FAIL",
+   "layer": "L2",
+   "recorded_commit": "83310ff",
+   "documents": {
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/BOUNDARY.md": "f64b1be60fd2b2089606225dd54f81785747572a0990bdea06cd048b89c6062e",
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/INPUTS.md": "97d041c4cdfdd749ec835369e85522337ba9a93fe671873b00a8d964f9fadc1a",
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/RESULTS.md": "6e10731b52856e48a3d20a6b2bb51c63f326c94cf5a0d77ec4e3ec934403f2ca"
+   },
+   "inputs": {
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/BUDGET.json": "fffd7675774c31ffd825913fb668b08ae4ac03c999a7f20825cb41cffc508239",
+    "data/external/tuncer1994_via_femwell/reference_points.csv": "4c044dbb53c14bea48acf862832b33edafb5a5a6d2e3fe798173dc64bae2bded"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/results.json": "815cc34eb8d6af6229299acff869cc602e2e6075717b8c6ccb3b10abf3c117e9",
+    "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/run_log.json": "ba67a7d194ede92047452189775d3c32a964cf0aebe9ab33f3d629b8dc0c0cc1"
+   },
+   "replay_note": "femwell eigen-solves differ between runs at the 1e-4 relative level (ARPACK start vector, shift-invert round-off); a scratch re-run reproduced the status and all 36 threshold flags but not the bytes. Re-run with: python scripts/run_a17.py (needs requirements-fem-lock.txt; exits 2 by design for NUMERICAL_FAIL)"
   }
  ]
 }

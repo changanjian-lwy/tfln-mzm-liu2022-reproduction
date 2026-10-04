@@ -1,0 +1,666 @@
+{
+ "experiment": "A17",
+ "layer": "L2",
+ "scope": "femwell method gate on the Tuncer 1994 CPW benchmark; not Liu 2022 data",
+ "femwell": {
+  "version": "0.0.1",
+  "source": {
+   "url": "https://github.com/HelgeGehring/femwell.git",
+   "vcs_info": {
+    "commit_id": "be2c54763f6215757fd2dac543c9385a82ca5b26",
+    "requested_revision": "be2c54763f6215757fd2dac543c9385a82ca5b26",
+    "vcs": "git"
+   }
+  }
+ },
+ "structure": {
+  "w_sig_um": 7.0,
+  "gap_um": 10.0,
+  "w_gnd_um": 100.0,
+  "t_metal_um": 0.8,
+  "sigma_S_per_m": 60000000.0,
+  "eps_sub": 13.0
+ },
+ "convergence_frequencies_GHz": [
+  0.0481948,
+  1.0,
+  38.9045
+ ],
+ "budget": {
+  "wall_seconds": 2400,
+  "per_solve_seconds": 180,
+  "max_mesh_elements": 400000,
+  "max_solves": 120,
+  "max_new_disk_mb": 5,
+  "max_rss_gb": 10
+ },
+ "convergence": {
+  "rounds": [
+   {
+    "m": 1.0,
+    "d": 1,
+    "mesh_change": {
+     "0.04819GHz": {
+      "nm": 0.00772824,
+      "alpha": 0.0081428,
+      "absZ0": 0.0190303
+     },
+     "1GHz": {
+      "nm": 0.00414365,
+      "alpha": 0.00666891,
+      "absZ0": 0.0125181
+     },
+     "38.9GHz": {
+      "nm": 0.00303951,
+      "alpha": 0.0244455,
+      "absZ0": 0.0154112
+     }
+    },
+    "domain_change": {
+     "0.04819GHz": {
+      "nm": 0.0123365,
+      "alpha": 0.0208817,
+      "absZ0": 0.0581701
+     },
+     "1GHz": {
+      "nm": 0.00039187,
+      "alpha": 0.00431299,
+      "absZ0": 0.0416493
+     },
+     "38.9GHz": {
+      "nm": 0.000664517,
+      "alpha": 0.0150754,
+      "absZ0": 0.0408592
+     }
+    },
+    "mesh_ok": false,
+    "domain_ok": false
+   },
+   {
+    "m": 0.5,
+    "d": 2,
+    "mesh_change": {
+     "0.04819GHz": {
+      "nm": 0.147177,
+      "alpha": 0.171821,
+      "absZ0": 0.394639
+     },
+     "1GHz": {
+      "nm": 0.00244317,
+      "alpha": 0.0052013,
+      "absZ0": 0.0107052
+     },
+     "38.9GHz": {
+      "nm": 0.00177539,
+      "alpha": 0.0138211,
+      "absZ0": 0.0128405
+     }
+    },
+    "domain_change": {
+     "0.04819GHz": {
+      "nm": 0.00182153,
+      "alpha": 0.00481453,
+      "absZ0": 0.0111719
+     },
+     "1GHz": {
+      "nm": 0.000447601,
+      "alpha": 0.00163236,
+      "absZ0": 0.00666794
+     },
+     "38.9GHz": {
+      "nm": 0.000530116,
+      "alpha": 0.00154099,
+      "absZ0": 0.00662776
+     }
+    },
+    "mesh_ok": false,
+    "domain_ok": false
+   }
+  ],
+  "accepted": null
+ },
+ "status": "NUMERICAL_FAIL_NOT_CONVERGED",
+ "solves": 18,
+ "all_solves": [
+  {
+   "m": 0.25,
+   "d": 2,
+   "f_GHz": 0.0481948,
+   "neff": [
+    7.42913,
+    -6.81009
+   ],
+   "alpha_dB_per_cm": 0.597484,
+   "Z0_pi": [
+    321.006,
+    -293.19
+   ],
+   "Z0_rlgc": [
+    278.019,
+    -246.521
+   ],
+   "R_ohm_per_m": 3271.98,
+   "L_H_per_m": 1.30234e-06,
+   "G_S_per_m": 9.0733e-11,
+   "C_F_per_m": 7.88264e-11,
+   "contour_to_conduction_current": 1.21067,
+   "n_elements": 117031,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.129644,
+    "z0_consistency": 0.145945,
+    "pass": false
+   }
+  },
+  {
+   "m": 0.25,
+   "d": 2,
+   "f_GHz": 1.0,
+   "neff": [
+    3.00276,
+    -1.18374
+   ],
+   "alpha_dB_per_cm": 2.15491,
+   "Z0_pi": [
+    68.8069,
+    -27.1071
+   ],
+   "Z0_rlgc": [
+    68.6776,
+    -27.1715
+   ],
+   "R_ohm_per_m": 3432.1,
+   "L_H_per_m": 5.82265e-07,
+   "G_S_per_m": 1.33338e-08,
+   "C_F_per_m": 1.46359e-10,
+   "contour_to_conduction_current": 0.999616,
+   "n_elements": 117031,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00421507,
+    "z0_consistency": 0.00195291,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.25,
+   "d": 2,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.60638,
+    -0.0696463
+   ],
+   "alpha_dB_per_cm": 4.93255,
+   "Z0_pi": [
+    59.6751,
+    -1.58009
+   ],
+   "Z0_rlgc": [
+    59.5037,
+    -1.59908
+   ],
+   "R_ohm_per_m": 6817.64,
+   "L_H_per_m": 5.18526e-07,
+   "G_S_per_m": 5.85544e-05,
+   "C_F_per_m": 1.46554e-10,
+   "contour_to_conduction_current": 0.999307,
+   "n_elements": 117031,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0030593,
+    "z0_consistency": 0.0028889,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 1,
+   "f_GHz": 0.0481948,
+   "neff": [
+    8.61462,
+    -8.13291
+   ],
+   "alpha_dB_per_cm": 0.713542,
+   "Z0_pi": [
+    203.811,
+    -192.392
+   ],
+   "Z0_rlgc": [
+    203.26,
+    -191.93
+   ],
+   "R_ohm_per_m": 3367.86,
+   "L_H_per_m": 6.38223e-07,
+   "G_S_per_m": 4.37671e-11,
+   "C_F_per_m": 1.42544e-10,
+   "contour_to_conduction_current": 0.978064,
+   "n_elements": 23270,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00838068,
+    "z0_consistency": 0.0025647,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 1,
+   "f_GHz": 1.0,
+   "neff": [
+    3.01127,
+    -1.19812
+   ],
+   "alpha_dB_per_cm": 2.18108,
+   "Z0_pi": [
+    70.488,
+    -28.0108
+   ],
+   "Z0_rlgc": [
+    70.2369,
+    -28.1366
+   ],
+   "R_ohm_per_m": 3575.11,
+   "L_H_per_m": 5.9622e-07,
+   "G_S_per_m": 9.36669e-09,
+   "C_F_per_m": 1.43961e-10,
+   "contour_to_conduction_current": 0.991103,
+   "n_elements": 23270,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00795268,
+    "z0_consistency": 0.00370217,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 1,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.61122,
+    -0.0713014
+   ],
+   "alpha_dB_per_cm": 5.04977,
+   "Z0_pi": [
+    61.0137,
+    -1.61931
+   ],
+   "Z0_rlgc": [
+    60.6779,
+    -1.6751
+   ],
+   "R_ohm_per_m": 7176.75,
+   "L_H_per_m": 5.31333e-07,
+   "G_S_per_m": 4.07934e-05,
+   "C_F_per_m": 1.44423e-10,
+   "contour_to_conduction_current": 0.986969,
+   "n_elements": 23270,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00612171,
+    "z0_consistency": 0.00557632,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 2,
+   "f_GHz": 0.0481948,
+   "neff": [
+    8.52253,
+    -7.9802
+   ],
+   "alpha_dB_per_cm": 0.700144,
+   "Z0_pi": [
+    192.135,
+    -179.854
+   ],
+   "Z0_rlgc": [
+    192.204,
+    -180.085
+   ],
+   "R_ohm_per_m": 3135.22,
+   "L_H_per_m": 6.74823e-07,
+   "G_S_per_m": 1.82025e-10,
+   "C_F_per_m": 1.49561e-10,
+   "contour_to_conduction_current": 0.982189,
+   "n_elements": 41716,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0114882,
+    "z0_consistency": 0.000916775,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 2,
+   "f_GHz": 1.0,
+   "neff": [
+    3.01009,
+    -1.18989
+   ],
+   "alpha_dB_per_cm": 2.16611,
+   "Z0_pi": [
+    68.0543,
+    -26.8574
+   ],
+   "Z0_rlgc": [
+    67.7776,
+    -26.9997
+   ],
+   "R_ohm_per_m": 3431.98,
+   "L_H_per_m": 5.7679e-07,
+   "G_S_per_m": 1.41265e-08,
+   "C_F_per_m": 1.49241e-10,
+   "contour_to_conduction_current": 0.988291,
+   "n_elements": 41716,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00889296,
+    "z0_consistency": 0.00425323,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 2,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.61101,
+    -0.0706089
+   ],
+   "alpha_dB_per_cm": 5.00073,
+   "Z0_pi": [
+    58.9092,
+    -1.54483
+   ],
+   "Z0_rlgc": [
+    58.5426,
+    -1.60288
+   ],
+   "R_ohm_per_m": 6871.16,
+   "L_H_per_m": 5.12924e-07,
+   "G_S_per_m": 6.09523e-05,
+   "C_F_per_m": 1.49773e-10,
+   "contour_to_conduction_current": 0.987169,
+   "n_elements": 41716,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00676066,
+    "z0_consistency": 0.00629917,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 4,
+   "f_GHz": 0.0481948,
+   "neff": [
+    8.50703,
+    -7.94197
+   ],
+   "alpha_dB_per_cm": 0.696789,
+   "Z0_pi": [
+    190.285,
+    -177.574
+   ],
+   "Z0_rlgc": [
+    190.395,
+    -177.855
+   ],
+   "R_ohm_per_m": 3087.63,
+   "L_H_per_m": 6.95234e-07,
+   "G_S_per_m": 3.05765e-10,
+   "C_F_per_m": 1.50554e-10,
+   "contour_to_conduction_current": 0.981263,
+   "n_elements": 115092,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0104488,
+    "z0_consistency": 0.00115927,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 4,
+   "f_GHz": 1.0,
+   "neff": [
+    3.01144,
+    -1.18795
+   ],
+   "alpha_dB_per_cm": 2.16258,
+   "Z0_pi": [
+    67.6236,
+    -26.6286
+   ],
+   "Z0_rlgc": [
+    67.3824,
+    -26.7585
+   ],
+   "R_ohm_per_m": 3400.11,
+   "L_H_per_m": 5.73898e-07,
+   "G_S_per_m": 1.63062e-08,
+   "C_F_per_m": 1.50064e-10,
+   "contour_to_conduction_current": 0.991462,
+   "n_elements": 115092,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00787265,
+    "z0_consistency": 0.00377012,
+    "pass": true
+   }
+  },
+  {
+   "m": 0.5,
+   "d": 4,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.6124,
+    -0.0707179
+   ],
+   "alpha_dB_per_cm": 5.00844,
+   "Z0_pi": [
+    58.5215,
+    -1.53118
+   ],
+   "Z0_rlgc": [
+    58.1863,
+    -1.59312
+   ],
+   "R_ohm_per_m": 6829.01,
+   "L_H_per_m": 5.09776e-07,
+   "G_S_per_m": 7.07449e-05,
+   "C_F_per_m": 1.50683e-10,
+   "contour_to_conduction_current": 0.988163,
+   "n_elements": 115092,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.00617384,
+    "z0_consistency": 0.00582194,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 1,
+   "f_GHz": 0.0481948,
+   "neff": [
+    8.6812,
+    -8.19914
+   ],
+   "alpha_dB_per_cm": 0.719352,
+   "Z0_pi": [
+    199.89,
+    -188.775
+   ],
+   "Z0_rlgc": [
+    199.786,
+    -188.842
+   ],
+   "R_ohm_per_m": 3363.28,
+   "L_H_per_m": 6.26069e-07,
+   "G_S_per_m": 4.7609e-11,
+   "C_F_per_m": 1.47194e-10,
+   "contour_to_conduction_current": 0.982948,
+   "n_elements": 14733,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0159234,
+    "z0_consistency": 0.000448932,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 1,
+   "f_GHz": 1.0,
+   "neff": [
+    3.02374,
+    -1.20611
+   ],
+   "alpha_dB_per_cm": 2.19563,
+   "Z0_pi": [
+    69.591,
+    -27.697
+   ],
+   "Z0_rlgc": [
+    69.1913,
+    -27.9018
+   ],
+   "R_ohm_per_m": 3574.82,
+   "L_H_per_m": 5.9073e-07,
+   "G_S_per_m": 1.02752e-08,
+   "C_F_per_m": 1.47354e-10,
+   "contour_to_conduction_current": 0.983498,
+   "n_elements": 14733,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0129512,
+    "z0_consistency": 0.00599568,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 1,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.61916,
+    -0.0730444
+   ],
+   "alpha_dB_per_cm": 5.17322,
+   "Z0_pi": [
+    60.0738,
+    -1.57861
+   ],
+   "Z0_rlgc": [
+    59.5173,
+    -1.69082
+   ],
+   "R_ohm_per_m": 7294.8,
+   "L_H_per_m": 5.24796e-07,
+   "G_S_per_m": 4.18377e-05,
+   "C_F_per_m": 1.48271e-10,
+   "contour_to_conduction_current": 0.983379,
+   "n_elements": 14733,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0101111,
+    "z0_consistency": 0.00944695,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 2,
+   "f_GHz": 0.0481948,
+   "neff": [
+    8.57541,
+    -8.03143
+   ],
+   "alpha_dB_per_cm": 0.704638,
+   "Z0_pi": [
+    189.67,
+    -177.58
+   ],
+   "Z0_rlgc": [
+    189.544,
+    -177.7
+   ],
+   "R_ohm_per_m": 3135.66,
+   "L_H_per_m": 6.68618e-07,
+   "G_S_per_m": 1.9247e-10,
+   "C_F_per_m": 1.53717e-10,
+   "contour_to_conduction_current": 0.972284,
+   "n_elements": 17796,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0190732,
+    "z0_consistency": 0.000670792,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 2,
+   "f_GHz": 1.0,
+   "neff": [
+    3.02493,
+    -1.20093
+   ],
+   "alpha_dB_per_cm": 2.1862,
+   "Z0_pi": [
+    66.8554,
+    -26.4713
+   ],
+   "Z0_rlgc": [
+    66.3839,
+    -26.7112
+   ],
+   "R_ohm_per_m": 3431.69,
+   "L_H_per_m": 5.688e-07,
+   "G_S_per_m": 1.5392e-08,
+   "C_F_per_m": 1.54007e-10,
+   "contour_to_conduction_current": 0.975353,
+   "n_elements": 17796,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0158122,
+    "z0_consistency": 0.00735752,
+    "pass": true
+   }
+  },
+  {
+   "m": 1.0,
+   "d": 2,
+   "f_GHz": 38.9045,
+   "neff": [
+    2.6209,
+    -0.0719596
+   ],
+   "alpha_dB_per_cm": 5.09639,
+   "Z0_pi": [
+    57.7161,
+    -1.49701
+   ],
+   "Z0_rlgc": [
+    57.083,
+    -1.602
+   ],
+   "R_ohm_per_m": 6929.77,
+   "L_H_per_m": 5.04657e-07,
+   "G_S_per_m": 6.42622e-05,
+   "C_F_per_m": 1.54998e-10,
+   "contour_to_conduction_current": 0.973172,
+   "n_elements": 17796,
+   "checks": {
+    "nonfinite": 0,
+    "gamma_consistency": 0.0120826,
+    "z0_consistency": 0.011116,
+    "pass": true
+   }
+  }
+ ]
+}
