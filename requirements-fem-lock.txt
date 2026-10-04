@@ -1,0 +1,13 @@
+# Optional FEM layer (SC-01, experiments A17 on). Install on top of requirements-lock.txt:
+#   python -m pip install -c requirements-lock.txt -r requirements-fem-lock.txt
+#   python -m pip install --no-deps "femwell @ git+https://github.com/HelgeGehring/femwell.git@be2c54763f6215757fd2dac543c9385a82ca5b26"
+# femwell is installed without its declared dependencies (meshwell pulls cadquery, vtk and trame, which
+# the cross-section solver does not import). Adding these packages changed no version in requirements-lock.txt.
+gmsh==4.15.2
+markdown-it-py==4.2.0
+mdurl==0.1.2
+meshio==5.3.5
+pygmsh==7.1.17
+rich==15.0.0
+scikit-fem==12.0.2
+shapely==2.1.2

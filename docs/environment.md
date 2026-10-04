@@ -16,3 +16,7 @@ Created 2026-09-18. Project-local `.venv`; no system package changes.
 | nbclient | 0.11.0 |
 
 `requirements-lock.txt` records installed third-party dependencies. Source PDFs are not runtime dependencies. Scientific libraries and JupyterLab are installed; commercial field solvers are not required.
+
+## Optional FEM layer (added 2026-10-04 for SC-01 / A17)
+
+The cross-section solver `src/tfln_mzm/cpw_fem.py` needs femwell (GPL-3.0, used as a dependency, no code copied), pinned to commit `be2c547` (2025-10-08), plus the packages in `requirements-fem-lock.txt`: scikit-fem 12.0.2, gmsh 4.15.2, pygmsh 7.1.17, meshio 5.3.5, shapely 2.1.2. Install commands are in that file. femwell is installed with `--no-deps` because its declared dependency meshwell pulls in cadquery, vtk and trame, which the solver does not use. Adding these packages left every version in `requirements-lock.txt` unchanged. Without them, `tests/test_cpw_fem.py` is skipped and `check_evidence.py --replay` skips experiments that declare `requires: ["femwell"]`.

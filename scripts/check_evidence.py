@@ -13,7 +13,7 @@ Usage:
   python scripts/check_evidence.py --hash PATH...   # print SHA-256 for a new manifest entry
 """
 from pathlib import Path
-import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile
+import argparse,hashlib,importlib.util,json,os,shutil,subprocess,sys,tempfile
 
 ROOT=Path(__file__).resolve().parents[1]
 MANIFEST=ROOT/'experiments/EVIDENCE_MANIFEST.json'
@@ -77,6 +77,9 @@ def replay_check(images=None):
                 report.append(f"{'SAME' if ok else 'DIFF'} {exp['id']}: preflight result")
                 if not ok:failures.append(f"{exp['id']}: preflight result differs from {spec['output']}")
                 continue
+            missing=[mod for mod in spec.get('requires',[]) if importlib.util.find_spec(mod) is None]
+            if missing:
+                report.append(f"SKIP {exp['id']}: needs {', '.join(missing)} (optional FEM dependencies)");continue
             args=[a.replace('{images}',str(images)) if images else a for a in spec['command']]
             if any('{images}' in a for a in args):
                 report.append(f"SKIP {exp['id']}: needs --images (local paper rasters, not in Git)");continue
