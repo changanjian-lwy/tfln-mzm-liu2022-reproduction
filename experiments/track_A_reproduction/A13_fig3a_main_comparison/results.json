@@ -1,0 +1,58 @@
+{
+  "grade": "PARTIAL_COMPARISON_FAIL",
+  "scope": "Fig.3(a) main panel 50-200 GHz, 20/40 ohm and open only; L1 provider of A04",
+  "a06_curves_sha256": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+  "criteria": {
+    "1_inset40_reproduces_A04": true,
+    "2_all_finite": true,
+    "3_per_series_pass": {
+      "20": false,
+      "40": true,
+      "open": false
+    }
+  },
+  "results": [
+    {
+      "load": "20",
+      "target_count": 675,
+      "scored_count": 578,
+      "unsupported_input_count": 97,
+      "target_gap_excluded_count": 0,
+      "nonfinite_prediction_count": 0,
+      "MAE_V": 0.014262691479852211,
+      "RMSE_V": 0.014952494261005549,
+      "max_abs_error_V": 0.02348365547625625,
+      "mean_signed_error_V": 0.014262691479852211,
+      "within_readout_fraction": 0.5224913494809689,
+      "diagnostic_pass": false
+    },
+    {
+      "load": "40",
+      "target_count": 487,
+      "scored_count": 379,
+      "unsupported_input_count": 60,
+      "target_gap_excluded_count": 48,
+      "nonfinite_prediction_count": 0,
+      "MAE_V": 0.006061056484525247,
+      "RMSE_V": 0.0065608729176570854,
+      "max_abs_error_V": 0.013438027656303864,
+      "mean_signed_error_V": 0.006039342515146584,
+      "within_readout_fraction": 0.9894459102902374,
+      "diagnostic_pass": true
+    },
+    {
+      "load": "open",
+      "target_count": 532,
+      "scored_count": 410,
+      "unsupported_input_count": 86,
+      "target_gap_excluded_count": 36,
+      "nonfinite_prediction_count": 0,
+      "MAE_V": 0.011186984866861753,
+      "RMSE_V": 0.016992887698841087,
+      "max_abs_error_V": 0.04547785134350252,
+      "mean_signed_error_V": 0.007147972938384529,
+      "within_readout_fraction": 0.7439024390243902,
+      "diagnostic_pass": false
+    }
+  ]
+}

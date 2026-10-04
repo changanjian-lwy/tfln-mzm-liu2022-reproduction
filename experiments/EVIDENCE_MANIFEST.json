@@ -378,6 +378,33 @@
      "scripts/run_a12.py"
     ]
    }
+  },
+  {
+   "id": "A13_fig3a_main_comparison",
+   "dir": "experiments/track_A_reproduction/A13_fig3a_main_comparison",
+   "grade": "PARTIAL_COMPARISON_FAIL",
+   "layer": "L1",
+   "recorded_commit": "2e94547",
+   "documents": {
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/BOUNDARY.md": "e995191a0588208f36e909a92c24587c27f306cb73f81cba1dd13d9a24861520",
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/INPUTS.md": "88a936d87e1af4f646322b2bb97081b671812697c8d4eca1f05686470c8251de",
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/RESULTS.md": "43096fcd1708e333ee2ee82168eb3a960911e6aa353ebc907d2836f65ceea39a"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "data/digitized/liu2022/a06_curves.csv": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+    "experiments/track_A_reproduction/A04_digitized_comparison/results.json": "dce5c94dfcfd3a2847da90a1ba078deacb3bb5ec405015577347a98c8a761323"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/results.json": "b71fc98e76bc6bb0cd274d40c8205e7f6f274b8b4c08d8cdeaccc832b21e819e",
+    "experiments/track_A_reproduction/A13_fig3a_main_comparison/fig3a_main_comparison.png": "2136b963553631dc0e6516b8de1000404b69ef731dde9fdc25d4a0c5a6159c77"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a13.py"
+    ]
+   }
   }
  ]
 }
