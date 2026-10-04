@@ -15,7 +15,8 @@ class TestEvidenceManifest(unittest.TestCase):
 
     def test_frozen_experiments_are_all_registered(self):
         registered = {e["id"] for e in check_evidence.load_manifest()["experiments"]}
-        on_disk = {p.name for p in (ROOT/"experiments/track_A_reproduction").iterdir() if p.is_dir()}
+        on_disk = {p.name for track in ("track_A_reproduction", "track_B_extensions")
+                   for p in (ROOT/"experiments"/track).iterdir() if p.is_dir()}
         self.assertEqual(on_disk - registered, set())
 
     def test_changed_or_missing_files_are_reported(self):

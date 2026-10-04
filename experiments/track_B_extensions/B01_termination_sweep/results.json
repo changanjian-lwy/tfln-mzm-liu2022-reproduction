@@ -1,0 +1,60 @@
+{
+  "grade": "SENSITIVITY_ONLY",
+  "track": "B",
+  "parent": "A04 L1 provider",
+  "changed": "ZL 20-80 ohm step 1, plus open",
+  "criteria": {
+    "1_A04_mae_reproduced": true,
+    "2_P50_grid_shift_max_dB": 0.002741625777573087,
+    "2_D1_grid_shift_max_GHz": 0.002574426455979051,
+    "2_pass": true,
+    "3_finite": true,
+    "3_S11_exact_zero_points": 0
+  },
+  "summary": {
+    "P50_lt_1dB_ZL_range": {
+      "ZL_min": 45.0,
+      "ZL_max": 45.0,
+      "contiguous": true
+    },
+    "P50_minimum": {
+      "ZL_ohm": 45.0,
+      "P50_dB": 0.9977235451075022
+    },
+    "in_range": {
+      "D1_GHz_min": null,
+      "D1_censored_any": true,
+      "maxS11_dB_range": [
+        -16.954647889222297,
+        -16.954647889222297
+      ],
+      "Vref_V_range": [
+        0.47368421052631576,
+        0.47368421052631576
+      ]
+    },
+    "bridged_P50_lt_1dB_ZL_range": {
+      "ZL_min": 45.0,
+      "ZL_max": 45.0,
+      "contiguous": true
+    },
+    "bridged_minus_primary_P50_dB": {
+      "median": 0.0,
+      "max": 0.0
+    },
+    "observation_readout_P50_dB": {
+      "20": 4.232142857142858,
+      "40": 1.0446428571428577,
+      "50": 1.4196428571428577,
+      "80": 3.2946428571428577,
+      "open": 8.357142857142858
+    }
+  },
+  "A04_fig3b_mae_recomputed": {
+    "20": 0.7572075781772696,
+    "40": 0.06768222531359241,
+    "50": 0.07029790232494389,
+    "80": 0.12232325180672089,
+    "open": 0.42737954747898543
+  }
+}
