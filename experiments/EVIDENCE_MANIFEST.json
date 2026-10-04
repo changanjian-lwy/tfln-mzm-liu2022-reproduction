@@ -517,6 +517,33 @@
      "scripts/run_a14.py"
     ]
    }
+  },
+  {
+   "id": "A15_frequency_readout_corners",
+   "dir": "experiments/track_A_reproduction/A15_frequency_readout_corners",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "L1",
+   "recorded_commit": "48c6377",
+   "documents": {
+    "experiments/track_A_reproduction/A15_frequency_readout_corners/BOUNDARY.md": "975879a75bdbb1e93b4bbb526c77d3b933f041156e05388ee4e44796788f43d0",
+    "experiments/track_A_reproduction/A15_frequency_readout_corners/INPUTS.md": "e0500518cd661bcae429b82ec6a77d686eb413f7b4503a3e8d34041cf558c0f3",
+    "experiments/track_A_reproduction/A15_frequency_readout_corners/RESULTS.md": "136b0624ab5306fd565f5d196af2e9edcb6cbc81b10cc6a2c2af1094818d15df"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "data/digitized/liu2022/a06_curves.csv": "27c3c45e90d63dccb36ce97cbb6786097b2eae6fa16ad6a0ea5b9c25bffe006c",
+    "experiments/track_A_reproduction/A14_input_uncertainty_corners/results.json": "e21d685f010ec1ed8f201c0b9c6066020f53bbb08b12870fde45a4461ff64e0c"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A15_frequency_readout_corners/results.json": "16b3b336d4a0d8f3a42ff98da5bf66cf4b7a3c9583ccfcffeb3deccf38202ea8",
+    "experiments/track_A_reproduction/A15_frequency_readout_corners/frequency_corners.png": "95dccbecf7fe24d66be1821745cc1673490d173301baf985417f964d2bbf71ab"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a15.py"
+    ]
+   }
   }
  ]
 }

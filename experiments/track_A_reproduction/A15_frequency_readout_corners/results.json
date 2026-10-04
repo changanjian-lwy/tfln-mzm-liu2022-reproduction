@@ -1,0 +1,266 @@
+{
+  "grade": "DIAGNOSTIC_ONLY",
+  "scope": "A14 corners plus Fig.2(c) frequency-axis shift; 27 combinations",
+  "criteria": {
+    "1_reproduces_A14": true,
+    "2_all_finite": true,
+    "3_reassessed_A14_beyond": {
+      "fig3a_inset:80": {
+        "A14": 0.896774193548387,
+        "A15": 0.9548387096774194,
+        "verdict": "failure_within_input_readout_precision"
+      },
+      "fig3a_inset:open": {
+        "A14": 0.37637362637362637,
+        "A15": 0.4258241758241758,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3b:20": {
+        "A14": 0.0572987721691678,
+        "A15": 0.12414733969986358,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3b:open": {
+        "A14": 0.5590851334180432,
+        "A15": 0.6086404066073697,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3c:20": {
+        "A14": 0.4259776536312849,
+        "A15": 0.5027932960893855,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3c:40": {
+        "A14": 0.0,
+        "A15": 0.07894736842105263,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3c:50": {
+        "A14": 0.5348189415041783,
+        "A15": 0.6559888579387186,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3c:80": {
+        "A14": 0.13157894736842105,
+        "A15": 0.17105263157894737,
+        "verdict": "failure_beyond_input_readout_precision"
+      },
+      "fig3a_main:20": {
+        "A14": 0.8806228373702422,
+        "A15": 0.9256055363321799,
+        "verdict": "failure_within_input_readout_precision"
+      },
+      "fig3a_main:open": {
+        "A14": 0.8121951219512196,
+        "A15": 0.8317073170731707,
+        "verdict": "failure_beyond_input_readout_precision"
+      }
+    }
+  },
+  "series": [
+    {
+      "panel": "fig3a_inset",
+      "load": "20",
+      "scored": 392,
+      "within_A14_corners": 0.923469387755102,
+      "within_with_frequency_shift": 0.9744897959183674,
+      "all_finite": true,
+      "A14_verdict": "failure_within_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_within_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "40",
+      "scored": 360,
+      "within_A14_corners": 1.0,
+      "within_with_frequency_shift": 1.0,
+      "all_finite": true,
+      "A14_verdict": "passed_originally",
+      "A14_reproduced": true,
+      "verdict": "passed_originally",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "50",
+      "scored": 130,
+      "within_A14_corners": 1.0,
+      "within_with_frequency_shift": 1.0,
+      "all_finite": true,
+      "A14_verdict": "failure_within_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_within_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "80",
+      "scored": 310,
+      "within_A14_corners": 0.896774193548387,
+      "within_with_frequency_shift": 0.9548387096774194,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_within_input_readout_precision",
+      "changed_from_A14": true
+    },
+    {
+      "panel": "fig3a_inset",
+      "load": "open",
+      "scored": 364,
+      "within_A14_corners": 0.37637362637362637,
+      "within_with_frequency_shift": 0.4258241758241758,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3b",
+      "load": "20",
+      "scored": 733,
+      "within_A14_corners": 0.0572987721691678,
+      "within_with_frequency_shift": 0.12414733969986358,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3b",
+      "load": "40",
+      "scored": 787,
+      "within_A14_corners": 1.0,
+      "within_with_frequency_shift": 1.0,
+      "all_finite": true,
+      "A14_verdict": "passed_originally",
+      "A14_reproduced": true,
+      "verdict": "passed_originally",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3b",
+      "load": "50",
+      "scored": 784,
+      "within_A14_corners": 1.0,
+      "within_with_frequency_shift": 1.0,
+      "all_finite": true,
+      "A14_verdict": "passed_originally",
+      "A14_reproduced": true,
+      "verdict": "passed_originally",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3b",
+      "load": "80",
+      "scored": 787,
+      "within_A14_corners": 0.9707750952986023,
+      "within_with_frequency_shift": 0.9783989834815756,
+      "all_finite": true,
+      "A14_verdict": "failure_within_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_within_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3b",
+      "load": "open",
+      "scored": 787,
+      "within_A14_corners": 0.5590851334180432,
+      "within_with_frequency_shift": 0.6086404066073697,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3c",
+      "load": "20",
+      "scored": 716,
+      "within_A14_corners": 0.4259776536312849,
+      "within_with_frequency_shift": 0.5027932960893855,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3c",
+      "load": "40",
+      "scored": 760,
+      "within_A14_corners": 0.0,
+      "within_with_frequency_shift": 0.07894736842105263,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3c",
+      "load": "50",
+      "scored": 718,
+      "within_A14_corners": 0.5348189415041783,
+      "within_with_frequency_shift": 0.6559888579387186,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3c",
+      "load": "80",
+      "scored": 760,
+      "within_A14_corners": 0.13157894736842105,
+      "within_with_frequency_shift": 0.17105263157894737,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3a_main",
+      "load": "20",
+      "scored": 578,
+      "within_A14_corners": 0.8806228373702422,
+      "within_with_frequency_shift": 0.9256055363321799,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_within_input_readout_precision",
+      "changed_from_A14": true
+    },
+    {
+      "panel": "fig3a_main",
+      "load": "40",
+      "scored": 379,
+      "within_A14_corners": 1.0,
+      "within_with_frequency_shift": 1.0,
+      "all_finite": true,
+      "A14_verdict": "passed_originally",
+      "A14_reproduced": true,
+      "verdict": "passed_originally",
+      "changed_from_A14": false
+    },
+    {
+      "panel": "fig3a_main",
+      "load": "open",
+      "scored": 410,
+      "within_A14_corners": 0.8121951219512196,
+      "within_with_frequency_shift": 0.8317073170731707,
+      "all_finite": true,
+      "A14_verdict": "failure_beyond_input_readout_precision",
+      "A14_reproduced": true,
+      "verdict": "failure_beyond_input_readout_precision",
+      "changed_from_A14": false
+    }
+  ]
+}
