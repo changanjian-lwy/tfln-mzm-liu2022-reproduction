@@ -3,8 +3,9 @@
 Static mode verifies that every registered experiment keeps its BOUNDARY/INPUTS/RESULTS
 documents and that frozen documents, inputs and outputs still match
 experiments/EVIDENCE_MANIFEST.json. --replay regenerates replayable outputs in a
-temporary copy of the working tree and requires byte-identical files; the working
-tree itself is never written. A03 replay needs the local paper rasters (--images).
+temporary copy of the working tree and requires byte-identical files; neither the
+working tree nor the local raster folder is written. A03 replay needs the local paper
+rasters (--images); they and the sibling PDF are copied into the temporary folder.
 
 Usage:
   python scripts/check_evidence.py
@@ -54,6 +55,13 @@ def replay_check(images=None):
         copy=Path(tmp)/'repo'
         shutil.copytree(ROOT,copy,ignore=COPY_IGNORE)
         env=dict(os.environ,PYTHONPATH=str(copy/'src'),MPLBACKEND='Agg')
+        if images:
+            # digitize_a03 writes overlays next to the rasters and reads the PDF from their parent.
+            local=Path(tmp)/'local_sources'/images.name
+            shutil.copytree(images,local)
+            pdf=images.parent/'reference_tfln_lpt2022.pdf'
+            if pdf.is_file():shutil.copy2(pdf,local.parent/pdf.name)
+            images=local
         for exp in manifest['experiments']:
             spec=exp.get('replay')
             if spec is None:
