@@ -590,6 +590,23 @@
     "experiments/track_A_reproduction/A17_femwell_cpw_method_gate/run_log.json": "ba67a7d194ede92047452189775d3c32a964cf0aebe9ab33f3d629b8dc0c0cc1"
    },
    "replay_note": "femwell eigen-solves differ between runs at the 1e-4 relative level (ARPACK start vector, shift-invert round-off); a scratch re-run reproduced the status and all 36 threshold flags but not the bytes. Re-run with: python scripts/run_a17.py (needs requirements-fem-lock.txt; exits 2 by design for NUMERICAL_FAIL)"
+  },
+  {
+   "id": "A17b_femwell_cpw_order2_tracking",
+   "dir": "experiments/track_A_reproduction/A17b_femwell_cpw_order2_tracking",
+   "grade": "NUMERICAL_FAIL",
+   "layer": "L2",
+   "recorded_commit": "1eead28",
+   "documents": {
+    "experiments/track_A_reproduction/A17b_femwell_cpw_order2_tracking/BOUNDARY.md": "c5273b020052d26f4607dd91966e24fb3da0516828004deb17eb11d8dc8e2104",
+    "experiments/track_A_reproduction/A17b_femwell_cpw_order2_tracking/INPUTS.md": "dd6c59a9dde8926d0574db413d592945b726f2b9431f315c222e8e6ceea652b9",
+    "experiments/track_A_reproduction/A17b_femwell_cpw_order2_tracking/RESULTS.md": "1dcdd08c37076d82d1cb54d9c047abee065af1df89675ee6d578f98b9023ab3a"
+   },
+   "inputs": {
+    "experiments/track_A_reproduction/A17b_femwell_cpw_order2_tracking/BUDGET.json": "c2283abd262913c054a8446f6a5487b9dbbdb7bd7b1958964a6409798a1d5620"
+   },
+   "outputs": {},
+   "replay_note": "not run: G1 failed before the run (low-frequency breakdown at 48 MHz, BOUNDARY section 8); no outputs. G1 diagnostics (ratios only, values vary between runs): python scripts/a17b_g1_diagnostics.py shift|rate|cost"
   }
  ]
 }
