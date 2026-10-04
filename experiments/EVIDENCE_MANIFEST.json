@@ -544,6 +544,31 @@
      "scripts/run_a15.py"
     ]
    }
+  },
+  {
+   "id": "A16_s2_supported_reference",
+   "dir": "experiments/track_A_reproduction/A16_s2_supported_reference",
+   "grade": "QUALITATIVE_ONLY",
+   "layer": "L1",
+   "recorded_commit": "d509fc9",
+   "documents": {
+    "experiments/track_A_reproduction/A16_s2_supported_reference/BOUNDARY.md": "e1132c449cbd76b221360fa17ad8546dc3013c250f695d6cec50849cbde83766",
+    "experiments/track_A_reproduction/A16_s2_supported_reference/INPUTS.md": "5d6152309da72df44705241c9e6e899c4f33e8e9e4e377f274595b21a6cdf834",
+    "experiments/track_A_reproduction/A16_s2_supported_reference/RESULTS.md": "da8cbce8d18ff237272257e430c7802cea66370697171117901005a5c73b2fab"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_A_reproduction/A09_qualitative_statements/results.json": "b93ee5b739f83c7f73d87d4eb0e791ec0d1c292ac7a65039c7976f730e9b64cb"
+   },
+   "outputs": {
+    "experiments/track_A_reproduction/A16_s2_supported_reference/results.json": "a1e0c8698fae590f26270a115e1224f5dae4d0b9bba8dc2e26304a121aadb4a2"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_a16.py"
+    ]
+   }
   }
  ]
 }
