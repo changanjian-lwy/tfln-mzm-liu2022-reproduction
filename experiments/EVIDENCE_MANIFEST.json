@@ -405,6 +405,90 @@
      "scripts/run_a13.py"
     ]
    }
+  },
+  {
+   "id": "B02_length_scan",
+   "dir": "experiments/track_B_extensions/B02_length_scan",
+   "grade": "SENSITIVITY_ONLY",
+   "layer": "L1",
+   "recorded_commit": "30cdcfd",
+   "documents": {
+    "experiments/track_B_extensions/B02_length_scan/BOUNDARY.md": "3fd8e76cfc5a87a1e0341f61f049564dc3f375659aed9b12fe5326cbd7b5dda3",
+    "experiments/track_B_extensions/B02_length_scan/INPUTS.md": "139c75159eda853c5d20f268da37cb874ed211d938519c0a98bfb0bfc5810e05",
+    "experiments/track_B_extensions/B02_length_scan/RESULTS.md": "48336c1bde8aa4423cc3323b4f012120104f35020f19c2582ee054de61c53e7b"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_B_extensions/B01_termination_sweep/sweep.csv": "90368de2db7d1a35368bda1d3e41feb5729f2b3039bc2a16264ec0c674721556"
+   },
+   "outputs": {
+    "experiments/track_B_extensions/B02_length_scan/results.json": "c5a45f3d8eb1b1ceea88caac9ba2f861cca0265d063d8c173c084daa4357ea78",
+    "experiments/track_B_extensions/B02_length_scan/B02_length_scan.png": "a3b95292f52089283daa0b2099475ebe0e7d468ec6ce7e999938becc3512dfd5"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_b02_b04.py",
+     "--study",
+     "B02"
+    ]
+   }
+  },
+  {
+   "id": "B03_loss_scan",
+   "dir": "experiments/track_B_extensions/B03_loss_scan",
+   "grade": "SENSITIVITY_ONLY",
+   "layer": "L1",
+   "recorded_commit": "30cdcfd",
+   "documents": {
+    "experiments/track_B_extensions/B03_loss_scan/BOUNDARY.md": "ae56419df5498e5e1141cf35e47a90b3debbc15d322d010259252ae10dd04cb4",
+    "experiments/track_B_extensions/B03_loss_scan/INPUTS.md": "e43856fbf9f644a1a1e233a66f217ce534d81f61a25efc7cb4c5555413991fdd",
+    "experiments/track_B_extensions/B03_loss_scan/RESULTS.md": "0aaa18b4e1b179ac6d29824ff71c8cb63faf2549579dc220f1a6dd6ae74cb073"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_B_extensions/B01_termination_sweep/sweep.csv": "90368de2db7d1a35368bda1d3e41feb5729f2b3039bc2a16264ec0c674721556"
+   },
+   "outputs": {
+    "experiments/track_B_extensions/B03_loss_scan/results.json": "42a98a608c2fffb00bf3f312e12e8f963bb33b3208df45736b32612da535f36d",
+    "experiments/track_B_extensions/B03_loss_scan/B03_loss_scan.png": "173e1aeca6a1758699d4067cc277d552a4823484b2b886ce9316dce1bf759f09"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_b02_b04.py",
+     "--study",
+     "B03"
+    ]
+   }
+  },
+  {
+   "id": "B04_mismatch_scan",
+   "dir": "experiments/track_B_extensions/B04_mismatch_scan",
+   "grade": "SENSITIVITY_ONLY",
+   "layer": "L1",
+   "recorded_commit": "30cdcfd",
+   "documents": {
+    "experiments/track_B_extensions/B04_mismatch_scan/BOUNDARY.md": "57e794b9d19a8a852de1577d9aa9db92e8615636618eeff54d88042aff24dbdd",
+    "experiments/track_B_extensions/B04_mismatch_scan/INPUTS.md": "974c9047c4554be4c8d368113b6f03d0ca16ba628c4349e476e19c48c890b7a5",
+    "experiments/track_B_extensions/B04_mismatch_scan/RESULTS.md": "ccfa46185b18c9c1d0a26b7f5f89fb3b743b765acbac43f1cde73ed68b2fec7d"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_B_extensions/B01_termination_sweep/sweep.csv": "90368de2db7d1a35368bda1d3e41feb5729f2b3039bc2a16264ec0c674721556"
+   },
+   "outputs": {
+    "experiments/track_B_extensions/B04_mismatch_scan/results.json": "16994811c7ff1ad325a6edd2f3e253db7019a3cfc81e5991f943aed2f3964cd5",
+    "experiments/track_B_extensions/B04_mismatch_scan/B04_mismatch_scan.png": "e15b71e864804ffbc910b5e66a959fffb6c33eca4e37ed74e69cf84259b491d5"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_b02_b04.py",
+     "--study",
+     "B04"
+    ]
+   }
   }
  ]
 }
