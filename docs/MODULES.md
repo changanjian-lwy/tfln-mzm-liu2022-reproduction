@@ -13,6 +13,7 @@
 | validation.py | 冻结配置、候选结果、参考点 → 逐项判据 | 不反向修改模型以获得通过 | 未单独成模块：边界测试在 tests/，A04 判据在 scripts/run_a04.py；新判据须在 BOUNDARY 中写死后再实现 |
 | experiments/ + scripts/ | 配置 → 原始输出、图、判据报告 | 单变量实验，保留父版本 | A00–A05 已归档并登记在 EVIDENCE_MANIFEST.json |
 | scripts/check_evidence.py | 证据清单 → 哈希核对；--replay 在临时副本重跑 | 只核对证据完整性，不验证物理 | 已实现；G1 关卡的一部分 |
+| surrogate.py | 设计变量 (x)、模型输出 (y) → GP 后验均值/标准差、可行概率、下一个求值点 | 方法模块，不是物理模块：只见模型产生的 (x, y)，不见论文数据；只用 numpy/scipy；B05 起（SC-04） | Matérn-5/2 GP（解析梯度）与"改进量 × 可行概率"采集已实现，6 项测试 |
 | static.py + 01_static_mzm.ipynb | 课件参数 → 静态干涉 | 辅助 C，不计入论文主线验收 | 已通过七项检查 |
 
 装配顺序：来源配置 → 微波传播/终端 → 电光相互作用 → 响应提取 → 独立验证 → 展示。

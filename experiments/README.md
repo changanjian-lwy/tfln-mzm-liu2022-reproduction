@@ -29,6 +29,7 @@ Evidence check (gate G1): `python scripts/check_evidence.py --replay` regenerate
 | B | [B02 length scan](track_B_extensions/B02_length_scan/RESULTS.md) | L1 | SENSITIVITY_ONLY | Boundary committed first (`30cdcfd`) | Longer lines lose normalized bandwidth, yet efficiency-weighted response at 200 GHz still rises up to 12 mm |
 | B | [B03 loss-multiplier scan](track_B_extensions/B03_loss_scan/RESULTS.md) | L1 | SENSITIVITY_ONLY | Boundary committed first (`30cdcfd`) | k-fold loss ≈ k-fold length when velocity-matched; 40-ohm termination is less loss-sensitive |
 | B | [B04 mismatch scan](track_B_extensions/B04_mismatch_scan/RESULTS.md) | L1 | SENSITIVITY_ONLY | Boundary committed first (`30cdcfd`) | ±Δn nearly symmetric; the Δn range spanned by Fig.2(b) matters far less than loss or termination |
+| B | [B05 joint (ZL, L) + Bayesian optimization](track_B_extensions/B05_joint_zl_length_bo/RESULTS.md) | L1 (SC-04) | SENSITIVITY_ONLY | Boundary committed first (`46ade0c`); module `35c63b2` | GP-based BO finds the 64 311-point grid optimum in 30/30 seeds per target (median 9–12.5 evaluations; random search 1/90). Under only a −3 dB floor and S11 ≤ −10 dB the optimum rides the S11 edge at ZL ≈ 23 Ω with 17–30 mm lines: 3.8–6.9 dB ripple, and the first quarter-wave feature falls below the first Z0 readout (L > 15 mm), so the front is not a design result |
 
 P1 finding that applies to A00–A05: each experiment's BOUNDARY.md and RESULTS.md entered Git in the same commit, so "criteria fixed before results" rests on the documents' own statements, not on Git history. These experiments predate the v2 rules and are not rewritten. Their INPUTS.md files are retrospective records written on 2026-10-04.
 
@@ -42,6 +43,7 @@ Order follows the minimum evidence list in [SOURCE_COVERAGE_MATRIX.md](../docs/S
 3. ~~C-02 reference-frequency branches~~ — A11.
 4. C-03: A06 supports nm(100 GHz) = 2.25; a dispersion branch has no paper source yet, so it is deferred.
 5. ~~Track B single-variable scans~~ — B01–B04.
+6. ~~SC-04 (D9, user 2026-10-05 00:18): joint (ZL, L) design space with Bayesian optimization~~ — B05.
 
 SC-01 stage 1 (A17, authorized 2026-10-04) failed its convergence gate; the retry A17b (decision D8) failed G1 and was not run. SC-01 is paused by the user (2026-10-04 22:57); resuming it first needs a source for the T-rail geometry. Waiting for user authorization: SC-02 feedline/pad network (L3), SC-03 measured Figure 6/7 comparison. Decisions are recorded in [docs/DECISIONS_PENDING.md](../docs/DECISIONS_PENDING.md). HANDOFF.md is frozen at `22d9aa1` and predates A17b.
 

@@ -607,6 +607,43 @@
    },
    "outputs": {},
    "replay_note": "not run: G1 failed before the run (low-frequency breakdown at 48 MHz, BOUNDARY section 8); no outputs. G1 diagnostics (ratios only, values vary between runs): python scripts/a17b_g1_diagnostics.py shift|rate|cost"
+  },
+  {
+   "id": "B05_joint_zl_length_bo",
+   "dir": "experiments/track_B_extensions/B05_joint_zl_length_bo",
+   "grade": "SENSITIVITY_ONLY",
+   "layer": "L1",
+   "recorded_commit": "46ade0c",
+   "documents": {
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/BOUNDARY.md": "847bfb55d5f31f68ec8742fd3242a815a0c79a33d63fd3d15b5154d553605c88",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/INPUTS.md": "026d1b8d019eebd516de7e3ddd0930a8071ca9079856f8dc2e89b7b2234a14a2",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/RESULTS.md": "ba3fb7210f67ff90ec34641b5a3539cb675f4622e25c00533cf5a14524c0c9ba"
+   },
+   "inputs": {
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d",
+    "experiments/track_B_extensions/B01_termination_sweep/sweep.csv": "90368de2db7d1a35368bda1d3e41feb5729f2b3039bc2a16264ec0c674721556",
+    "experiments/track_B_extensions/B02_length_scan/results.json": "c5a45f3d8eb1b1ceea88caac9ba2f861cca0265d063d8c173c084daa4357ea78"
+   },
+   "outputs": {
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/results.json": "7f3bfd8e8814f8f21f40341bbce355435cbbbe12843b7ac02c6272c4b864cb30",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/front.csv": "f587f795c35fef125aab68bc670a37fc9cf36ecba7f31f277dfeddb385373e62",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/bo_runs.csv": "b767ea8c9ef64239e933f00ebfd97e91d84437935064fbbd61dbf540e281895f",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/b05_design_space.png": "f09c071e5cd8fcccebe57efdd55697d149f3dc4146646962a2d47cac640de2ef",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/b05_front_bo.png": "039f06f3f5d27b84ee9b5c4de730e2a88b400176009cfa1fd32a18aeec03b61e",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/observation_peaking.json": "9efccb7d6e2154936ed1f0bd24b7a84d3c99c264d5411eede7277ef162055e24",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/observation_response.png": "acd8eb0ecf3d533a7311a04dfc733c859ae86cac8d859c443d4601067ee3a849"
+   },
+   "static_only": [
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/observation_peaking.json",
+    "experiments/track_B_extensions/B05_joint_zl_length_bo/observation_response.png"
+   ],
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_b05.py"
+    ]
+   },
+   "replay_note": "observation_* are post-hoc (not criteria); regenerate with python scripts/b05_observation_peaking.py after run_b05.py"
   }
  ]
 }
