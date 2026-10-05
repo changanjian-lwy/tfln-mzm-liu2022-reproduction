@@ -284,8 +284,8 @@ def plot(R,res,m,n0):
     bx.set_yticks(y);bx.set_yticklabels([r[0] for r in rows],fontsize=8)
     bx.grid(axis='x',color=GRID,lw=0.6);bx.set_axisbelow(True)
     for s in ('top','right'):bx.spines[s].set_visible(False)
-    bx.legend(loc='lower right',fontsize=8,frameon=False)
-    bx.set_xlabel('VpiL of the device = rail-section VpiL / 0.9 (V*cm); dark band 1.59-1.65 (measured), light 1.32-1.92')
+    bx.legend(loc='upper left',fontsize=8,frameon=False)
+    bx.set_xlabel('device VpiL = rail VpiL / 0.9 (V*cm)\nbands: measured 1.59-1.65 (dark), 1.32-1.92 (light)')
     v=res['verdicts'];bx.set_title(f"(b) VpiL per configuration, duty 0.9\nverdict A: {v['A']['verdict']}, B: {v['B']['verdict']}",loc='left',fontsize=9)
     fig.tight_layout();fig.savefig(OUT/'o02_vpil.png',dpi=150);plt.close(fig)
 
