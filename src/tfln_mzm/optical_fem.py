@@ -84,13 +84,14 @@ def domain(sec,d):
     return 4*d,-sec.t_box-d,sec.t_film+2.1*d
 
 
-def geometry(sec,d=1.0,half=False):
+def geometry(sec,d=1.0,half=False,extent=None):
     """Ordered shapes; earlier entries override later ones when meshed (femwell mesh_from_OrderedDict).
 
     half=True keeps x >= 0 only (O01 BOUNDARY section 5): with PEC on every outer edge, x = 0 is a PEC
     symmetry plane, exact for TE0 of this mirror-symmetric section (its E_y and E_z are odd in x).
+    extent=(X, ybot, ytop) overrides domain(sec, d) (O02 uses a larger electrostatic domain).
     """
-    X,ybot,ytop=domain(sec,d)
+    X,ybot,ytop=extent if extent is not None else domain(sec,d)
     ys=sec.t_film-sec.etch
     top,bot=sec.widths()
     ridge=Polygon([(-bot/2,ys),(bot/2,ys),(top/2,sec.t_film),(-top/2,sec.t_film)])
@@ -125,10 +126,10 @@ def resolutions(m,rails=True,half=False):
     return r
 
 
-def build_mesh(sec,m,d=1.0,half=False):
+def build_mesh(sec,m,d=1.0,half=False,extent=None):
     from femwell.mesh import mesh_from_OrderedDict
     from skfem.io.meshio import from_meshio
-    return from_meshio(mesh_from_OrderedDict(geometry(sec,d,half),resolutions(m,sec.rail_t is not None,half),
+    return from_meshio(mesh_from_OrderedDict(geometry(sec,d,half,extent),resolutions(m,sec.rail_t is not None,half),
                                              default_resolution_max=.4*m))
 
 
@@ -150,13 +151,18 @@ def cladding_index_max(sec,lam):
     return max(np.sqrt(v[0].real) for k,v in permittivity(sec,lam).items() if k not in LN_NAMES and not k.startswith('rail'))
 
 
-def solve_modes(mesh,eps_by_region,lam,n_guess,num_modes=6,metallic=True,order=2):
-    """femwell modes for a piecewise-constant diagonal permittivity. Returns (modes, seconds)."""
+def solve_modes(mesh,eps_by_region,lam,n_guess,num_modes=6,metallic=True,order=2,deps_xx=None,intorder=None):
+    """femwell modes for a piecewise-constant diagonal permittivity. Returns (modes, seconds).
+
+    deps_xx: optional per-element addition to eps_xx (length mesh.nelements; O02 convention B).
+    intorder: quadrature order of the permittivity basis, which femwell's mode basis inherits. None keeps
+    skfem's default for P0 (a 3-point rule), as used in O01; O02 passes 4 (as A17 / the femwell tutorials).
+    """
     from femwell.maxwell.waveguide import compute_modes
     from skfem import Basis,ElementTriP0,ElementVector
     # femwell takes the diagonal-anisotropy branch when epsilon interpolates to (3, elements, points),
     # i.e. epsilon lives on a 3-component P0 basis; interior_dofs[k] holds component k of every element.
-    basis0=Basis(mesh,ElementVector(ElementTriP0(),3))
+    basis0=Basis(mesh,ElementVector(ElementTriP0(),3),**({} if intorder is None else {'intorder':intorder}))
     lossy=any(np.iscomplexobj(np.asarray(v)) and np.any(np.imag(v)) for v in eps_by_region.values())
     eps=basis0.zeros(dtype=complex if lossy else float)
     for name,v in eps_by_region.items():
@@ -164,6 +170,9 @@ def solve_modes(mesh,eps_by_region,lam,n_guess,num_modes=6,metallic=True,order=2
         elems=mesh.subdomains[name]
         for k in range(3):eps[basis0.interior_dofs[k,elems]]=v[k]
     if np.any(eps==0):raise ValueError('element without a material')
+    if deps_xx is not None:
+        eps=eps.astype(np.result_type(eps.dtype,np.asarray(deps_xx).dtype))
+        eps[basis0.interior_dofs[0]]+=deps_xx
     t=time.perf_counter()
     modes=compute_modes(basis0,eps,wavelength=lam,num_modes=num_modes,order=order,metallic_boundaries=metallic,n_guess=n_guess)
     return modes,time.perf_counter()-t
@@ -175,11 +184,11 @@ def pick_te0(modes,n_floor,te_min=0.8):
     return max(ok,key=lambda m:m.n_eff.real) if ok else None
 
 
-def solve_te0(sec,mesh,lam):
+def solve_te0(sec,mesh,lam,deps_xx=None,intorder=None):
     """TE0 of a Section at wavelength lam (um): n_eff, TE fraction, loss, and a summary of all modes found."""
     eps=permittivity(sec,lam)
     n_guess=float(np.sqrt(eps['ridge'][1]))   # shift k0^2 n_o^2 (boundary 0.2)
-    modes,sec_s=solve_modes(mesh,eps,lam,n_guess)
+    modes,sec_s=solve_modes(mesh,eps,lam,n_guess,deps_xx=deps_xx,intorder=intorder)
     floor=cladding_index_max(sec,lam)
     te0=pick_te0(modes,floor)
     out={'lam_um':lam,'solve_s':sec_s,'n_floor':floor,'n_elements':int(mesh.nelements),
