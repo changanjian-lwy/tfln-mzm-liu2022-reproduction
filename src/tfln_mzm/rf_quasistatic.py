@@ -19,7 +19,7 @@ from dataclasses import dataclass,replace
 import numpy as np
 from scipy.special import ellipk
 from shapely.affinity import translate
-from shapely.geometry import LineString,Polygon,box  # noqa: F401  (box is re-used by tests)
+from shapely.geometry import LineString,MultiLineString,Polygon,box  # noqa: F401  (box is re-used by tests)
 from shapely.ops import unary_union
 
 EPS0=8.8541878128e-12
@@ -63,22 +63,25 @@ def _unit(v):return v/np.linalg.norm(v)
 def build_mesh(shapes,conductors,m,X,thin=(),corner_res=0.02,face_res=0.5,far=None):
     """Mesh an OrderedDict of shapes (earlier entries win) with graded refinement at conductor corners and faces.
 
-    Each conductor outline gets face lines (size face_res m, growing to 5 m within 30 um) and every corner off the
+    Each conductor outline gets a face line (size face_res m, growing to 5 m within 30 um), and every corner off the
     x = 0 symmetry plane a short mark along each adjacent edge (size corner_res m, growing to face_res m within
-    4 um). thin: (name, thickness) layers whose size is capped at min(20 thickness, 5) m. The far field is capped
-    at `far` m (default X/40). Returns (mesh, {conductor: [mark and face line names lying on it]})."""
+    4 um); the marks of one conductor form one MultiLineString. thin: (name, thickness) layers whose size is capped
+    at min(20 thickness, 5) m. The far field is capped at `far` m (default X/40). Returns (mesh, {conductor: [line
+    names lying on it]}); line conductors need those lines fixed too."""
     from femwell.mesh import mesh_from_OrderedDict
     from skfem.io.meshio import from_meshio
     far=X/40 if far is None else far
     ell=corner_res*m/2
     res={};lines=OrderedDict();owned={}
     for name in conductors:
-        geom=shapes[name];owned[name]=[]
-        for i,(p,dirs) in enumerate(_vertices(geom)):
+        geom=shapes[name];segs=[]
+        for p,dirs in _vertices(geom):
             if abs(p[0])<1e-9:continue                             # symmetry plane: not an edge
-            for j,u in enumerate(dirs):
-                key=f'{name}__c{i}_{j}';lines[key]=LineString([tuple(p),tuple(p+ell*u)])
-                res[key]={'resolution':corner_res*m,'distance':4.0,'SizeMax':face_res*m};owned[name].append(key)
+            segs+=[LineString([tuple(p),tuple(p+ell*u)]) for u in dirs]
+        owned[name]=[]
+        if segs:
+            key=f'{name}__marks';lines[key]=MultiLineString(segs)
+            res[key]={'resolution':corner_res*m,'distance':4.0,'SizeMax':face_res*m};owned[name].append(key)
         if isinstance(geom,Polygon):
             key=f'{name}__face';lines[key]=LineString(list(geom.exterior.coords))
             res[key]={'resolution':face_res*m,'distance':30.0,'SizeMax':5*m}
@@ -156,7 +159,8 @@ def inductance(c0_full):
 # ---------------------------------------------------------------- Q02: Liu cross-section
 @dataclass(frozen=True)
 class RFSection:
-    """Q02 BOUNDARY section 1 table (lengths um). kind: 'U' unloaded, 'H' through T-heads, 'N' through necks."""
+    """Q02 BOUNDARY section 1 table (lengths um). kind: 'U' unloaded, 'H' through T-heads, 'N' through necks
+    (the head, its neck and its main electrode are then one conductor polygon)."""
     t_bcb:float=1.5
     kind:str='H'
     w_t:float=2.0
@@ -203,9 +207,13 @@ def liu_shapes(sec,X):
     if sec.kind in ('H','N'):
         hs=box(xa-HEAD_GAP/2-sec.w_t,y_gap,xa-HEAD_GAP/2,y_gap+sec.h_t)
         hg=box(xa+HEAD_GAP/2,y_gap,xa+HEAD_GAP/2+sec.w_t,y_gap+sec.h_t)
-        if sec.kind=='N':
-            hs=unary_union([hs,*_neck(sec,y_gap,y_el,-1)]);hg=unary_union([hg,*_neck(sec,y_gap,y_el,+1)])
-        shapes['head_s']=hs;shapes['head_g']=hg;cond+=['head_s','head_g']
+        if sec.kind=='N':                                # necks join the heads to the electrodes: one conductor each
+            for name,head,side in (('sig',hs,-1),('gnd',hg,+1)):
+                u=unary_union([shapes[name],head,*_neck(sec,y_gap,y_el,side)]).simplify(0)
+                if u.geom_type!='Polygon':raise ValueError(f'{name} with neck is not one polygon')
+                shapes[name]=u
+        else:
+            shapes['head_s']=hs;shapes['head_g']=hg;cond+=['head_s','head_g']
     shapes['ridge']=ridge.difference(box(-1,-1,0,X))
     shapes['ln']=ln
     shapes['clad']=clad
@@ -220,23 +228,24 @@ def liu_shapes(sec,X):
     return shapes,cond,thin
 
 
+def _span(a,b,y0,y1):return box(min(a,b),y0,max(a,b),y1)
+
+
 def _neck(sec,y_gap,y_el,side):
-    """Neck conductor pieces from the head to the main electrode (side -1: signal, +1: ground)."""
+    """Neck pieces from the head to the main electrode (side -1: signal, +1: ground); each piece shares an edge of
+    length h_t with the next one or with the electrode side face, never only a corner."""
     xa=sec.xa;h=sec.h_t
     xe=sec.s/2 if side<0 else sec.s/2+sec.g              # electrode inner edge
-    xw=xa+side*sec.W                                     # BCB wall
     xh=xa+side*(HEAD_GAP/2+sec.w_t)                      # head outer edge
-    lo,hi=sorted((xw,xh))
-    pieces=[box(lo,y_gap,hi,y_gap+h)]
-    if sec.t_bcb>0 or abs(y_el-y_gap)>1e-9:
-        ledge_top=y_gap+sec.t_bcb
-        wl,wh=sorted((xw,xw-side*h))                     # strip on the gap side of the wall
-        pieces.append(box(wl,y_gap,wh,max(ledge_top,y_gap)+h))
-        if abs(xw-xe)>1e-9:
-            a,b=sorted((xe,xw-side*h))
-            pieces.append(box(a,ledge_top,b,ledge_top+h))
-            c,d=sorted((xe,xe-side*h))
-            pieces.append(box(c,ledge_top,d,y_el))      # riser to the electrode bottom
+    xw=xa+side*sec.W if sec.t_bcb>0 else xe              # BCB wall (no BCB: start at the electrode)
+    pieces=[_span(xw,xh,y_gap,y_gap+h)]                  # on the PECVD top inside the window
+    if sec.t_bcb>0 and abs(xw-xe)>1e-9:                  # BCB ledge between electrode and window
+        lt=y_gap+sec.t_bcb
+        pieces+=[_span(xw,xw-side*h,y_gap,lt+h),           # up the wall
+                 _span(xe,xw-side*h,lt,lt+h),              # along the ledge top
+                 _span(xe,xe-side*h,lt,y_el+h)]            # riser into the electrode side face
+    else:
+        pieces.append(_span(xe,xe-side*h,y_gap,y_el+h))   # wall aligned with the electrode (or no BCB)
     return pieces
 
 

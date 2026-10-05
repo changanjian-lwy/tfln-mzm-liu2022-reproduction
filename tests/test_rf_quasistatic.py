@@ -57,26 +57,33 @@ class LiuSection(unittest.TestCase):
                         sec=q.RFSection(t_bcb=t,kind=kind,etch=etch,window=win)
                         sh,cond,thin=q.liu_shapes(sec,X)
                         self.assertEqual(cond[:2],['sig','gnd'])
-                        self.assertEqual(len(cond),2 if kind=='U' else 4)
+                        self.assertEqual(len(cond),4 if kind=='H' else 2)
                         if t>0:
                             self.assertTrue(sh['bcb'].is_valid)
                             inside=sh['bcb'].intersection(q.box(sec.xa-sec.W+1e-6,0,sec.xa+sec.W-1e-6,X))
                             self.assertLess(inside.area,1e-9)                       # no BCB in the window
                         for name in cond:self.assertTrue(sh[name].is_valid)
-                        if kind!='U':
+                        if kind=='H':
                             gap=sh['head_g'].bounds[0]-sh['head_s'].bounds[2]
                             self.assertAlmostEqual(gap,q.HEAD_GAP,places=9)
-                        y_el=sh['sig'].bounds[1]
-                        base=(0.3 if etch=='full' else 0.6)+0.1
-                        self.assertAlmostEqual(y_el,base+t,places=9)
+                        if kind!='N':                                      # with a neck 'sig' reaches down
+                            base=(0.3 if etch=='full' else 0.6)+0.1
+                            self.assertAlmostEqual(sh['sig'].bounds[1],base+t,places=9)
 
-    def test_neck_reaches_electrode(self):
+    def test_neck_joins_head_to_electrode(self):
         for etch in ('full','gap'):
             for win in (None,4.5):
-                sec=q.RFSection(kind='N',etch=etch,window=win)
-                sh,_,_=q.liu_shapes(sec,2000.0)
-                self.assertLess(sh['head_s'].distance(sh['sig']),1e-9)
-                self.assertLess(sh['head_g'].distance(sh['gnd']),1e-9)
+                for t in (0.0,1.5):
+                    for h in (0.2,0.8):
+                        sec=q.RFSection(kind='N',etch=etch,window=win,t_bcb=t,h_t=h)
+                        sh,cond,_=q.liu_shapes(sec,2000.0)
+                        self.assertEqual(cond,['sig','gnd'])
+                        for name in cond:self.assertEqual(sh[name].geom_type,'Polygon')
+                        head=q.RFSection(kind='H',etch=etch,window=win,t_bcb=t,h_t=h)
+                        hs,_,_=q.liu_shapes(head,2000.0)
+                        self.assertLess(hs['head_s'].difference(sh['sig']).area,1e-12)
+                        self.assertLess(hs['head_g'].difference(sh['gnd']).area,1e-12)
+                        self.assertLess(sh['sig'].intersection(sh['gnd']).area,1e-12)
 
 
 if __name__=='__main__':
