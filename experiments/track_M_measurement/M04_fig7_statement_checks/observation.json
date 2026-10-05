@@ -1,0 +1,16 @@
+{
+  "note": "post-hoc observation, written after M04 ran; not a criterion",
+  "annotation_line_rows": [
+    100.5,
+    124.5
+  ],
+  "annotation_line_dB": [
+    0.7786259541984732,
+    -0.32061068702290074
+  ],
+  "annotation_span_dB": 1.099236641221374,
+  "span_uncertainty_dB": 0.183206106870229,
+  "readout_38ohm_max_dB": 0.8244274809160306,
+  "readout_38ohm_min_dB": -0.3206106870229007,
+  "readout_38ohm_peak_to_peak_dB": 1.1450381679389312
+}

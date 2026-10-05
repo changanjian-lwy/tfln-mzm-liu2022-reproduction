@@ -767,6 +767,42 @@
      "{images}"
     ]
    }
+  },
+  {
+   "id": "M04_fig7_statement_checks",
+   "dir": "experiments/track_M_measurement/M04_fig7_statement_checks",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "measurement statements (SC-03)",
+   "recorded_commit": "d432c27",
+   "documents": {
+    "experiments/track_M_measurement/M04_fig7_statement_checks/BOUNDARY.md": "8563ebbe57612a10da6057b29b20faa648cea0f749302cb0e4768eddee0fd51c",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/INPUTS.md": "0486bb72150ebfbc42798bad80f76873fc9333431e3f9fda4092173feb9b1e54",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/RESULTS.md": "89087c0f456b1a4863341385253c1414fba223f37b1906a8b990cd106d738da7"
+   },
+   "inputs": {
+    "data/digitized/liu2022/m03_curves.csv": "41d8577b9fd0fa05de80900a1fb5163391ef94b873d209851ec44df6928cfbeb",
+    "data/digitized/liu2022/m03_metadata.json": "b1ff8ccb0e8362316c6bc4c6a087872cbf60ea514d5f045ebfd20b9cdbdcf7c5",
+    "experiments/track_M_measurement/M03_fig7_digitization/results.json": "030c2adf658e75e8465c7d4d26049bace7009d01028dcb405ded734cf6da1928"
+   },
+   "outputs": {
+    "experiments/track_M_measurement/M04_fig7_statement_checks/results.json": "906f6bff4a7b0f01c3c8f619398b3d8a98acd3a6f5b2c481dd980a5be78c455c",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/m04_checks.png": "4220c0573139709a16e6662f230229607bb5754ffbb789a4eb8f1325b6dfd487",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/observation.json": "a52999729349c29e7cd062ea80e95eec3d4d9d2605a81488e2d9b4749c6ded70",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/OBSERVATION_posthoc.md": "52bf2e8933add35d856e712b9ae62aa1a8dc24e960d8518b9db3b0f3fbf0fe75"
+   },
+   "local_inputs": {
+    "p4_1.png": "6efa75979dca4e9206cd42a21cd0d7725f85761dd2a1a876b4940ddc6a6e0fb7"
+   },
+   "static_only": [
+    "experiments/track_M_measurement/M04_fig7_statement_checks/observation.json",
+    "experiments/track_M_measurement/M04_fig7_statement_checks/OBSERVATION_posthoc.md"
+   ],
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_m04.py"
+    ]
+   }
   }
  ]
 }

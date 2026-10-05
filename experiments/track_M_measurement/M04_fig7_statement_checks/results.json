@@ -1,0 +1,106 @@
+{
+  "grade_cap": "DIAGNOSTIC_ONLY",
+  "inputs": {
+    "data/digitized/liu2022/m03_curves.csv": "41d8577b9fd0fa05de80900a1fb5163391ef94b873d209851ec44df6928cfbeb"
+  },
+  "gate_inputs": {
+    "m03_registered": true,
+    "m03_curves_hash_matches": true,
+    "m03_criterion_2": true,
+    "m03_criterion_3": true,
+    "eo_38_usable": true,
+    "s11_38_usable": true,
+    "usable_series": [
+      "EO_response_38ohm",
+      "EO_response_57ohm",
+      "EO_response_open",
+      "S11_38ohm",
+      "S11_57ohm",
+      "S11_83ohm"
+    ]
+  },
+  "nonfinite_values": 0,
+  "U1a_initial_rise": {
+    "points": 37,
+    "points_definitely_above_0dB": 37,
+    "max_dB": 0.8244274809160306,
+    "max_at_GHz": 6.200241254523522,
+    "verdict": "initial_rise"
+  },
+  "U1b_flatness_38ohm": {
+    "points": 199,
+    "last_point_GHz": 48.854041013269,
+    "max_dB": 0.8244274809160306,
+    "max_at_GHz": 6.200241254523522,
+    "min_dB": -0.3206106870229007,
+    "min_at_GHz": 35.53679131483715,
+    "peak_to_peak_dB": 1.1450381679389312,
+    "P_lo_dB": 0.916030534351145,
+    "P_hi_dB": 1.3740458015267174,
+    "verdict": "undecided"
+  },
+  "U1b_reported_other_loads": {
+    "57ohm": {
+      "points": 193,
+      "last_point_GHz": 49.819059107358264,
+      "max_dB": -1.076335877862595,
+      "max_at_GHz": 4.6562123039807,
+      "min_dB": -2.6793893129770994,
+      "min_at_GHz": 45.76598311218335,
+      "peak_to_peak_dB": 1.6030534351145043,
+      "P_lo_dB": 1.328244274809161,
+      "P_hi_dB": 1.8778625954198476,
+      "verdict": "does_not_hold"
+    },
+    "open": {
+      "points": 202,
+      "last_point_GHz": 49.62605548854041,
+      "max_dB": -3.2061068702290076,
+      "max_at_GHz": 3.691194209891435,
+      "min_dB": -8.908396946564885,
+      "min_at_GHz": 7.744270205066345,
+      "peak_to_peak_dB": 5.702290076335878,
+      "P_lo_dB": 5.358778625954199,
+      "P_hi_dB": 6.045801526717556,
+      "verdict": "does_not_hold"
+    }
+  },
+  "U2_s11_38ohm": {
+    "points": 560,
+    "clipped_counted_below": 0,
+    "definitely_above": 86,
+    "fraction_above": 0.15357142857142858,
+    "max_dB": -8.30848623853211,
+    "max_at_GHz": 0.9891435464414968,
+    "verdict": "not_below"
+  },
+  "U2_reported": {
+    "38ohm_0_50GHz": {
+      "points": 254,
+      "clipped_counted_below": 0,
+      "definitely_above": 80,
+      "fraction_above": 0.31496062992125984,
+      "max_dB": -8.30848623853211,
+      "max_at_GHz": 0.9891435464414968,
+      "verdict": "not_below"
+    },
+    "57ohm": {
+      "points": 454,
+      "clipped_counted_below": 6,
+      "definitely_above": 0,
+      "fraction_above": 0.0,
+      "max_dB": -11.639908256880734,
+      "max_at_GHz": 23.18455971049457,
+      "verdict": "strictly_below"
+    },
+    "83ohm": {
+      "points": 532,
+      "clipped_counted_below": 3,
+      "definitely_above": 0,
+      "fraction_above": 0.0,
+      "max_dB": -11.35894495412844,
+      "max_at_GHz": 94.01688781664656,
+      "verdict": "strictly_below"
+    }
+  }
+}
