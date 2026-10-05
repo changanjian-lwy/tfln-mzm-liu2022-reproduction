@@ -19,6 +19,9 @@
 | WebPlotDigitizer 或同类工具 | 后续读取 Figure 2/3 曲线 | 到数字化阶段再决定，不需要现在安装 |
 | VS Code | 可选代码编辑器 | JupyterLab 已足够入门 |
 | COMSOL / HFSS / Lumerical | 几何和全波场求解 | 当前解析复现不需要 |
+| uv + Python 3.12 | 可选 PDK 环境（与主环境 3.14.6 分开） | 2026-10-05 已装（D11）；版本见 `requirements-pdk-lock.txt` |
+| gdsfactory / SAX / KLayout 模块 | 光子版图（PCell→GDS）与 S 参数网表电路仿真 | 已装在可选环境；流程说明见 [PIC_DESIGN_FLOW_zh.md](PIC_DESIGN_FLOW_zh.md) |
+| Luxtelligence TFLN PDK（MIT） | 开源 TFLN 代工厂 PDK：T 形电极 CPW、MZM 单元，只有直流紧凑模型 | 已装，自带测试 120 项通过；其几何只能作外部参考 |
 
 ## 文件夹逻辑
 
