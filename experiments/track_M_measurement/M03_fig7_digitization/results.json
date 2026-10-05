@@ -1,0 +1,186 @@
+{
+  "grade": "PARTIAL_EXTRACTION_COMPLETE",
+  "scope": "raster readout of measured solid curves only; dashed calculations not read",
+  "evidence": "digitized_paper_measurement",
+  "m03_curves_sha256": "41d8577b9fd0fa05de80900a1fb5163391ef94b873d209851ec44df6928cfbeb",
+  "criteria": {
+    "2_reference_lines_pm0.09dB": true,
+    "3_tick_residual_le_1px": true,
+    "4_retained_ge_70pct": {
+      "EO_response_38ohm": true,
+      "EO_response_57ohm": true,
+      "EO_response_83ohm": false,
+      "EO_response_open": true,
+      "S11_38ohm": true,
+      "S11_57ohm": true,
+      "S11_83ohm": true
+    },
+    "5_strict_median_le_1px": {
+      "EO_response_38ohm": true,
+      "EO_response_57ohm": true,
+      "EO_response_83ohm": true,
+      "EO_response_open": true,
+      "S11_38ohm": true,
+      "S11_57ohm": true,
+      "S11_83ohm": true
+    }
+  },
+  "reference_lines": {
+    "-1": {
+      "rows": [
+        139,
+        140
+      ],
+      "value": -1.0076335877862594,
+      "uncertainty": 0.0916030534351145
+    },
+    "-3": {
+      "rows": [
+        182,
+        183,
+        184
+      ],
+      "value": -3.0,
+      "uncertainty": 0.0916030534351145
+    }
+  },
+  "tick_max_residual_px": {
+    "fig7a": 0.5,
+    "fig7b": 0.4285714285714448
+  },
+  "quality": [
+    {
+      "panel": "fig7a",
+      "series": "EO_response_38ohm",
+      "colour": "purple",
+      "eligible_columns": 249,
+      "retained": 199,
+      "retained_fraction": 0.7991967871485943,
+      "single": 197,
+      "merged": 2,
+      "missing": 4,
+      "ambiguous": 46,
+      "clipped": 0,
+      "dash_classified_px": 178,
+      "end_column": 356,
+      "end_GHz": 48.854041013269,
+      "strict_common_points": 195,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.7370325693606787
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_57ohm",
+      "colour": "orange",
+      "eligible_columns": 254,
+      "retained": 193,
+      "retained_fraction": 0.7598425196850394,
+      "single": 193,
+      "merged": 0,
+      "missing": 19,
+      "ambiguous": 42,
+      "clipped": 0,
+      "dash_classified_px": 332,
+      "end_column": 361,
+      "end_GHz": 49.819059107358264,
+      "strict_common_points": 193,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.158021712907118
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_83ohm",
+      "colour": "red",
+      "eligible_columns": 255,
+      "retained": 174,
+      "retained_fraction": 0.6823529411764706,
+      "single": 170,
+      "merged": 4,
+      "missing": 30,
+      "ambiguous": 51,
+      "clipped": 0,
+      "dash_classified_px": 353,
+      "end_column": 362,
+      "end_GHz": 50.01206272617611,
+      "strict_common_points": 173,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 5.9831121833534375
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_open",
+      "colour": "blue",
+      "eligible_columns": 255,
+      "retained": 202,
+      "retained_fraction": 0.792156862745098,
+      "single": 202,
+      "merged": 0,
+      "missing": 14,
+      "ambiguous": 39,
+      "clipped": 0,
+      "dash_classified_px": 834,
+      "end_column": 362,
+      "end_GHz": 50.01206272617611,
+      "strict_common_points": 199,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 2.316043425814236
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_38ohm",
+      "colour": "purple",
+      "eligible_columns": 562,
+      "retained": 560,
+      "retained_fraction": 0.99644128113879,
+      "single": 560,
+      "merged": 0,
+      "missing": 0,
+      "ambiguous": 2,
+      "clipped": 0,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 560,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 0.38600723763570954
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_57ohm",
+      "colour": "orange",
+      "eligible_columns": 562,
+      "retained": 454,
+      "retained_fraction": 0.8078291814946619,
+      "single": 447,
+      "merged": 7,
+      "missing": 9,
+      "ambiguous": 93,
+      "clipped": 6,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 454,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.9650180940892739
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_83ohm",
+      "colour": "red",
+      "eligible_columns": 562,
+      "retained": 532,
+      "retained_fraction": 0.9466192170818505,
+      "single": 530,
+      "merged": 2,
+      "missing": 20,
+      "ambiguous": 7,
+      "clipped": 3,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 529,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.1580217129071286
+    }
+  ]
+}

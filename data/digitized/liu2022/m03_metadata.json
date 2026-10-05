@@ -1,0 +1,616 @@
+{
+  "doi": "10.1109/LPT.2022.3178214",
+  "evidence": "digitized_paper_measurement",
+  "scope_change": "SC-03 (D7, D13)",
+  "sources": {
+    "p4_1.png": "6efa75979dca4e9206cd42a21cd0d7725f85761dd2a1a876b4940ddc6a6e0fb7"
+  },
+  "pdf_sha256": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+  "extraction": "pdfimages -all -f 4 -l 4 reference_tfln_lpt2022.pdf (image 1 of page 4)",
+  "calibration": {
+    "fig7a": {
+      "x_px": [
+        206.5,
+        621
+      ],
+      "x_phys": [
+        20,
+        100
+      ],
+      "y_px": [
+        117.5,
+        510.5
+      ],
+      "y_phys": [
+        0,
+        -18
+      ],
+      "frame": [
+        104,
+        672,
+        74,
+        510
+      ],
+      "scan_x": [
+        108,
+        372
+      ],
+      "quantity": "EO_response",
+      "x_ticks_GHz": 20,
+      "y_tick_step": 3
+    },
+    "fig7b": {
+      "x_px": [
+        206.5,
+        621
+      ],
+      "x_phys": [
+        20,
+        100
+      ],
+      "y_px": [
+        649.5,
+        1085.5
+      ],
+      "y_phys": [
+        0,
+        -35
+      ],
+      "frame": [
+        104,
+        672,
+        650,
+        1085
+      ],
+      "scan_x": [
+        108,
+        669
+      ],
+      "quantity": "S11",
+      "x_ticks_GHz": 20,
+      "y_tick_step": 5
+    }
+  },
+  "legend_masks": {
+    "fig7a": {
+      "purple": [
+        [
+          329,
+          490,
+          370,
+          484
+        ]
+      ],
+      "orange": [
+        [
+          329,
+          490,
+          370,
+          484
+        ]
+      ],
+      "red": [
+        [
+          329,
+          490,
+          370,
+          484
+        ]
+      ],
+      "blue": [
+        [
+          329,
+          490,
+          370,
+          484
+        ]
+      ]
+    },
+    "fig7b": {
+      "purple": [
+        [
+          426,
+          490,
+          681,
+          690
+        ]
+      ],
+      "orange": [
+        [
+          426,
+          490,
+          712,
+          721
+        ]
+      ],
+      "red": [
+        [
+          426,
+          490,
+          742,
+          751
+        ]
+      ]
+    }
+  },
+  "series": [
+    {
+      "panel": "fig7a",
+      "load": "38ohm",
+      "colour": "purple"
+    },
+    {
+      "panel": "fig7a",
+      "load": "57ohm",
+      "colour": "orange"
+    },
+    {
+      "panel": "fig7a",
+      "load": "83ohm",
+      "colour": "red"
+    },
+    {
+      "panel": "fig7a",
+      "load": "open",
+      "colour": "blue"
+    },
+    {
+      "panel": "fig7b",
+      "load": "38ohm",
+      "colour": "purple"
+    },
+    {
+      "panel": "fig7b",
+      "load": "57ohm",
+      "colour": "orange"
+    },
+    {
+      "panel": "fig7b",
+      "load": "83ohm",
+      "colour": "red"
+    }
+  ],
+  "rules": {
+    "purple": "90<=R<=200, B>=110, G<=110, B-G>=50, R-G>=40 (strict 105<=R<=150, 125<=B<=165, G<=70)",
+    "occluder": "grey (max-min<40, max<215) or another curve colour",
+    "bridge_px": 3,
+    "solid_min_extent_px": 30,
+    "scan": "frame+4 .. frame-3; fig7a to x=372 (52 GHz)"
+  },
+  "method": "M01 per-column cluster with merge across occluders; fig7a solid-component filter; no interpolation",
+  "uncertainty": "2px axis localization plus half stroke height; not author error bars",
+  "quality": [
+    {
+      "panel": "fig7a",
+      "series": "EO_response_38ohm",
+      "colour": "purple",
+      "eligible_columns": 249,
+      "retained": 199,
+      "retained_fraction": 0.7991967871485943,
+      "single": 197,
+      "merged": 2,
+      "missing": 4,
+      "ambiguous": 46,
+      "clipped": 0,
+      "dash_classified_px": 178,
+      "end_column": 356,
+      "end_GHz": 48.854041013269,
+      "strict_common_points": 195,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.7370325693606787
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_57ohm",
+      "colour": "orange",
+      "eligible_columns": 254,
+      "retained": 193,
+      "retained_fraction": 0.7598425196850394,
+      "single": 193,
+      "merged": 0,
+      "missing": 19,
+      "ambiguous": 42,
+      "clipped": 0,
+      "dash_classified_px": 332,
+      "end_column": 361,
+      "end_GHz": 49.819059107358264,
+      "strict_common_points": 193,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.158021712907118
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_83ohm",
+      "colour": "red",
+      "eligible_columns": 255,
+      "retained": 174,
+      "retained_fraction": 0.6823529411764706,
+      "single": 170,
+      "merged": 4,
+      "missing": 30,
+      "ambiguous": 51,
+      "clipped": 0,
+      "dash_classified_px": 353,
+      "end_column": 362,
+      "end_GHz": 50.01206272617611,
+      "strict_common_points": 173,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 5.9831121833534375
+    },
+    {
+      "panel": "fig7a",
+      "series": "EO_response_open",
+      "colour": "blue",
+      "eligible_columns": 255,
+      "retained": 202,
+      "retained_fraction": 0.792156862745098,
+      "single": 202,
+      "merged": 0,
+      "missing": 14,
+      "ambiguous": 39,
+      "clipped": 0,
+      "dash_classified_px": 834,
+      "end_column": 362,
+      "end_GHz": 50.01206272617611,
+      "strict_common_points": 199,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 2.316043425814236
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_38ohm",
+      "colour": "purple",
+      "eligible_columns": 562,
+      "retained": 560,
+      "retained_fraction": 0.99644128113879,
+      "single": 560,
+      "merged": 0,
+      "missing": 0,
+      "ambiguous": 2,
+      "clipped": 0,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 560,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 0.38600723763570954
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_57ohm",
+      "colour": "orange",
+      "eligible_columns": 562,
+      "retained": 454,
+      "retained_fraction": 0.8078291814946619,
+      "single": 447,
+      "merged": 7,
+      "missing": 9,
+      "ambiguous": 93,
+      "clipped": 6,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 454,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.9650180940892739
+    },
+    {
+      "panel": "fig7b",
+      "series": "S11_83ohm",
+      "colour": "red",
+      "eligible_columns": 562,
+      "retained": 532,
+      "retained_fraction": 0.9466192170818505,
+      "single": 530,
+      "merged": 2,
+      "missing": 20,
+      "ambiguous": 7,
+      "clipped": 3,
+      "dash_classified_px": null,
+      "end_column": 669,
+      "end_GHz": 109.26417370325693,
+      "strict_common_points": 529,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.1580217129071286
+    }
+  ],
+  "clipped": {
+    "EO_response_38ohm": [],
+    "EO_response_57ohm": [],
+    "EO_response_83ohm": [],
+    "EO_response_open": [],
+    "S11_38ohm": [],
+    "S11_57ohm": [
+      {
+        "x_pixel": 130,
+        "x_value": 5.235223160434257,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 131,
+        "x_value": 5.42822677925211,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 132,
+        "x_value": 5.621230398069963,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 186,
+        "x_value": 16.043425814234016,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 188,
+        "x_value": 16.429433051869722,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 189,
+        "x_value": 16.622436670687577,
+        "edge": "bottom"
+      }
+    ],
+    "S11_83ohm": [
+      {
+        "x_pixel": 504,
+        "x_value": 77.41857659831122,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 507,
+        "x_value": 77.99758745476478,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 508,
+        "x_value": 78.19059107358262,
+        "edge": "bottom"
+      }
+    ]
+  },
+  "reference_lines": {
+    "-1": {
+      "rows": [
+        139,
+        140
+      ],
+      "value": -1.0076335877862594,
+      "uncertainty": 0.0916030534351145
+    },
+    "-3": {
+      "rows": [
+        182,
+        183,
+        184
+      ],
+      "value": -3.0,
+      "uncertainty": 0.0916030534351145
+    }
+  },
+  "ticks": {
+    "fig7a": {
+      "ticks": [
+        {
+          "axis": "x",
+          "centre_px": 206.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 310.5,
+          "residual_px": 0.375
+        },
+        {
+          "axis": "x",
+          "centre_px": 414.0,
+          "residual_px": 0.25
+        },
+        {
+          "axis": "x",
+          "centre_px": 517.5,
+          "residual_px": 0.125
+        },
+        {
+          "axis": "x",
+          "centre_px": 621.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 206.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 310.5,
+          "residual_px": 0.375
+        },
+        {
+          "axis": "x",
+          "centre_px": 414.0,
+          "residual_px": 0.25
+        },
+        {
+          "axis": "x",
+          "centre_px": 517.5,
+          "residual_px": 0.125
+        },
+        {
+          "axis": "x",
+          "centre_px": 621.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 248.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 314.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 379.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 444.5,
+          "residual_px": 0.5
+        },
+        {
+          "axis": "y",
+          "centre_px": 117.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 248.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 314.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 379.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 444.5,
+          "residual_px": 0.5
+        }
+      ],
+      "excluded_reference_line_rows": [
+        139.5,
+        183.0,
+        139.5,
+        183.0
+      ],
+      "max_residual_px": 0.5
+    },
+    "fig7b": {
+      "ticks": [
+        {
+          "axis": "x",
+          "centre_px": 206.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 310.5,
+          "residual_px": 0.375
+        },
+        {
+          "axis": "x",
+          "centre_px": 414.0,
+          "residual_px": 0.25
+        },
+        {
+          "axis": "x",
+          "centre_px": 517.5,
+          "residual_px": 0.125
+        },
+        {
+          "axis": "x",
+          "centre_px": 621.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 206.5,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "x",
+          "centre_px": 310.5,
+          "residual_px": 0.375
+        },
+        {
+          "axis": "x",
+          "centre_px": 414.0,
+          "residual_px": 0.25
+        },
+        {
+          "axis": "x",
+          "centre_px": 517.5,
+          "residual_px": 0.125
+        },
+        {
+          "axis": "x",
+          "centre_px": 621.0,
+          "residual_px": 0.0
+        },
+        {
+          "axis": "y",
+          "centre_px": 712.0,
+          "residual_px": 0.21428571428566556
+        },
+        {
+          "axis": "y",
+          "centre_px": 774.5,
+          "residual_px": 0.4285714285714448
+        },
+        {
+          "axis": "y",
+          "centre_px": 836.5,
+          "residual_px": 0.14285714285711038
+        },
+        {
+          "axis": "y",
+          "centre_px": 898.5,
+          "residual_px": 0.14285714285711038
+        },
+        {
+          "axis": "y",
+          "centre_px": 961.0,
+          "residual_px": 0.07142857142855519
+        },
+        {
+          "axis": "y",
+          "centre_px": 1023.5,
+          "residual_px": 0.28571428571422075
+        },
+        {
+          "axis": "y",
+          "centre_px": 712.0,
+          "residual_px": 0.21428571428566556
+        },
+        {
+          "axis": "y",
+          "centre_px": 774.5,
+          "residual_px": 0.4285714285714448
+        },
+        {
+          "axis": "y",
+          "centre_px": 836.5,
+          "residual_px": 0.14285714285711038
+        },
+        {
+          "axis": "y",
+          "centre_px": 898.5,
+          "residual_px": 0.14285714285711038
+        },
+        {
+          "axis": "y",
+          "centre_px": 961.0,
+          "residual_px": 0.07142857142855519
+        },
+        {
+          "axis": "y",
+          "centre_px": 1023.5,
+          "residual_px": 0.28571428571422075
+        }
+      ],
+      "excluded_reference_line_rows": [],
+      "max_residual_px": 0.4285714285714448
+    }
+  }
+}

@@ -35,7 +35,8 @@ def gate_inputs():
             'm03_curves_hash_matches':entry is not None and entry['outputs'].get(str(M03.relative_to(ROOT)))==sha(M03),
             'm03_criterion_2':bool(c['2_reference_lines_pm0.09dB']),'m03_criterion_3':bool(c['3_tick_residual_le_1px']),
             'eo_38_usable':bool(c['4_retained_ge_70pct']['EO_response_38ohm'] and c['5_strict_median_le_1px']['EO_response_38ohm']),
-            's11_38_usable':bool(c['4_retained_ge_70pct']['S11_38ohm'] and c['5_strict_median_le_1px']['S11_38ohm'])}
+            's11_38_usable':bool(c['4_retained_ge_70pct']['S11_38ohm'] and c['5_strict_median_le_1px']['S11_38ohm']),
+            'usable_series':sorted(k for k,v in c['4_retained_ge_70pct'].items() if v and c['5_strict_median_le_1px'][k])}
 
 
 def flatness(s):
@@ -75,12 +76,12 @@ def run():
     s11={l:d[d.series==f'S11_{l}'].sort_values('x_value') for l in ('38ohm','57ohm','83ohm')}
     if gate['m03_criterion_2'] and gate['m03_criterion_3'] and gate['eo_38_usable']:
         res['U1a_initial_rise']=rise(eo['38ohm']);res['U1b_flatness_38ohm']=flatness(eo['38ohm'])
-        res['U1b_reported_other_loads']={l:flatness(s) for l,s in eo.items() if l!='38ohm' and len(s)}
+        res['U1b_reported_other_loads']={l:flatness(s) for l,s in eo.items() if l!='38ohm' and f'EO_response_{l}' in gate['usable_series']}
     else:res['U1']='not run (M03 Fig.7(a) calibration or 38-ohm EO series unusable)'
     if gate['m03_criterion_3'] and gate['s11_38_usable']:
         res['U2_s11_38ohm']=s11_below(s11['38ohm'],clipped['S11_38ohm'])
         res['U2_reported']={'38ohm_0_50GHz':s11_below(s11['38ohm'],clipped['S11_38ohm'],S11_SUB_BAND),
-                            **{l:s11_below(s,clipped[f'S11_{l}']) for l,s in s11.items() if l!='38ohm'}}
+                            **{l:s11_below(s,clipped[f'S11_{l}']) for l,s in s11.items() if l!='38ohm' and f'S11_{l}' in gate['usable_series']}}
     else:res['U2']='not run (M03 Fig.7(b) calibration or 38-ohm S11 series unusable)'
     (OUT/'results.json').write_text(json.dumps(res,indent=2)+'\n')
     fig,axs=plt.subplots(1,2,figsize=(13,4.8),layout='constrained')
