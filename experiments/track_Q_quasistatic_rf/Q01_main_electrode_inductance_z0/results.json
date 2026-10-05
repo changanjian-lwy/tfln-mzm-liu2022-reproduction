@@ -1,0 +1,280 @@
+{
+ "experiment": "Q01",
+ "layer": "Q-L2 (quasi-static RF cross-section, perfect conductors, 2D, high-frequency limit)",
+ "scope": "external inductance of the main CPW (s 80, g 20, t 4 um) and Z0(100 GHz) = c L / nm vs Fig.2(c); no T-rails",
+ "geometry_um": {
+  "s": 80.0,
+  "g": 20.0,
+  "t_au": 4.0,
+  "wg_nominal": 150.0,
+  "wg_endpoints": [
+   50.0,
+   500.0
+  ],
+  "wg_scan": [
+   20.0,
+   30.889,
+   47.7066,
+   73.6806,
+   113.796,
+   175.753,
+   271.442,
+   419.229,
+   647.479,
+   1000.0
+  ]
+ },
+ "nm": [
+  2.25,
+  0.0005
+ ],
+ "outer_boundary": "natural (BOUNDARY section 5)",
+ "budget": {
+  "wall_seconds": 1200,
+  "per_solve_seconds": 120,
+  "max_mesh_elements": 400000,
+  "max_solves": 80,
+  "max_new_disk_mb": 5,
+  "max_rss_gb": 8
+ },
+ "readings": {
+  "B_near_ohm": [
+   43.7799043062201,
+   48.803827751196174
+  ],
+  "B_wide_ohm": [
+   36.124401913875595,
+   55.74162679425837
+  ],
+  "n_near": 43,
+  "n_wide": 448,
+  "alpha_max_Np_per_m": 59.2093,
+  "n_alpha": 28,
+  "L_int_max_nH_per_m": 9.19802
+ },
+ "G1_start": {
+  "m": 2.0,
+  "d": 1.0,
+  "elements": 7728,
+  "cases": [
+   {
+    "case": "vacuum",
+    "C_exact_pF_per_m": 33.0115048,
+    "C_fem_pF_per_m": 33.019804,
+    "rel_err": 0.000251403
+   },
+   {
+    "case": "isotropic_4.5",
+    "C_exact_pF_per_m": 90.7816382,
+    "C_fem_pF_per_m": 90.8044021,
+    "rel_err": 0.000250753
+   },
+   {
+    "case": "anisotropic_27.9_44",
+    "C_exact_pF_per_m": 594.819833,
+    "C_fem_pF_per_m": 594.979792,
+    "rel_err": 0.000268922
+   }
+  ],
+  "pass": true
+ },
+ "G2_mesh": {
+  "rounds": [
+   {
+    "m": 2.0,
+    "fine": 1.0,
+    "change": {
+     "150.0": 7.82255e-05,
+     "50.0": 8.67932e-05,
+     "500.0": 8.70602e-05
+    },
+    "pass": true
+   }
+  ],
+  "accepted": 2.0
+ },
+ "G2_domain": {
+  "change": 2.37961e-05,
+  "pass": true
+ },
+ "G1_accepted": {
+  "m": 2.0,
+  "d": 1.0,
+  "elements": 7728,
+  "cases": [
+   {
+    "case": "vacuum",
+    "C_exact_pF_per_m": 33.0115048,
+    "C_fem_pF_per_m": 33.019804,
+    "rel_err": 0.000251403
+   },
+   {
+    "case": "isotropic_4.5",
+    "C_exact_pF_per_m": 90.7816382,
+    "C_fem_pF_per_m": 90.8044021,
+    "rel_err": 0.000250753
+   },
+   {
+    "case": "anisotropic_27.9_44",
+    "C_exact_pF_per_m": 594.819833,
+    "C_fem_pF_per_m": 594.979792,
+    "rel_err": 0.000268922
+   }
+  ],
+  "pass": true
+ },
+ "configs": {
+  "150.0": {
+   "L_ext_nH_per_m": 299.017566,
+   "L_thin_exact_nH_per_m": 337.049178,
+   "thickness_reduction": 0.112837,
+   "Z0_pred_ohm": [
+    39.8281598,
+    41.0806625
+   ],
+   "elements": 14890
+  },
+  "50.0": {
+   "L_ext_nH_per_m": 314.367496,
+   "L_thin_exact_nH_per_m": 358.115652,
+   "thickness_reduction": 0.122162,
+   "Z0_pred_ohm": [
+    41.8727201,
+    43.1265852
+   ],
+   "elements": 12372
+  },
+  "500.0": {
+   "L_ext_nH_per_m": 294.730986,
+   "L_thin_exact_nH_per_m": 331.448291,
+   "thickness_reduction": 0.110778,
+   "Z0_pred_ohm": [
+    39.2572013,
+    40.5093235
+   ],
+   "elements": 26782
+  }
+ },
+ "wg_scan": [
+  {
+   "wg_um": 20.0,
+   "L_ext_nH_per_m": 340.883271,
+   "Z0_pred_ohm": [
+    45.4045345,
+    46.6607531
+   ],
+   "reaches_B_near": true
+  },
+  {
+   "wg_um": 30.889,
+   "L_ext_nH_per_m": 326.756156,
+   "Z0_pred_ohm": [
+    43.5228491,
+    44.7778138
+   ],
+   "reaches_B_near": true
+  },
+  {
+   "wg_um": 47.7066,
+   "L_ext_nH_per_m": 315.412961,
+   "Z0_pred_ohm": [
+    42.0119727,
+    43.2659306
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 73.6806,
+   "L_ext_nH_per_m": 307.051039,
+   "Z0_pred_ohm": [
+    40.898192,
+    42.1514077
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 113.796,
+   "L_ext_nH_per_m": 301.423202,
+   "Z0_pred_ohm": [
+    40.1485826,
+    41.4012988
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 175.753,
+   "L_ext_nH_per_m": 297.961022,
+   "Z0_pred_ohm": [
+    39.6874316,
+    40.9398405
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 271.442,
+   "L_ext_nH_per_m": 296.006237,
+   "Z0_pred_ohm": [
+    39.4270606,
+    40.6792959
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 419.229,
+   "L_ext_nH_per_m": 294.982532,
+   "Z0_pred_ohm": [
+    39.2907065,
+    40.542851
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 647.479,
+   "L_ext_nH_per_m": 294.479012,
+   "Z0_pred_ohm": [
+    39.2236392,
+    40.4757391
+   ],
+   "reaches_B_near": false
+  },
+  {
+   "wg_um": 1000.0,
+   "L_ext_nH_per_m": 294.243805,
+   "Z0_pred_ohm": [
+    39.1923105,
+    40.4443894
+   ],
+   "reaches_B_near": false
+  }
+ ],
+ "verdict": {
+  "Z0_pred_ohm": [
+   39.2572013,
+   43.1265852
+  ],
+  "u_rel": 0.000110856,
+  "u_parts": {
+   "mesh": 8.70602e-05,
+   "domain": 2.37961e-05
+  },
+  "B_near_ohm": [
+   43.7799,
+   48.8038
+  ],
+  "B_wide_ohm": [
+   36.1244,
+   55.7416
+  ],
+  "verdict": "undetermined",
+  "L_imp_nH_per_m": [
+   328.577,
+   366.282
+  ],
+  "wg_scanned_reaching_B_near_um": [
+   20.0,
+   30.889
+  ]
+ },
+ "status": "COMPLETE",
+ "solves": 20
+}
