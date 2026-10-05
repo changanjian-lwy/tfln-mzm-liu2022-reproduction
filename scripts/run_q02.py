@@ -177,7 +177,7 @@ def run():
             for side,pick in (('lo',min),('hi',max)):
                 choice={fac:pick([nom]+ends,key=lambda v,fac=fac:value(fac,v,q)) for fac,(nom,ends) in FACTORS.items()}
                 c=cfg(**choice);ck=key(c)
-                if ck not in {key(x['cfg']) for x in corners.values()}:
+                if ck not in {key(x['cfg']) for x in corners.values() if 'cfg' in x}:
                     a,f,mc=mesh_change(c,m);corners[f'{q}_{side}']={'cfg':c,'rec':a,'fine':f,'mesh':mc}
                 else:
                     corners[f'{q}_{side}']={'same_as':[k for k,x in corners.items() if 'cfg' in x and key(x['cfg'])==ck][0]}
