@@ -1,0 +1,2226 @@
+{
+ "elapsed_s": 452.2,
+ "peak_rss_gb": 1.076,
+ "events": [
+  {
+   "mesh": "gates m=2.0",
+   "elements": 7728,
+   "seconds": 0.35
+  },
+  {
+   "solve": "gates m=2.0",
+   "seconds": 0.06,
+   "rss_gb": 0.191
+  },
+  {
+   "solve": "gates m=2.0",
+   "seconds": 0.05,
+   "rss_gb": 0.197
+  },
+  {
+   "solve": "gates m=2.0",
+   "seconds": 0.05,
+   "rss_gb": 0.198
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18717,
+   "seconds": 1.0
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.14,
+   "rss_gb": 0.292
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18985,
+   "seconds": 1.07
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.349
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 22821,
+   "seconds": 1.9
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.423
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 24295,
+   "seconds": 1.56
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.451
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.469
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 22169,
+   "seconds": 1.75
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.469
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 23795,
+   "seconds": 1.5
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.469
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18346,
+   "seconds": 0.85
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.473
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 22132,
+   "seconds": 1.57
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.473
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 24472,
+   "seconds": 1.39
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.505
+  },
+  {
+   "mesh": "U t=0.5 m=1.0 d=1.0",
+   "elements": 66266,
+   "seconds": 2.0
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.63,
+   "rss_gb": 0.624
+  },
+  {
+   "mesh": "H t=0.5 m=1.0 d=1.0",
+   "elements": 78490,
+   "seconds": 3.27
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.81,
+   "rss_gb": 0.757
+  },
+  {
+   "mesh": "N t=0.5 m=1.0 d=1.0",
+   "elements": 84492,
+   "seconds": 2.94
+  },
+  {
+   "solve": "N t=0.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.72,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "U t=1.5 m=1.0 d=1.0",
+   "elements": 65094,
+   "seconds": 1.8
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.55,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "H t=1.5 m=1.0 d=1.0",
+   "elements": 77008,
+   "seconds": 2.76
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.74,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "N t=1.5 m=1.0 d=1.0",
+   "elements": 82238,
+   "seconds": 2.48
+  },
+  {
+   "solve": "N t=1.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.69,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "U t=3.5 m=1.0 d=1.0",
+   "elements": 67101,
+   "seconds": 1.77
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.58,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "H t=3.5 m=1.0 d=1.0",
+   "elements": 80545,
+   "seconds": 2.61
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.8,
+   "rss_gb": 0.76
+  },
+  {
+   "mesh": "N t=3.5 m=1.0 d=1.0",
+   "elements": 86707,
+   "seconds": 2.69
+  },
+  {
+   "solve": "N t=3.5 m=1.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.76,
+   "rss_gb": 0.825
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 vac air",
+   "seconds": 0.57,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=2.0",
+   "elements": 40557,
+   "seconds": 1.42
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.41,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=2.0",
+   "elements": 44207,
+   "seconds": 2.22
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.46,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=2.0",
+   "elements": 45805,
+   "seconds": 1.9
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.45,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=2.0",
+   "elements": 40173,
+   "seconds": 1.28
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.43,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=2.0",
+   "elements": 43669,
+   "seconds": 2.09
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.42,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=2.0",
+   "elements": 45391,
+   "seconds": 1.84
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.43,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=2.0",
+   "elements": 39994,
+   "seconds": 1.14
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.41,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=2.0",
+   "elements": 43816,
+   "seconds": 1.84
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.44,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=2.0",
+   "elements": 46202,
+   "seconds": 1.7
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=2.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.45,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=2.0 vac air",
+   "seconds": 0.4,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18985,
+   "seconds": 1.09
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 22207,
+   "seconds": 1.9
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 24295,
+   "seconds": 1.56
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18717,
+   "seconds": 0.99
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 21845,
+   "seconds": 1.73
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 23795,
+   "seconds": 1.52
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18346,
+   "seconds": 0.87
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 21954,
+   "seconds": 1.55
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 24472,
+   "seconds": 1.39
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18985,
+   "seconds": 1.13
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 22537,
+   "seconds": 1.92
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 24295,
+   "seconds": 1.59
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18717,
+   "seconds": 1.0
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 22203,
+   "seconds": 1.83
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 23795,
+   "seconds": 1.72
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.18,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18346,
+   "seconds": 0.95
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 23160,
+   "seconds": 1.7
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 24472,
+   "seconds": 1.41
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18985,
+   "seconds": 1.15
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 21871,
+   "seconds": 1.96
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 22165,
+   "seconds": 1.63
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18717,
+   "seconds": 1.02
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 21825,
+   "seconds": 1.89
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 22145,
+   "seconds": 1.52
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18346,
+   "seconds": 0.87
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 25584,
+   "seconds": 1.55
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.21,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 25252,
+   "seconds": 1.39
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18985,
+   "seconds": 1.09
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 23441,
+   "seconds": 1.9
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 25267,
+   "seconds": 1.54
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18717,
+   "seconds": 1.0
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 22639,
+   "seconds": 1.79
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 25143,
+   "seconds": 1.53
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18346,
+   "seconds": 0.85
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 22442,
+   "seconds": 1.56
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 24946,
+   "seconds": 1.4
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18999,
+   "seconds": 1.06
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 22537,
+   "seconds": 1.88
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 24229,
+   "seconds": 1.63
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18633,
+   "seconds": 1.0
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 22383,
+   "seconds": 1.78
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 24101,
+   "seconds": 1.56
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18412,
+   "seconds": 0.83
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 22202,
+   "seconds": 1.54
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 32106,
+   "seconds": 1.53
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.25,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 18959,
+   "seconds": 1.14
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 22695,
+   "seconds": 1.93
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 23767,
+   "seconds": 1.63
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 18419,
+   "seconds": 1.03
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 22025,
+   "seconds": 1.74
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 23861,
+   "seconds": 1.53
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 18422,
+   "seconds": 0.89
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 22688,
+   "seconds": 1.57
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 24960,
+   "seconds": 1.5
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.17,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.5, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.8, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.21,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'fused') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') pec",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac pec",
+   "seconds": 0.12,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 16395,
+   "seconds": 0.81
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 20155,
+   "seconds": 1.49
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 21571,
+   "seconds": 1.24
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 16131,
+   "seconds": 0.74
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 19535,
+   "seconds": 1.43
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 21239,
+   "seconds": 1.19
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 16002,
+   "seconds": 0.65
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 19762,
+   "seconds": 1.24
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 22156,
+   "seconds": 1.2
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.11,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 30391,
+   "seconds": 2.03
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.2,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 34313,
+   "seconds": 3.23
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 35685,
+   "seconds": 2.58
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.23,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 29969,
+   "seconds": 1.76
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.2,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 33815,
+   "seconds": 2.95
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.23,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 35477,
+   "seconds": 2.4
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.22,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 29432,
+   "seconds": 1.58
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 34524,
+   "seconds": 2.63
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 36598,
+   "seconds": 2.28
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 30221,
+   "seconds": 2.0
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.2,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 33957,
+   "seconds": 3.25
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.23,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 39635,
+   "seconds": 3.14
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 29897,
+   "seconds": 1.82
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 34107,
+   "seconds": 2.94
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.23,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 39909,
+   "seconds": 2.83
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 29564,
+   "seconds": 1.81
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 33582,
+   "seconds": 2.74
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.24,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 43516,
+   "seconds": 2.59
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.28,
+   "rss_gb": 0.866
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac pec",
+   "seconds": 0.19,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=0.5 m=1.0 d=1.0",
+   "elements": 105815,
+   "seconds": 3.59
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.0,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=0.5 m=1.0 d=1.0",
+   "elements": 119531,
+   "seconds": 5.03
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.18,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=0.5 m=1.0 d=1.0",
+   "elements": 139301,
+   "seconds": 4.83
+  },
+  {
+   "solve": "N t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.2,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=1.5 m=1.0 d=1.0",
+   "elements": 105324,
+   "seconds": 3.32
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.0,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "H t=1.5 m=1.0 d=1.0",
+   "elements": 119290,
+   "seconds": 4.77
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.15,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "N t=1.5 m=1.0 d=1.0",
+   "elements": 140470,
+   "seconds": 4.71
+  },
+  {
+   "solve": "N t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.17,
+   "rss_gb": 0.866
+  },
+  {
+   "mesh": "U t=3.5 m=1.0 d=1.0",
+   "elements": 105454,
+   "seconds": 3.04
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 0.95,
+   "rss_gb": 0.875
+  },
+  {
+   "mesh": "H t=3.5 m=1.0 d=1.0",
+   "elements": 119140,
+   "seconds": 4.43
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.12,
+   "rss_gb": 0.875
+  },
+  {
+   "mesh": "N t=3.5 m=1.0 d=1.0",
+   "elements": 146482,
+   "seconds": 4.45
+  },
+  {
+   "solve": "N t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'fused') pec",
+   "seconds": 1.23,
+   "rss_gb": 0.875
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 vac pec",
+   "seconds": 0.97,
+   "rss_gb": 0.952
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 16395,
+   "seconds": 0.8
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 18831,
+   "seconds": 1.4
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 16131,
+   "seconds": 0.73
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 18767,
+   "seconds": 1.28
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 16002,
+   "seconds": 0.72
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 27446,
+   "seconds": 1.3
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.26,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "U t=0.5 m=1.0 d=1.0",
+   "elements": 56684,
+   "seconds": 1.43
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.55,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=0.5 m=1.0 d=1.0",
+   "elements": 66022,
+   "seconds": 2.26
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.68,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "U t=1.5 m=1.0 d=1.0",
+   "elements": 56724,
+   "seconds": 1.27
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.56,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=1.5 m=1.0 d=1.0",
+   "elements": 66852,
+   "seconds": 2.05
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.69,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "U t=3.5 m=1.0 d=1.0",
+   "elements": 58697,
+   "seconds": 1.22
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 0.54,
+   "rss_gb": 0.954
+  },
+  {
+   "mesh": "H t=3.5 m=1.0 d=1.0",
+   "elements": 99983,
+   "seconds": 2.28
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.9, 'quartz') air",
+   "seconds": 1.83,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 vac air",
+   "seconds": 0.58,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.11,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.27,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.52,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.64,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.54,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.68,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 0.53,
+   "rss_gb": 0.954
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'quartz') air",
+   "seconds": 1.42,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 30391,
+   "seconds": 2.32
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.2,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 33303,
+   "seconds": 3.21
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.31,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 29969,
+   "seconds": 4.2
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.23,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 33437,
+   "seconds": 4.08
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.31,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 29432,
+   "seconds": 2.35
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.26,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 45832,
+   "seconds": 4.08
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 0.67,
+   "rss_gb": 0.972
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac pec",
+   "seconds": 0.26,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=0.5 m=1.0 d=1.0",
+   "elements": 106495,
+   "seconds": 5.14
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 1.43,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=0.5 m=1.0 d=1.0",
+   "elements": 115235,
+   "seconds": 7.71
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 2.05,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=1.5 m=1.0 d=1.0",
+   "elements": 105401,
+   "seconds": 4.4
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 1.28,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=1.5 m=1.0 d=1.0",
+   "elements": 114811,
+   "seconds": 5.19
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 1.47,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "U t=3.5 m=1.0 d=1.0",
+   "elements": 106608,
+   "seconds": 4.94
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 1.47,
+   "rss_gb": 0.972
+  },
+  {
+   "mesh": "H t=3.5 m=1.0 d=1.0",
+   "elements": 144490,
+   "seconds": 6.45
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.5, 0.95, 3.8, 'fused') pec",
+   "seconds": 2.47,
+   "rss_gb": 0.972
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 vac pec",
+   "seconds": 1.26,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=0.5 m=2.0 d=1.0",
+   "elements": 16357,
+   "seconds": 1.22
+  },
+  {
+   "solve": "U t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=0.5 m=2.0 d=1.0",
+   "elements": 20161,
+   "seconds": 2.19
+  },
+  {
+   "solve": "H t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.19,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=0.5 m=2.0 d=1.0",
+   "elements": 25815,
+   "seconds": 4.55
+  },
+  {
+   "solve": "N t=0.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 1.69,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=1.5 m=2.0 d=1.0",
+   "elements": 16147,
+   "seconds": 3.13
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.21,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=1.5 m=2.0 d=1.0",
+   "elements": 20187,
+   "seconds": 2.0
+  },
+  {
+   "solve": "H t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.18,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=1.5 m=2.0 d=1.0",
+   "elements": 26217,
+   "seconds": 2.37
+  },
+  {
+   "solve": "N t=1.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.26,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=3.5 m=2.0 d=1.0",
+   "elements": 16076,
+   "seconds": 1.18
+  },
+  {
+   "solve": "U t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.23,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=3.5 m=2.0 d=1.0",
+   "elements": 20048,
+   "seconds": 3.09
+  },
+  {
+   "solve": "H t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.26,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=3.5 m=2.0 d=1.0",
+   "elements": 29952,
+   "seconds": 1.97
+  },
+  {
+   "solve": "N t=3.5 m=2.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.19,
+   "rss_gb": 1.076
+  },
+  {
+   "solve": "U t=1.5 m=2.0 d=1.0 vac air",
+   "seconds": 0.1,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=0.5 m=1.0 d=1.0",
+   "elements": 56628,
+   "seconds": 4.95
+  },
+  {
+   "solve": "U t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.88,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=0.5 m=1.0 d=1.0",
+   "elements": 70190,
+   "seconds": 2.91
+  },
+  {
+   "solve": "H t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.7,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=0.5 m=1.0 d=1.0",
+   "elements": 89832,
+   "seconds": 3.0
+  },
+  {
+   "solve": "N t=0.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.8,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=1.5 m=1.0 d=1.0",
+   "elements": 56711,
+   "seconds": 1.45
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.58,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=1.5 m=1.0 d=1.0",
+   "elements": 70701,
+   "seconds": 2.34
+  },
+  {
+   "solve": "H t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.72,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=1.5 m=1.0 d=1.0",
+   "elements": 91899,
+   "seconds": 2.59
+  },
+  {
+   "solve": "N t=1.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.84,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=3.5 m=1.0 d=1.0",
+   "elements": 58605,
+   "seconds": 1.36
+  },
+  {
+   "solve": "U t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.54,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=3.5 m=1.0 d=1.0",
+   "elements": 72745,
+   "seconds": 2.24
+  },
+  {
+   "solve": "H t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.71,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=3.5 m=1.0 d=1.0",
+   "elements": 100403,
+   "seconds": 2.58
+  },
+  {
+   "solve": "N t=3.5 m=1.0 d=1.0 (2.65, 1.0, 4.5, 'quartz') air",
+   "seconds": 0.86,
+   "rss_gb": 1.076
+  },
+  {
+   "solve": "U t=1.5 m=1.0 d=1.0 vac air",
+   "seconds": 0.54,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=0.0 m=2.0 d=1.0",
+   "elements": 24395,
+   "seconds": 0.98
+  },
+  {
+   "solve": "U t=0.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.24,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=0.0 m=2.0 d=1.0",
+   "elements": 28201,
+   "seconds": 1.85
+  },
+  {
+   "solve": "H t=0.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.26,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=0.0 m=2.0 d=1.0",
+   "elements": 26603,
+   "seconds": 1.22
+  },
+  {
+   "solve": "N t=0.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.2,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=1.0 m=2.0 d=1.0",
+   "elements": 18809,
+   "seconds": 1.2
+  },
+  {
+   "solve": "U t=1.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.24,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=1.0 m=2.0 d=1.0",
+   "elements": 22119,
+   "seconds": 1.83
+  },
+  {
+   "solve": "H t=1.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.18,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=1.0 m=2.0 d=1.0",
+   "elements": 23431,
+   "seconds": 1.55
+  },
+  {
+   "solve": "N t=1.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=2.0 m=2.0 d=1.0",
+   "elements": 18597,
+   "seconds": 0.96
+  },
+  {
+   "solve": "U t=2.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.13,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=2.0 m=2.0 d=1.0",
+   "elements": 22031,
+   "seconds": 2.11
+  },
+  {
+   "solve": "H t=2.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=2.0 m=2.0 d=1.0",
+   "elements": 23873,
+   "seconds": 1.51
+  },
+  {
+   "solve": "N t=2.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=2.5 m=2.0 d=1.0",
+   "elements": 18274,
+   "seconds": 0.9
+  },
+  {
+   "solve": "U t=2.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=2.5 m=2.0 d=1.0",
+   "elements": 21810,
+   "seconds": 1.54
+  },
+  {
+   "solve": "H t=2.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=2.5 m=2.0 d=1.0",
+   "elements": 23592,
+   "seconds": 1.4
+  },
+  {
+   "solve": "N t=2.5 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=3.0 m=2.0 d=1.0",
+   "elements": 18286,
+   "seconds": 0.96
+  },
+  {
+   "solve": "U t=3.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=3.0 m=2.0 d=1.0",
+   "elements": 21772,
+   "seconds": 1.53
+  },
+  {
+   "solve": "H t=3.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.15,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=3.0 m=2.0 d=1.0",
+   "elements": 23840,
+   "seconds": 1.4
+  },
+  {
+   "solve": "N t=3.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.14,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "U t=4.0 m=2.0 d=1.0",
+   "elements": 18245,
+   "seconds": 0.82
+  },
+  {
+   "solve": "U t=4.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.12,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "H t=4.0 m=2.0 d=1.0",
+   "elements": 22787,
+   "seconds": 1.52
+  },
+  {
+   "solve": "H t=4.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.17,
+   "rss_gb": 1.076
+  },
+  {
+   "mesh": "N t=4.0 m=2.0 d=1.0",
+   "elements": 24815,
+   "seconds": 1.37
+  },
+  {
+   "solve": "N t=4.0 m=2.0 d=1.0 (2.65, 1.0, 3.9, 'quartz') air",
+   "seconds": 0.16,
+   "rss_gb": 1.076
+  }
+ ]
+}
