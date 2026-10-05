@@ -4,9 +4,38 @@ An independent PIC learning and reproducibility project based on EEK5103 and:
 
 Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator With Ultra-Flat Frequency Response*, IEEE Photonics Technology Letters **34**(16), 854–857 (2022). [DOI: 10.1109/LPT.2022.3178214](https://doi.org/10.1109/LPT.2022.3178214).
 
+## Summary
+
+A self-directed reproduction of a published thin-film lithium niobate (TFLN) traveling-wave Mach–Zehnder modulator, done alongside the EEK5103 photonics course. The question is not whether the paper's figures can be redrawn, but **which of its results can be reproduced from the published information alone, which cannot, and why**. Every experiment commits its numeric pass/fail criteria before it runs, and failures are registered alongside successes.
+
+**Status (2026-10-05):** paused after 31 registered experiments (67 tests). Full reproduction of the paper is **not** established.
+
+| Question | What was done | Result |
+|---|---|---|
+| RF/EO frequency response (paper Eq. 1–4, Figure 3) | Transmission-line model; the paper's Fig. 2 curves, digitized with uncertainty, are the only inputs; no fitting | 4 of 17 scorable series reproduce within readout precision: 40 Ω average voltage (inset and main panel) and EO response, and 50 Ω EO response (first −3 dB crossing 141.82 vs 141.78 GHz). 5 more failures lie within input readout precision; S11 and the open load do not reproduce; 6 failures remain unexplained ([Figure 3 status](docs/FIGURE3_STATUS.md)) |
+| Optical group index from the cross-section | Anisotropic-LN optical mode FEM (femwell) over declared ranges of the unstated parameters (wavelength, sidewall angle, electrode geometry) | ng 2.281–2.286 vs the paper's "~2.25": undetermined under the pre-declared rule ([O01](experiments/track_O_optical/O01_optical_mode_ng/RESULTS.md)) |
+| Electro-optic overlap and VπL | Anisotropic quasi-static FEM (scikit-fem) plus overlap integral, two VπL conventions | Overlap Γ 0.39–0.45; device VπL 1.66–2.23 V·cm vs measured 1.62 V·cm: undetermined. Agreement would need near-continuous T-rail electrodes (duty cycle at least 0.90–0.97 depending on convention, vs 0.9 in the cited design) ([O02](experiments/track_O_optical/O02_eo_overlap_vpil/RESULTS.md)) |
+| The paper's claims about its measured data (Figs. 6–7) | Measured curves digitized with uncertainty; each text claim checked against them | "<1 dB ripple to 50 GHz" is undetermined at readout precision (1.15 dB peak-to-peak, bounds 0.92–1.37 dB); "S11 below −10 dB" fails for the 38 Ω device (15.4% of points above) ([M04](experiments/track_M_measurement/M04_fig7_statement_checks/RESULTS.md)) |
+| Design space with machine learning | Gaussian-process Bayesian optimization (NumPy/SciPy) over termination impedance and length | Finds the 64 311-point grid optimum in 30/30 seeds (median 9–12.5 evaluations; random search 1/90). The unconstrained optimum is shown not to be a usable design (large ripple, outside input-data coverage) ([B05](experiments/track_B_extensions/B05_joint_zl_length_bo/RESULTS.md)) |
+| RF cross-section FEM | Method gate: reproduce a published CPW benchmark before trusting femwell for Z0(f) | Failed on low-frequency numerical breakdown near 50 MHz; the track was paused, not forced ([A17](experiments/track_A_reproduction/A17_femwell_cpw_method_gate/RESULTS.md)) |
+
+![Figure 3 panels: digitized author calculation (dots) vs model (lines), no parameter fit](experiments/track_A_reproduction/A04_digitized_comparison/comparison.png)
+
+*Figure 3 panels: dots are the digitized author calculation, lines are the model with no parameter fit (A04). Gaps are regions where the source curve could not be read.*
+
+**Method**
+
+- **Boundary first.** Scope, numeric criteria and predictions are committed before each run. Criteria are never relaxed afterwards, and wrong predictions are reported.
+- **Reproducible evidence.** `python scripts/check_evidence.py --replay` regenerates the outputs of 27 experiments in a clean copy and requires byte-identical files. The FEM experiments (A17, O01, O02) and the unrun A17b are hash-checked only, because FEM eigen-solves vary in their last digits between runs. Errors found later go into the [errata](docs/ERRATA.md), never into registered files.
+- **Uncertainty, not fitting.** Digitized curves carry calibration, masks and readout uncertainty. Parameters the paper does not state become declared ranges, and results are reported as intervals.
+
+**Tools:** Python (NumPy, SciPy, pandas, Matplotlib); femwell, scikit-fem and gmsh for FEM. A survey of an open-source PIC design flow (gdsfactory, SAX, Luxtelligence TFLN PDK) is in [docs/PIC_DESIGN_FLOW_zh.md](docs/PIC_DESIGN_FLOW_zh.md). The experiment index and this summary are in English; most working documents (boundaries, decision log, worklog, result reports) are in Chinese.
+
+## Detailed status (development log)
+
 **Primary target:** paper equations (1)–(4) and Figure 3 average voltage, EO response and S11. Course-based static MZM material is auxiliary background, not a reproduction milestone.
 
-**Status:** A01–A02 analytical model and bandwidth logic pass the current 42-test suite (the 4 FEM tests skip without the optional FEM dependencies). A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
+**Initial status (A01–A05, 2026-09):** A01–A02 analytical model and bandwidth logic pass the current 42-test suite (the 4 FEM tests skip without the optional FEM dependencies). A03 extracts paper input/target curves with raster uncertainty and missing-region masks. A04 performs an independent, unfitted comparison: 40/50-ohm EO curves agree closely on supported samples, but S11 and several other series fail the predeclared diagnostic. Full Figure 3 reproduction is **not** established. Missing dispersion and normalization/input conventions require further audit.
 
 [A05 cause audit](experiments/track_A_reproduction/A05_convention_audit/RESULTS.md): cross-panel reference differences explain part of the 20-ohm offset; phase-independent bounds rule out microwave-phase-only correction for many S11 samples. Full reproduction remains unresolved.
 
@@ -16,7 +45,7 @@ Xuecheng Liu et al., *Capacitively-Loaded Thin-Film Lithium Niobate Modulator Wi
 
 [A03 extraction](experiments/track_A_reproduction/A03_digitization/RESULTS.md) · [A04 comparison and failures](experiments/track_A_reproduction/A04_digitized_comparison/RESULTS.md)
 
-Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step. Every registered experiment except A17 (A00–A16, B01–B04) can be regenerated and byte-compared in a temporary copy; A17 (femwell, optional dependencies in `requirements-fem-lock.txt`) is hash-checked only because its FEM solves vary at the 1e-4 level between runs, and A17b was not run (G1 failed; SC-01 paused); all are checked with `python scripts/check_evidence.py --replay`; the individual entry points are `scripts/run_a0*.py`, `scripts/run_a1*.py`, `scripts/run_b01.py` and `scripts/run_b02_b04.py --study B02|B03|B04` (A03/A06 digitization needs local paper rasters). Open decisions for the project owner are listed in [docs/DECISIONS_PENDING.md](docs/DECISIONS_PENDING.md).
+Run `python scripts/run_a04.py` to reproduce the numerical comparison from committed digitized data; no PDF required for that step. As of 2026-10-04 (the current list is in the summary above), every registered experiment except A17 (A00–A16, B01–B04) can be regenerated and byte-compared in a temporary copy; A17 (femwell, optional dependencies in `requirements-fem-lock.txt`) is hash-checked only because its FEM solves vary at the 1e-4 level between runs, and A17b was not run (G1 failed; SC-01 paused); all are checked with `python scripts/check_evidence.py --replay`; the individual entry points are `scripts/run_a0*.py`, `scripts/run_a1*.py`, `scripts/run_b01.py` and `scripts/run_b02_b04.py --study B02|B03|B04` (A03/A06 digitization needs local paper rasters). Open decisions for the project owner are listed in [docs/DECISIONS_PENDING.md](docs/DECISIONS_PENDING.md).
 
 [A02 boundary](experiments/track_A_reproduction/A02_frequency_response/BOUNDARY.md) · [A02 results](experiments/track_A_reproduction/A02_frequency_response/RESULTS.md)
 
@@ -91,4 +120,4 @@ The finite extension will vary length, RF loss and microwave–optical group-vel
 
 [GitHub repository](https://github.com/changanjian-lwy/tfln-mzm-liu2022-reproduction) · [Experiment index](experiments/README.md) · [Tools and working process](docs/TOOLS_AND_WORKFLOW_zh.md)
 
-This is a work-in-progress reproduction, not a completed paper validation. Course slides, publisher PDFs, personal assignments, credentials and the local Python environment are excluded. The original paper is cited by DOI. A redistribution license for original code has not yet been selected; public visibility alone does not grant a reuse license.
+The project is paused (2026-10-05). It is a partial reproduction, not a completed paper validation. Course slides, publisher PDFs, personal assignments, credentials and the local Python environment are excluded. The original paper is cited by DOI. A redistribution license for original code has not yet been selected; public visibility alone does not grant a reuse license.
