@@ -835,6 +835,38 @@
     "ref10_liu_col2021.pdf": "d62a71b62b2cf4312e0f90fe67a01711ff09e827fa7ec9e3a01aa4890ed2407c"
    },
    "replay_note": "Not replayed: the full run takes 10.9 min (over the 10-min replay limit in the O01 boundary, section 4), and ARPACK start vectors make the last digits run-dependent. Re-run with: PYTHONPATH=src python scripts/run_o01.py (needs requirements-fem-lock.txt); the ref10 PDF is a source document, not read by the script."
+  },
+  {
+   "id": "O02_eo_overlap_vpil",
+   "dir": "experiments/track_O_optical/O02_eo_overlap_vpil",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "O-L2 (optical + quasi-static, SC-05)",
+   "recorded_commit": "2f66d0f",
+   "documents": {
+    "experiments/track_O_optical/O02_eo_overlap_vpil/BOUNDARY.md": "fce719ae7dc69d34591fead59a5d897067f1d797605f332de9af38aa15faa094",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/INPUTS.md": "e08db63dcf7148a64b7d26ca148f4bbf524a56af4d9e9456b9ac9808c72df3c5",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/RESULTS.md": "0ee3a09e03c6bf278bf38c7a1539f2b24d0b1098d1182bea8ce0330f2b617a7d"
+   },
+   "inputs": {
+    "data/external/optical_materials/LiNbO3_Zelmon-e.yml": "aae97bf9e9550a189b12678a32351521a78d2bb8c7d826d1d909d83177566cb4",
+    "data/external/optical_materials/LiNbO3_Zelmon-o.yml": "d254398af5abdff90c93ba37d3d1f8178038b5f7378bcf54f33aebd655c62a87",
+    "data/external/optical_materials/SiO2_Malitson.yml": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52",
+    "data/external/optical_materials/SiO2-quartz_Ghosh-o.yml": "c63dabfdfe9921c8c19264ff6126d68cd78abb1552e40f536c2ffaa083773e7d",
+    "data/external/optical_materials/Au_Olmon-ev.yml": "be778621e6491fc4e2db6eee400fb329d44ada2b987f7bfd2e219c83fe32a338",
+    "data/external/dc_materials/SOURCE.md": "c1ba2ab8d2467007f8439abf37e605fc2c73b6b9e65b6acd2b429c3350cf0dff",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/BUDGET.json": "b769d332f9c52c9098a91704454bf8fba76099e169054a8154bbbf0f18dbd351"
+   },
+   "outputs": {
+    "experiments/track_O_optical/O02_eo_overlap_vpil/results.json": "a6db3e02e6fe96a6be19743594c6b3fbb1793e90098f09e6b1921d8625967be9",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/run_log.json": "6e5732e67a4af2deb26d66d3bdab5a54674c522a4d3be5e887506fcf15ae5550",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/o02_vpil.png": "ad6762d595490f31bf33429ae1e3524a420edb5972a6e16b39009b0b2686dea2",
+    "experiments/track_O_optical/O02_eo_overlap_vpil/OBSERVATION_posthoc.md": "69d3bab9678e7428dc61f1336e3ef4734bd71e99f3e5908329971ffc986e2da6"
+   },
+   "local_inputs": {
+    "crystal_technology_LN_properties.pdf": "a83393d0ef69c9a92133668b5a9b1a47fe6a83f80300156ece57cfe6338e384d",
+    "ref10_liu_col2021.pdf": "d62a71b62b2cf4312e0f90fe67a01711ff09e827fa7ec9e3a01aa4890ed2407c"
+   },
+   "replay_note": "Not replayed: two consecutive complete runs (13:38 and 13:44) differ in 13 JSON leaves at <=7.2e-5 relative (imaginary parts of n_eff, a 7e-9 linearity metric; ARPACK start vectors), so byte-identical replay is impossible although the run takes 290 s; every Gamma, VpiL and verdict is identical. Re-run with: PYTHONPATH=src python scripts/run_o02.py (needs requirements-fem-lock.txt). The two PDFs are source documents, not read by the script."
   }
  ]
 }

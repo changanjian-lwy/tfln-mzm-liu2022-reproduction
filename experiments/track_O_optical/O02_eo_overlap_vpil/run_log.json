@@ -1,0 +1,922 @@
+{
+ "elapsed_s": 290.1,
+ "peak_rss_gb": 2.312,
+ "events": [
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical"
+   },
+   "elements": 4144,
+   "seconds": 0.16
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0
+   },
+   "seconds": 2.82,
+   "rss_gb": 0.509
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0
+   },
+   "elements": 21578,
+   "seconds": 0.36
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 0.638
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 0.801
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": "optical"
+   },
+   "elements": 13755,
+   "seconds": 0.26
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 0
+   },
+   "seconds": 13.88,
+   "rss_gb": 1.605
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0
+   },
+   "elements": 78529,
+   "seconds": 0.94
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 10.0
+   },
+   "seconds": 13.56,
+   "rss_gb": 1.935
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": -10.0
+   },
+   "seconds": 14.11,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 2.0
+   },
+   "elements": 66172,
+   "seconds": 0.91
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 2.0,
+    "V": 10.0
+   },
+   "seconds": 2.82,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 2.0,
+    "V": -10.0
+   },
+   "seconds": 2.81,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 20.0
+   },
+   "seconds": 2.76,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -20.0
+   },
+   "seconds": 2.82,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "lam_nm": 1530.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "lam_nm": 1530.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "lam_nm": 1530.0
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "lam_nm": 1570.0
+   },
+   "seconds": 2.8,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "lam_nm": 1570.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "lam_nm": 1570.0
+   },
+   "seconds": 2.83,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "theta_deg": 60.0
+   },
+   "elements": 4146,
+   "seconds": 0.17
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 60.0
+   },
+   "seconds": 2.83,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 60.0
+   },
+   "elements": 21600,
+   "seconds": 0.41
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 60.0
+   },
+   "seconds": 2.86,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 60.0
+   },
+   "seconds": 2.86,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "theta_deg": 90.0
+   },
+   "elements": 4114,
+   "seconds": 0.15
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 90.0
+   },
+   "seconds": 2.82,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 90.0
+   },
+   "elements": 21472,
+   "seconds": 0.34
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 90.0
+   },
+   "seconds": 2.68,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 90.0
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "width_ref": "bottom"
+   },
+   "elements": 4152,
+   "seconds": 0.17
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "width_ref": "bottom"
+   },
+   "seconds": 2.92,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "width_ref": "bottom"
+   },
+   "elements": 21484,
+   "seconds": 0.37
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "width_ref": "bottom"
+   },
+   "seconds": 2.88,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "width_ref": "bottom"
+   },
+   "seconds": 2.89,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "rail_t": 0.2
+   },
+   "elements": 3282,
+   "seconds": 0.11
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "rail_t": 0.2
+   },
+   "seconds": 2.04,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_t": 0.2
+   },
+   "elements": 21240,
+   "seconds": 0.32
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "rail_t": 0.2
+   },
+   "seconds": 2.03,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "rail_t": 0.2
+   },
+   "seconds": 2.03,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "rail_t": 0.8
+   },
+   "elements": 4866,
+   "seconds": 0.19
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "rail_t": 0.8
+   },
+   "seconds": 3.62,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_t": 0.8
+   },
+   "elements": 21938,
+   "seconds": 0.42
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "rail_t": 0.8
+   },
+   "seconds": 3.49,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "rail_t": 0.8
+   },
+   "seconds": 3.81,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "rail_w": 1.0
+   },
+   "elements": 4022,
+   "seconds": 0.17
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "rail_w": 1.0
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_w": 1.0
+   },
+   "elements": 22740,
+   "seconds": 0.37
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "rail_w": 1.0
+   },
+   "seconds": 2.7,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "rail_w": 1.0
+   },
+   "seconds": 2.75,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "rail_w": 3.0
+   },
+   "elements": 4231,
+   "seconds": 0.16
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "rail_w": 3.0
+   },
+   "seconds": 2.82,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_w": 3.0
+   },
+   "elements": 20966,
+   "seconds": 0.35
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "rail_w": 3.0
+   },
+   "seconds": 2.78,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "rail_w": 3.0
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "state": "unclamped"
+   },
+   "seconds": 2.76,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "state": "unclamped"
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 2.77,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 2.82,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "eps_sio2": 4.5
+   },
+   "seconds": 2.79,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "eps_sio2": 4.5
+   },
+   "seconds": 2.86,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "substrate": "fused"
+   },
+   "elements": 4144,
+   "seconds": 0.17
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "substrate": "fused"
+   },
+   "seconds": 2.79,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "substrate": "fused"
+   },
+   "elements": 21578,
+   "seconds": 0.36
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "substrate": "fused"
+   },
+   "seconds": 2.83,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "substrate": "fused"
+   },
+   "seconds": 2.84,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0
+   },
+   "elements": 5038,
+   "seconds": 0.19
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 3.62,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0
+   },
+   "elements": 22250,
+   "seconds": 0.39
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 3.62,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 3.71,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": "optical",
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0
+   },
+   "elements": 16863,
+   "seconds": 0.33
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 17.75,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0
+   },
+   "elements": 82071,
+   "seconds": 0.98
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 17.95,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 60.0,
+    "substrate": "fused",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "lam_nm": 1530.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5
+   },
+   "seconds": 17.91,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": "optical",
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0
+   },
+   "elements": 3290,
+   "seconds": 0.11
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 2.08,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0
+   },
+   "elements": 21936,
+   "seconds": 0.37
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 2.0,
+   "rss_gb": 2.049
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 1.95,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": "optical",
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0
+   },
+   "elements": 10435,
+   "seconds": 0.18
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 9.31,
+   "rss_gb": 2.049
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0
+   },
+   "elements": 80587,
+   "seconds": 0.9
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": 10.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 9.12,
+   "rss_gb": 2.312
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "V": -10.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "lam_nm": 1570.0,
+    "eps_sio2": 3.8
+   },
+   "seconds": 9.23,
+   "rss_gb": 2.312
+  }
+ ]
+}

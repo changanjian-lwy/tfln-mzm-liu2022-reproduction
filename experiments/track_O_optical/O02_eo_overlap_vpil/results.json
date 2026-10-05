@@ -1,0 +1,913 @@
+{
+ "experiment": "O02",
+ "layer": "O-L2 (optical mode + quasi-static field, 2D cross-section)",
+ "scope": "Gamma and VpiL of the Liu 2022 rail cross-section under the declared branches; compared only with VpiL 1.62 V*cm (p.856)",
+ "femwell": {
+  "version": "0.0.1",
+  "source": {
+   "url": "https://github.com/HelgeGehring/femwell.git",
+   "vcs_info": {
+    "commit_id": "be2c54763f6215757fd2dac543c9385a82ca5b26",
+    "requested_revision": "be2c54763f6215757fd2dac543c9385a82ca5b26",
+    "vcs": "git"
+   }
+  }
+ },
+ "conventions": {
+  "A": "Gamma=(g/V) int_LN Ex|Ex,opt|^2/int|Ex,opt|^2; VpiL=lam g/(2 ne^3 r33 Gamma)",
+  "B": "re-solve TE0 with deps_xx=-ne^4 r33 <Ex> at +-V0; VpiL=lam/(4|dn/dV|) (BOUNDARY section 5)"
+ },
+ "gap_um": 3.0,
+ "duty": 0.9,
+ "V0": 10.0,
+ "intorder": null,
+ "factors": {
+  "lam_nm": [
+   1550.0,
+   [
+    1530.0,
+    1570.0
+   ]
+  ],
+  "theta_deg": [
+   75.0,
+   [
+    60.0,
+    90.0
+   ]
+  ],
+  "width_ref": [
+   "top",
+   [
+    "bottom"
+   ]
+  ],
+  "rail_t": [
+   0.5,
+   [
+    0.2,
+    0.8
+   ]
+  ],
+  "rail_w": [
+   2.0,
+   [
+    1.0,
+    3.0
+   ]
+  ],
+  "state": [
+   "clamped",
+   [
+    "unclamped"
+   ]
+  ],
+  "eps_sio2": [
+   3.9,
+   [
+    3.8,
+    4.5
+   ]
+  ],
+  "substrate": [
+   "quartz",
+   [
+    "fused"
+   ]
+  ]
+ },
+ "dc_ln": {
+  "clamped": {
+   "eps11": 44.0,
+   "eps33": 27.9,
+   "r33": 3.1e-05
+  },
+  "unclamped": {
+   "eps11": 85.0,
+   "eps33": 28.7,
+   "r33": 3.3e-05
+  }
+ },
+ "budget": {
+  "wall_seconds": 2400,
+  "per_solve_seconds": 180,
+  "max_mesh_elements": 400000,
+  "max_solves": 200,
+  "max_new_disk_mb": 5,
+  "max_rss_gb": 10
+ },
+ "G1": {
+  "two_layer": [
+   {
+    "axis": "x",
+    "exact_V_per_um": [
+     0.1,
+     0.715385
+    ],
+    "max_rel_err": [
+     7.32747e-15,
+     1.79856e-14
+    ],
+    "pass": true
+   },
+   {
+    "axis": "y",
+    "exact_V_per_um": [
+     0.0650759,
+     0.73419
+    ],
+    "max_rel_err": [
+     5.32907e-15,
+     1.62093e-14
+    ],
+    "pass": true
+   }
+  ],
+  "parent_neff": 1.8976164,
+  "parent_dneff": 3.68791e-09,
+  "pass": true
+ },
+ "G2_mesh": {
+  "rounds": [
+   {
+    "m": 2.0,
+    "fine": 1.0,
+    "change": {
+     "gamma": 0.000666542,
+     "dn_dv": 0.000645391
+    },
+    "pass": true,
+    "records": [
+     {
+      "config": {},
+      "m": 2.0,
+      "d": 1.0,
+      "V0": 10.0,
+      "n_elements": 4144,
+      "ok": true,
+      "neff0": [
+       1.8976164,
+       -3.03332412e-07
+      ],
+      "te0": 0.992842,
+      "gamma": 0.419076604,
+      "vpil_a": 1.83236977,
+      "dn_dv": 2.27704773e-05,
+      "vpil_b": 1.70176494,
+      "dte": 6.42907e-06,
+      "ne": 2.13756,
+      "r33": 3.1e-05,
+      "te_pm": [
+       0.992849,
+       0.992836
+      ],
+      "vpil_a_device": 2.03596642,
+      "vpil_b_device": 1.89084993
+     },
+     {
+      "config": {},
+      "m": 1.0,
+      "d": 1.0,
+      "V0": 10.0,
+      "n_elements": 13755,
+      "ok": true,
+      "neff0": [
+       1.89761183,
+       -2.98928376e-07
+      ],
+      "te0": 0.992844,
+      "gamma": 0.418797458,
+      "vpil_a": 1.83359113,
+      "dn_dv": 2.27557909e-05,
+      "vpil_b": 1.70286324,
+      "dte": 6.41409e-06,
+      "ne": 2.13756,
+      "r33": 3.1e-05,
+      "te_pm": [
+       0.992851,
+       0.992838
+      ],
+      "vpil_a_device": 2.03732347,
+      "vpil_b_device": 1.89207027
+     }
+    ]
+   }
+  ],
+  "accepted": 2.0
+ },
+ "G2_domain": {
+  "record": {
+   "config": {},
+   "m": 2.0,
+   "d": 2.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.418705595,
+   "vpil_a": 1.83399341,
+   "dn_dv": 2.27503197e-05,
+   "vpil_b": 1.70327277,
+   "dte": 6.42196e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.03777045,
+   "vpil_b_device": 1.8925253
+  },
+  "gamma": 0.000886084,
+  "dn_dv": 0.000886038,
+  "pass": true
+ },
+ "G2_linearity": {
+  "record": {
+   "config": {},
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 20.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.419076604,
+   "vpil_a": 1.83236977,
+   "dn_dv": 2.27704775e-05,
+   "vpil_b": 1.70176493,
+   "dte": 1.28784e-05,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992855,
+    0.992829
+   ],
+   "vpil_a_device": 2.03596642,
+   "vpil_b_device": 1.89084992
+  },
+  "dn_dv": 6.78943e-09,
+  "pass": true
+ },
+ "N": {
+  "config": {},
+  "m": 2.0,
+  "d": 1.0,
+  "V0": 10.0,
+  "n_elements": 4144,
+  "ok": true,
+  "neff0": [
+   1.8976164,
+   -3.03332412e-07
+  ],
+  "te0": 0.992842,
+  "gamma": 0.419076604,
+  "vpil_a": 1.83236977,
+  "dn_dv": 2.27704773e-05,
+  "vpil_b": 1.70176494,
+  "dte": 6.42907e-06,
+  "ne": 2.13756,
+  "r33": 3.1e-05,
+  "te_pm": [
+   0.992849,
+   0.992836
+  ],
+  "vpil_a_device": 2.03596642,
+  "vpil_b_device": 1.89084993
+ },
+ "one_factor": [
+  {
+   "factor": "lam_nm",
+   "value": 1530.0,
+   "config": {
+    "lam_nm": 1530.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.90259992,
+    -2.62199481e-07
+   ],
+   "te0": 0.992927,
+   "gamma": 0.420265641,
+   "vpil_a": 1.80213993,
+   "dn_dv": 2.28133982e-05,
+   "vpil_b": 1.67664632,
+   "dte": 6.76085e-06,
+   "ne": 2.13814,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992934,
+    0.992921
+   ],
+   "vpil_a_device": 2.0023777,
+   "vpil_b_device": 1.86294035
+  },
+  {
+   "factor": "lam_nm",
+   "value": 1570.0,
+   "config": {
+    "lam_nm": 1570.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.89263546,
+    -3.50233291e-07
+   ],
+   "te0": 0.992754,
+   "gamma": 0.417867345,
+   "vpil_a": 1.86288628,
+   "dn_dv": 2.272698e-05,
+   "vpil_b": 1.72702224,
+   "dte": 6.11381e-06,
+   "ne": 2.13699,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.99276,
+    0.992748
+   ],
+   "vpil_a_device": 2.06987364,
+   "vpil_b_device": 1.9189136
+  },
+  {
+   "factor": "theta_deg",
+   "value": 60.0,
+   "config": {
+    "theta_deg": 60.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4146,
+   "ok": true,
+   "neff0": [
+    1.9062601,
+    -2.79412269e-07
+   ],
+   "te0": 0.992126,
+   "gamma": 0.426180033,
+   "vpil_a": 1.80182843,
+   "dn_dv": 2.30902351e-05,
+   "vpil_b": 1.67819859,
+   "dte": 8.64625e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992135,
+    0.992117
+   ],
+   "vpil_a_device": 2.00203159,
+   "vpil_b_device": 1.8646651
+  },
+  {
+   "factor": "theta_deg",
+   "value": 90.0,
+   "config": {
+    "theta_deg": 90.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4114,
+   "ok": true,
+   "neff0": [
+    1.8884885,
+    -3.58084792e-07
+   ],
+   "te0": 0.993621,
+   "gamma": 0.41401783,
+   "vpil_a": 1.85475901,
+   "dn_dv": 2.25830797e-05,
+   "vpil_b": 1.71588643,
+   "dte": 4.28436e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.993626,
+    0.993617
+   ],
+   "vpil_a_device": 2.06084335,
+   "vpil_b_device": 1.90654048
+  },
+  {
+   "factor": "width_ref",
+   "value": "bottom",
+   "config": {
+    "width_ref": "bottom"
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4152,
+   "ok": true,
+   "neff0": [
+    1.88156581,
+    -4.14395296e-07
+   ],
+   "te0": 0.991179,
+   "gamma": 0.414471106,
+   "vpil_a": 1.8527306,
+   "dn_dv": 2.26074681e-05,
+   "vpil_b": 1.71403537,
+   "dte": 6.90173e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.991185,
+    0.991172
+   ],
+   "vpil_a_device": 2.05858956,
+   "vpil_b_device": 1.90448375
+  },
+  {
+   "factor": "rail_t",
+   "value": 0.2,
+   "config": {
+    "rail_t": 0.2
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 3282,
+   "ok": true,
+   "neff0": [
+    1.89761834,
+    -3.36140245e-07
+   ],
+   "te0": 0.992837,
+   "gamma": 0.413229285,
+   "vpil_a": 1.85829836,
+   "dn_dv": 2.24529427e-05,
+   "vpil_b": 1.72583169,
+   "dte": 6.32e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992843,
+    0.992831
+   ],
+   "vpil_a_device": 2.06477595,
+   "vpil_b_device": 1.91759077
+  },
+  {
+   "factor": "rail_t",
+   "value": 0.8,
+   "config": {
+    "rail_t": 0.8
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4866,
+   "ok": true,
+   "neff0": [
+    1.89761638,
+    -3.02131009e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.422248445,
+   "vpil_a": 1.8186054,
+   "dn_dv": 2.2942782e-05,
+   "vpil_b": 1.68898436,
+   "dte": 6.48969e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.02067266,
+   "vpil_b_device": 1.87664929
+  },
+  {
+   "factor": "rail_w",
+   "value": 1.0,
+   "config": {
+    "rail_w": 1.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4022,
+   "ok": true,
+   "neff0": [
+    1.89761641,
+    -3.02430432e-07
+   ],
+   "te0": 0.992843,
+   "gamma": 0.403257126,
+   "vpil_a": 1.90425228,
+   "dn_dv": 2.19109378e-05,
+   "vpil_b": 1.76852311,
+   "dte": 6.16587e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.11583587,
+   "vpil_b_device": 1.96502568
+  },
+  {
+   "factor": "rail_w",
+   "value": 3.0,
+   "config": {
+    "rail_w": 3.0
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4231,
+   "ok": true,
+   "neff0": [
+    1.89761641,
+    -3.0334899e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.422583176,
+   "vpil_a": 1.81716487,
+   "dn_dv": 2.29610007e-05,
+   "vpil_b": 1.68764422,
+   "dte": 6.49219e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.01907208,
+   "vpil_b_device": 1.87516024
+  },
+  {
+   "factor": "state",
+   "value": "unclamped",
+   "config": {
+    "state": "unclamped"
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.42142645,
+   "vpil_a": 1.71171911,
+   "dn_dv": 2.4376175e-05,
+   "vpil_b": 1.58966696,
+   "dte": 6.16651e-06,
+   "ne": 2.13756,
+   "r33": 3.3e-05,
+   "te_pm": [
+    0.992848,
+    0.992836
+   ],
+   "vpil_a_device": 1.90191012,
+   "vpil_b_device": 1.76629662
+  },
+  {
+   "factor": "eps_sio2",
+   "value": 3.8,
+   "config": {
+    "eps_sio2": 3.8
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.417877898,
+   "vpil_a": 1.83762603,
+   "dn_dv": 2.27053241e-05,
+   "vpil_b": 1.70664818,
+   "dte": 6.40675e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.0418067,
+   "vpil_b_device": 1.89627575
+  },
+  {
+   "factor": "eps_sio2",
+   "value": 4.5,
+   "config": {
+    "eps_sio2": 4.5
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.425506758,
+   "vpil_a": 1.80467945,
+   "dn_dv": 2.31199861e-05,
+   "vpil_b": 1.67603907,
+   "dte": 6.55124e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.00519939,
+   "vpil_b_device": 1.86226563
+  },
+  {
+   "factor": "substrate",
+   "value": "fused",
+   "config": {
+    "substrate": "fused"
+   },
+   "m": 2.0,
+   "d": 1.0,
+   "V0": 10.0,
+   "n_elements": 4144,
+   "ok": true,
+   "neff0": [
+    1.8976164,
+    -3.03332412e-07
+   ],
+   "te0": 0.992842,
+   "gamma": 0.420405806,
+   "vpil_a": 1.82657635,
+   "dn_dv": 2.28426953e-05,
+   "vpil_b": 1.69638475,
+   "dte": 6.45575e-06,
+   "ne": 2.13756,
+   "r33": 3.1e-05,
+   "te_pm": [
+    0.992849,
+    0.992836
+   ],
+   "vpil_a_device": 2.02952927,
+   "vpil_b_device": 1.88487195
+  }
+ ],
+ "excluded": [],
+ "corners": {
+  "lo": {
+   "choice": {
+    "lam_nm": 1530.0,
+    "theta_deg": 60.0,
+    "width_ref": "top",
+    "rail_t": 0.8,
+    "rail_w": 3.0,
+    "state": "unclamped",
+    "eps_sio2": 4.5,
+    "substrate": "fused"
+   },
+   "record": {
+    "config": {
+     "theta_deg": 60.0,
+     "substrate": "fused",
+     "rail_t": 0.8,
+     "rail_w": 3.0,
+     "lam_nm": 1530.0,
+     "state": "unclamped",
+     "eps_sio2": 4.5
+    },
+    "m": 2.0,
+    "d": 1.0,
+    "V0": 10.0,
+    "n_elements": 5038,
+    "ok": true,
+    "neff0": [
+     1.91110794,
+     -2.4189558e-07
+    ],
+    "te0": 0.99217,
+    "gamma": 0.44489902,
+    "vpil_a": 1.59918497,
+    "dn_dv": 2.56382536e-05,
+    "vpil_b": 1.49191129,
+    "dte": 9.53425e-06,
+    "ne": 2.13814,
+    "r33": 3.3e-05,
+    "te_pm": [
+     0.99218,
+     0.992161
+    ],
+    "vpil_a_device": 1.77687219,
+    "vpil_b_device": 1.65767921
+   },
+   "fine": {
+    "config": {
+     "theta_deg": 60.0,
+     "substrate": "fused",
+     "rail_t": 0.8,
+     "rail_w": 3.0,
+     "lam_nm": 1530.0,
+     "state": "unclamped",
+     "eps_sio2": 4.5
+    },
+    "m": 1.0,
+    "d": 1.0,
+    "V0": 10.0,
+    "n_elements": 16863,
+    "ok": true,
+    "neff0": [
+     1.91110699,
+     -2.39071927e-07
+    ],
+    "te0": 0.992171,
+    "gamma": 0.44463527,
+    "vpil_a": 1.60013358,
+    "dn_dv": 2.56218072e-05,
+    "vpil_b": 1.49286893,
+    "dte": 9.519e-06,
+    "ne": 2.13814,
+    "r33": 3.3e-05,
+    "te_pm": [
+     0.992181,
+     0.992162
+    ],
+    "vpil_a_device": 1.7779262,
+    "vpil_b_device": 1.65874326
+   },
+   "mesh_check": {
+    "gamma": 0.000593183,
+    "dn_dv": 0.00064189,
+    "pass": true
+   }
+  },
+  "hi": {
+   "choice": {
+    "lam_nm": 1570.0,
+    "theta_deg": 90.0,
+    "width_ref": "bottom",
+    "rail_t": 0.2,
+    "rail_w": 1.0,
+    "state": "clamped",
+    "eps_sio2": 3.8,
+    "substrate": "quartz"
+   },
+   "record": {
+    "config": {
+     "theta_deg": 90.0,
+     "width_ref": "bottom",
+     "rail_t": 0.2,
+     "rail_w": 1.0,
+     "lam_nm": 1570.0,
+     "eps_sio2": 3.8
+    },
+    "m": 2.0,
+    "d": 1.0,
+    "V0": 10.0,
+    "n_elements": 3290,
+    "ok": true,
+    "neff0": [
+     1.8833948,
+     -4.60771719e-07
+    ],
+    "te0": 0.993491,
+    "gamma": 0.389292374,
+    "vpil_a": 1.99962649,
+    "dn_dv": 2.12577848e-05,
+    "vpil_b": 1.84638242,
+    "dte": 3.85345e-06,
+    "ne": 2.13699,
+    "r33": 3.1e-05,
+    "te_pm": [
+     0.993494,
+     0.993487
+    ],
+    "vpil_a_device": 2.22180721,
+    "vpil_b_device": 2.05153602
+   },
+   "fine": {
+    "config": {
+     "theta_deg": 90.0,
+     "width_ref": "bottom",
+     "rail_t": 0.2,
+     "rail_w": 1.0,
+     "lam_nm": 1570.0,
+     "eps_sio2": 3.8
+    },
+    "m": 1.0,
+    "d": 1.0,
+    "V0": 10.0,
+    "n_elements": 10435,
+    "ok": true,
+    "neff0": [
+     1.88338791,
+     -4.52147356e-07
+    ],
+    "te0": 0.993492,
+    "gamma": 0.388891674,
+    "vpil_a": 2.00168683,
+    "dn_dv": 2.12363492e-05,
+    "vpil_b": 1.84824612,
+    "dte": 3.8411e-06,
+    "ne": 2.13699,
+    "r33": 3.1e-05,
+    "te_pm": [
+     0.993496,
+     0.993489
+    ],
+    "vpil_a_device": 2.22409648,
+    "vpil_b_device": 2.0536068
+   },
+   "mesh_check": {
+    "gamma": 0.00103037,
+    "dn_dv": 0.00100938,
+    "pass": true
+   }
+  }
+ },
+ "verdicts": {
+  "A": {
+   "vpil_rail": [
+    1.59918497,
+    1.99962649
+   ],
+   "u_rel": 0.00191645,
+   "vpil_device_compared": [
+    1.7734669,
+    2.22606519
+   ],
+   "measured_band": [
+    1.59,
+    1.65
+   ],
+   "wide_band": [
+    1.32,
+    1.92
+   ],
+   "verdict": "undetermined",
+   "duty_needed": [
+    0.969203,
+    1.25763
+   ],
+   "duty_needed_contains_0.9": false,
+   "duty_needed_exceeds_1": false,
+   "n_values": 16
+  },
+  "B": {
+   "vpil_rail": [
+    1.49191129,
+    1.84638242
+   ],
+   "u_rel": 0.00189543,
+   "vpil_device_compared": [
+    1.6545372,
+    2.05542455
+   ],
+   "measured_band": [
+    1.59,
+    1.65
+   ],
+   "wide_band": [
+    1.32,
+    1.92
+   ],
+   "verdict": "undetermined",
+   "duty_needed": [
+    0.904189,
+    1.16125
+   ],
+   "duty_needed_contains_0.9": false,
+   "duty_needed_exceeds_1": false,
+   "n_values": 16
+  }
+ },
+ "u_parts": {
+  "mesh_A": 0.00103037,
+  "mesh_B": 0.00100938,
+  "domain_gamma": 0.000886084,
+  "domain_dn_dv": 0.000886038,
+  "linearity": 6.78943e-09
+ },
+ "status": "COMPLETE",
+ "solves": 58
+}
