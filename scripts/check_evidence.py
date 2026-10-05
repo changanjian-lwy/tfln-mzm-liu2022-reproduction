@@ -97,7 +97,7 @@ def replay_check(images=None):
 def main():
     parser=argparse.ArgumentParser(description=__doc__,formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument('--replay',action='store_true')
-    parser.add_argument('--images',type=Path,help='folder with p2_2.jpeg and p3_0.png for A03 replay')
+    parser.add_argument('--images',type=Path,help='local raster folder: p2_2.jpeg and p3_0.png (A03, A06), p4_0.jpeg (M01)')
     parser.add_argument('--hash',nargs='+',metavar='PATH')
     a=parser.parse_args()
     if a.hash:
