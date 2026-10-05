@@ -669,6 +669,37 @@
      "scripts/run_b06.py"
     ]
    }
+  },
+  {
+   "id": "M01_fig6_digitization",
+   "dir": "experiments/track_M_measurement/M01_fig6_digitization",
+   "grade": "PARTIAL_EXTRACTION_COMPLETE",
+   "layer": "data (measurement, SC-03)",
+   "recorded_commit": "3ef0605",
+   "documents": {
+    "experiments/track_M_measurement/M01_fig6_digitization/BOUNDARY.md": "bf45156fce841e4b04cff2bd20151c407ed75980d0bce248a183c20987095a3f",
+    "experiments/track_M_measurement/M01_fig6_digitization/INPUTS.md": "7525808e55b41b2764bf11be6e7d5b888bd92e0e8da5dc091840c7f56fae3382",
+    "experiments/track_M_measurement/M01_fig6_digitization/RESULTS.md": "9468731bf6bc04a0e71caaa9d8bb4c576f271faa538a0c5ea822c04f3b6ffbb5"
+   },
+   "inputs": {},
+   "outputs": {
+    "data/digitized/liu2022/m01_curves.csv": "cdbb25e45e5bc5e8ac09c062b754d351f5097609491a9de57dc93f582a99c6d8",
+    "data/digitized/liu2022/m01_metadata.json": "463f5d1891cf2f7b5d57678f15450db661219e172c420203d697005a3a46f1b1",
+    "experiments/track_M_measurement/M01_fig6_digitization/digitized_preview.png": "4d2a1dbc0a8bf7220e092ce76be4ecc4209d87bb684c0216ed21d7fadee817f1",
+    "experiments/track_M_measurement/M01_fig6_digitization/results.json": "aa9a63e4347e920f8b49dcde635a720117a8d958109285995f22fd27da54feae"
+   },
+   "local_inputs": {
+    "pdf": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+    "p4_0.jpeg": "79198a8026bc874f525c14757dfca17e0c0ab574f720301374dfbd72feac4092"
+   },
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/digitize_m01.py",
+     "--images",
+     "{images}"
+    ]
+   }
   }
  ]
 }

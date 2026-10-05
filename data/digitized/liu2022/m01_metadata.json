@@ -1,0 +1,313 @@
+{
+  "doi": "10.1109/LPT.2022.3178214",
+  "evidence": "digitized_paper_measurement",
+  "scope_change": "SC-03 (D7)",
+  "sources": {
+    "p4_0.jpeg": "79198a8026bc874f525c14757dfca17e0c0ab574f720301374dfbd72feac4092"
+  },
+  "pdf_sha256": "ddcf40b8514cd43de28feccc4f571e9df327f546bfcdb0ee2e0accbc4a22300a",
+  "extraction": "pdfimages -all -f 4 -l 4 reference_tfln_lpt2022.pdf (native JPEG stream, image 0 of page 4)",
+  "calibration": {
+    "fig6a": {
+      "x_px": [
+        209,
+        837.5
+      ],
+      "x_phys": [
+        0,
+        150
+      ],
+      "y_px": [
+        113.5,
+        661
+      ],
+      "y_phys": [
+        0,
+        -36
+      ],
+      "frame": [
+        209,
+        921,
+        113,
+        661
+      ],
+      "legend": {
+        "blue": [
+          541,
+          601,
+          250,
+          255
+        ],
+        "red": [
+          717,
+          775,
+          582,
+          586
+        ]
+      }
+    },
+    "fig6b": {
+      "x_px": [
+        1156,
+        1790.5
+      ],
+      "x_phys": [
+        0,
+        150
+      ],
+      "y_px": [
+        660.5,
+        113
+      ],
+      "y_phys": [
+        2.0,
+        3.0
+      ],
+      "frame": [
+        1156,
+        1875,
+        113,
+        660
+      ],
+      "legend": {
+        "blue": [
+          1471,
+          1531,
+          288,
+          293
+        ],
+        "red": [
+          1472,
+          1531,
+          336,
+          340
+        ]
+      }
+    }
+  },
+  "series": [
+    {
+      "panel": "fig6a",
+      "series": "S21",
+      "colour": "blue",
+      "unit": "dB",
+      "occluder": "dark"
+    },
+    {
+      "panel": "fig6a",
+      "series": "S11",
+      "colour": "red",
+      "unit": "dB",
+      "occluder": null
+    },
+    {
+      "panel": "fig6b",
+      "series": "nm_microwave",
+      "colour": "blue",
+      "unit": "1",
+      "occluder": "red"
+    },
+    {
+      "panel": "fig6b",
+      "series": "optical_mode_line",
+      "colour": "red",
+      "unit": "1",
+      "occluder": null
+    }
+  ],
+  "rules": {
+    "legend_pad_px": 3,
+    "dark_occluder_max_rgb": 140,
+    "scan": "frame+4 .. frame-3",
+    "merged": "same-colour clusters separated only by declared occluder pixels",
+    "occluded": "fig6b blue absent, unique red optical-line cluster; value = red centre",
+    "clipped": "cluster touches the scan window edge; counted, not a value"
+  },
+  "method": "A03 per-column unique contiguous colour cluster; legends masked by pixel rectangles; no interpolation",
+  "uncertainty": "2px axis localization plus half stroke height; not author error bars",
+  "quality": [
+    {
+      "panel": "fig6a",
+      "series": "S21",
+      "colour": "blue",
+      "occluder": "dark",
+      "eligible_columns": 706,
+      "retained": 699,
+      "retained_fraction": 0.990084985835694,
+      "single": 698,
+      "merged": 1,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 1,
+      "clipped": 6,
+      "strict_common_points": 698,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.47732696897374716
+    },
+    {
+      "panel": "fig6a",
+      "series": "S11",
+      "colour": "red",
+      "occluder": null,
+      "eligible_columns": 706,
+      "retained": 684,
+      "retained_fraction": 0.9688385269121813,
+      "single": 684,
+      "merged": 0,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 10,
+      "clipped": 12,
+      "strict_common_points": 682,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.9093078758949815
+    },
+    {
+      "panel": "fig6b",
+      "series": "nm_microwave",
+      "colour": "blue",
+      "occluder": "red",
+      "eligible_columns": 713,
+      "retained": 712,
+      "retained_fraction": 0.9985974754558204,
+      "single": 459,
+      "merged": 0,
+      "occluded": 253,
+      "missing": 0,
+      "ambiguous": 1,
+      "clipped": 0,
+      "strict_common_points": 707,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 0.4728132387706836
+    },
+    {
+      "panel": "fig6b",
+      "series": "optical_mode_line",
+      "colour": "red",
+      "occluder": null,
+      "eligible_columns": 713,
+      "retained": 713,
+      "retained_fraction": 1.0,
+      "single": 713,
+      "merged": 0,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 0,
+      "clipped": 0,
+      "strict_common_points": 708,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.2364066193853489
+    }
+  ],
+  "clipped": {
+    "fig6a:S21": [
+      {
+        "x_pixel": 213,
+        "x_value": 0.954653937947494,
+        "edge": "top"
+      },
+      {
+        "x_pixel": 214,
+        "x_value": 1.1933174224343674,
+        "edge": "top"
+      },
+      {
+        "x_pixel": 215,
+        "x_value": 1.431980906921241,
+        "edge": "top"
+      },
+      {
+        "x_pixel": 216,
+        "x_value": 1.6706443914081146,
+        "edge": "top"
+      },
+      {
+        "x_pixel": 217,
+        "x_value": 1.909307875894988,
+        "edge": "top"
+      },
+      {
+        "x_pixel": 218,
+        "x_value": 2.1479713603818618,
+        "edge": "top"
+      }
+    ],
+    "fig6a:S11": [
+      {
+        "x_pixel": 253,
+        "x_value": 10.501193317422434,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 254,
+        "x_value": 10.739856801909308,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 526,
+        "x_value": 75.6563245823389,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 527,
+        "x_value": 75.89498806682577,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 528,
+        "x_value": 76.13365155131265,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 529,
+        "x_value": 76.37231503579952,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 530,
+        "x_value": 76.6109785202864,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 531,
+        "x_value": 76.84964200477327,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 635,
+        "x_value": 101.67064439140812,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 636,
+        "x_value": 101.90930787589498,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 639,
+        "x_value": 102.62529832935562,
+        "edge": "bottom"
+      },
+      {
+        "x_pixel": 640,
+        "x_value": 102.86396181384248,
+        "edge": "bottom"
+      }
+    ],
+    "fig6b:nm_microwave": [],
+    "fig6b:optical_mode_line": []
+  },
+  "derived": {
+    "dashed_line_minus_6p4": {
+      "rows": [
+        210,
+        211
+      ],
+      "value": -6.3780821917808215,
+      "uncertainty": 0.13150684931506848
+    },
+    "optical_mode_line_median": 2.2502283105022833,
+    "optical_mode_line_columns": 713,
+    "optical_mode_line_uncertainty": 0.0036529680365296802
+  }
+}

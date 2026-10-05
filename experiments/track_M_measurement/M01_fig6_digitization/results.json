@@ -1,0 +1,108 @@
+{
+  "grade": "PARTIAL_EXTRACTION_COMPLETE",
+  "scope": "raster readout of measured curves only; no model comparison",
+  "evidence": "digitized_paper_measurement",
+  "m01_curves_sha256": "cdbb25e45e5bc5e8ac09c062b754d351f5097609491a9de57dc93f582a99c6d8",
+  "criteria": {
+    "2_dashed_line_-6.40pm0.13dB": true,
+    "3_optical_line_2.250pm0.004": true,
+    "4_retained_ge_70pct": {
+      "S21": true,
+      "S11": true,
+      "nm_microwave": true
+    },
+    "5_strict_median_le_1px": {
+      "S21": true,
+      "S11": true,
+      "nm_microwave": true,
+      "optical_mode_line": true
+    }
+  },
+  "derived": {
+    "dashed_line_minus_6p4": {
+      "rows": [
+        210,
+        211
+      ],
+      "value": -6.3780821917808215,
+      "uncertainty": 0.13150684931506848
+    },
+    "optical_mode_line_median": 2.2502283105022833,
+    "optical_mode_line_columns": 713,
+    "optical_mode_line_uncertainty": 0.0036529680365296802
+  },
+  "quality": [
+    {
+      "panel": "fig6a",
+      "series": "S21",
+      "colour": "blue",
+      "occluder": "dark",
+      "eligible_columns": 706,
+      "retained": 699,
+      "retained_fraction": 0.990084985835694,
+      "single": 698,
+      "merged": 1,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 1,
+      "clipped": 6,
+      "strict_common_points": 698,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.47732696897374716
+    },
+    {
+      "panel": "fig6a",
+      "series": "S11",
+      "colour": "red",
+      "occluder": null,
+      "eligible_columns": 706,
+      "retained": 684,
+      "retained_fraction": 0.9688385269121813,
+      "single": 684,
+      "merged": 0,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 10,
+      "clipped": 12,
+      "strict_common_points": 682,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 1.9093078758949815
+    },
+    {
+      "panel": "fig6b",
+      "series": "nm_microwave",
+      "colour": "blue",
+      "occluder": "red",
+      "eligible_columns": 713,
+      "retained": 712,
+      "retained_fraction": 0.9985974754558204,
+      "single": 459,
+      "merged": 0,
+      "occluded": 253,
+      "missing": 0,
+      "ambiguous": 1,
+      "clipped": 0,
+      "strict_common_points": 707,
+      "strict_median_difference_px": 0.5,
+      "max_retained_gap_GHz": 0.4728132387706836
+    },
+    {
+      "panel": "fig6b",
+      "series": "optical_mode_line",
+      "colour": "red",
+      "occluder": null,
+      "eligible_columns": 713,
+      "retained": 713,
+      "retained_fraction": 1.0,
+      "single": 713,
+      "merged": 0,
+      "occluded": 0,
+      "missing": 0,
+      "ambiguous": 0,
+      "clipped": 0,
+      "strict_common_points": 708,
+      "strict_median_difference_px": 0.0,
+      "max_retained_gap_GHz": 0.2364066193853489
+    }
+  ]
+}
