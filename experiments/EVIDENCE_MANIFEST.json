@@ -803,6 +803,38 @@
      "scripts/run_m04.py"
     ]
    }
+  },
+  {
+   "id": "O01_optical_mode_ng",
+   "dir": "experiments/track_O_optical/O01_optical_mode_ng",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "O-L2 (optical cross-section, SC-05)",
+   "recorded_commit": "65efa21",
+   "documents": {
+    "experiments/track_O_optical/O01_optical_mode_ng/BOUNDARY.md": "8e763784c8ccb28734720bad2cc42757135fe475618e8c7ccf4332f52cd4e721",
+    "experiments/track_O_optical/O01_optical_mode_ng/INPUTS.md": "68ad77df393c3b945def28ee6bbf5ce74ad12b5b0b36ab51b1f2857b3cf175f7",
+    "experiments/track_O_optical/O01_optical_mode_ng/RESULTS.md": "a21cf3e590a4af6d4a79482c9fa0090cfcd363e5fa6dcb882086b81b4889d9c4"
+   },
+   "inputs": {
+    "data/external/optical_materials/LiNbO3_Zelmon-e.yml": "aae97bf9e9550a189b12678a32351521a78d2bb8c7d826d1d909d83177566cb4",
+    "data/external/optical_materials/LiNbO3_Zelmon-o.yml": "d254398af5abdff90c93ba37d3d1f8178038b5f7378bcf54f33aebd655c62a87",
+    "data/external/optical_materials/MgO-LiNbO3_Zelmon-e.yml": "ccc7d932d0edde4857d40c2a184a1fedf34d3c80671c33154297df848fc2aafd",
+    "data/external/optical_materials/MgO-LiNbO3_Zelmon-o.yml": "9315e2cc112ce89e6a1ce34dd8b783ce00e82de6fef91c3dd3424f2d94366475",
+    "data/external/optical_materials/SiO2_Malitson.yml": "c587670f397241ecb93a1af3279d6fe7ed67888e587e399074b0eab729c92b52",
+    "data/external/optical_materials/SiO2-quartz_Ghosh-o.yml": "c63dabfdfe9921c8c19264ff6126d68cd78abb1552e40f536c2ffaa083773e7d",
+    "data/external/optical_materials/Au_Olmon-ev.yml": "be778621e6491fc4e2db6eee400fb329d44ada2b987f7bfd2e219c83fe32a338",
+    "experiments/track_O_optical/O01_optical_mode_ng/BUDGET.json": "b769d332f9c52c9098a91704454bf8fba76099e169054a8154bbbf0f18dbd351"
+   },
+   "outputs": {
+    "experiments/track_O_optical/O01_optical_mode_ng/results.json": "d960cd8d13956dcfb7434dd6c20ba15e9278111bef4e065015b862d58e66f9f2",
+    "experiments/track_O_optical/O01_optical_mode_ng/run_log.json": "28e2696bd62330685453286611a41ff1af480d4c0f61fcd252add304dbc1515c",
+    "experiments/track_O_optical/O01_optical_mode_ng/o01_ng.png": "f0d63d7caf90beb08258ab1a5659e28ed5405db40a2442f2992dc29b02ed96de",
+    "experiments/track_O_optical/O01_optical_mode_ng/OBSERVATION_posthoc.md": "5f451a53da3d8eb94a031f781799dcb24c246c04e4e71fee88c60e66161d016c"
+   },
+   "local_inputs": {
+    "ref10_liu_col2021.pdf": "d62a71b62b2cf4312e0f90fe67a01711ff09e827fa7ec9e3a01aa4890ed2407c"
+   },
+   "replay_note": "Not replayed: the full run takes 10.9 min (over the 10-min replay limit in the O01 boundary, section 4), and ARPACK start vectors make the last digits run-dependent. Re-run with: PYTHONPATH=src python scripts/run_o01.py (needs requirements-fem-lock.txt); the ref10 PDF is a source document, not read by the script."
   }
  ]
 }

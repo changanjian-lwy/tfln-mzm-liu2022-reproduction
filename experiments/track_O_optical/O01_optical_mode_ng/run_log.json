@@ -1,0 +1,840 @@
+{
+ "elapsed_s": 652.7,
+ "peak_rss_gb": 1.396,
+ "events": [
+  {
+   "mesh": {
+    "slab": 2.0
+   },
+   "elements": 2904,
+   "seconds": 0.0
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TE",
+    "k": -1
+   },
+   "seconds": 3.21,
+   "rss_gb": 0.337
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TE",
+    "k": 0
+   },
+   "seconds": 3.19,
+   "rss_gb": 0.36
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TE",
+    "k": 1
+   },
+   "seconds": 3.32,
+   "rss_gb": 0.421
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TM",
+    "k": -1
+   },
+   "seconds": 3.34,
+   "rss_gb": 0.462
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TM",
+    "k": 0
+   },
+   "seconds": 3.17,
+   "rss_gb": 0.462
+  },
+  {
+   "solve": {
+    "slab": 2.0,
+    "pol": "TM",
+    "k": 1
+   },
+   "seconds": 3.14,
+   "rss_gb": 0.462
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0
+   },
+   "elements": 4144,
+   "seconds": 0.42
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002
+   },
+   "seconds": 5.94,
+   "rss_gb": 0.533
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55
+   },
+   "seconds": 5.8,
+   "rss_gb": 0.618
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555
+   },
+   "seconds": 6.09,
+   "rss_gb": 0.755
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0
+   },
+   "elements": 13755,
+   "seconds": 0.69
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002
+   },
+   "seconds": 32.63,
+   "rss_gb": 0.993
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.55
+   },
+   "seconds": 29.95,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.555
+   },
+   "seconds": 31.99,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_t": null
+   },
+   "elements": 3002,
+   "seconds": 0.21
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "rail_t": null
+   },
+   "seconds": 3.28,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "rail_t": null
+   },
+   "seconds": 3.22,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "rail_t": null
+   },
+   "seconds": 3.32,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0,
+    "rail_t": null
+   },
+   "elements": 9761,
+   "seconds": 0.41
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "rail_t": null
+   },
+   "seconds": 15.18,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "rail_t": null
+   },
+   "seconds": 14.03,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "rail_t": null
+   },
+   "seconds": 14.2,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.5
+   },
+   "elements": 5331,
+   "seconds": 0.49
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.5,
+    "lam_um": 1.5450000000000002
+   },
+   "seconds": 10.08,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.5,
+    "lam_um": 1.55
+   },
+   "seconds": 11.87,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.5,
+    "lam_um": 1.555
+   },
+   "seconds": 10.31,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5475
+   },
+   "seconds": 6.76,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5525
+   },
+   "seconds": 6.28,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.54
+   },
+   "seconds": 6.51,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.56
+   },
+   "seconds": 6.56,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5250000000000001
+   },
+   "seconds": 6.31,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.53
+   },
+   "seconds": 6.28,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.535
+   },
+   "seconds": 5.91,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5650000000000002
+   },
+   "seconds": 6.11,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.57
+   },
+   "seconds": 6.11,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.575
+   },
+   "seconds": 6.41,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 60.0
+   },
+   "elements": 4146,
+   "seconds": 0.58
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "theta_deg": 60.0
+   },
+   "seconds": 6.03,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "theta_deg": 60.0
+   },
+   "seconds": 5.92,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "theta_deg": 60.0
+   },
+   "seconds": 5.55,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 90.0
+   },
+   "elements": 4114,
+   "seconds": 0.43
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "theta_deg": 90.0
+   },
+   "seconds": 5.61,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "theta_deg": 90.0
+   },
+   "seconds": 5.74,
+   "rss_gb": 1.067
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "theta_deg": 90.0
+   },
+   "seconds": 5.59,
+   "rss_gb": 1.067
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "width_ref": "bottom"
+   },
+   "elements": 4152,
+   "seconds": 0.41
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "width_ref": "bottom"
+   },
+   "seconds": 6.08,
+   "rss_gb": 1.157
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "width_ref": "bottom"
+   },
+   "seconds": 6.09,
+   "rss_gb": 1.278
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "width_ref": "bottom"
+   },
+   "seconds": 6.11,
+   "rss_gb": 1.278
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "clad_dn": 0.02
+   },
+   "elements": 4144,
+   "seconds": 0.42
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "clad_dn": 0.02
+   },
+   "seconds": 5.77,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "clad_dn": 0.02
+   },
+   "seconds": 6.08,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "clad_dn": 0.02
+   },
+   "seconds": 5.79,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "substrate": "fused"
+   },
+   "elements": 4144,
+   "seconds": 0.41
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "substrate": "fused"
+   },
+   "seconds": 5.84,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "substrate": "fused"
+   },
+   "seconds": 5.82,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "substrate": "fused"
+   },
+   "seconds": 5.79,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_t": 0.2
+   },
+   "elements": 3282,
+   "seconds": 0.3
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "rail_t": 0.2
+   },
+   "seconds": 5.11,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "rail_t": 0.2
+   },
+   "seconds": 5.4,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "rail_t": 0.2
+   },
+   "seconds": 5.36,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "rail_t": 0.8
+   },
+   "elements": 4866,
+   "seconds": 0.62
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "rail_t": 0.8
+   },
+   "seconds": 8.98,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "rail_t": 0.8
+   },
+   "seconds": 8.85,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "rail_t": 0.8
+   },
+   "seconds": 7.78,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "ln": "MgO"
+   },
+   "elements": 4144,
+   "seconds": 0.42
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5450000000000002,
+    "ln": "MgO"
+   },
+   "seconds": 6.25,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.55,
+    "ln": "MgO"
+   },
+   "seconds": 6.49,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.555,
+    "ln": "MgO"
+   },
+   "seconds": 6.21,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "elements": 2952,
+   "seconds": 0.18
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5650000000000002,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 2.75,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.57,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 2.66,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.575,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 2.75,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "elements": 9777,
+   "seconds": 0.35
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.5650000000000002,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 12.99,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.57,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 12.64,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.575,
+    "theta_deg": 60.0,
+    "clad_dn": 0.02,
+    "substrate": "fused",
+    "rail_t": null
+   },
+   "seconds": 13.02,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 2.0,
+    "d": 1.0,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "elements": 4854,
+   "seconds": 0.6
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.5250000000000001,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 7.58,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.53,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 7.64,
+   "rss_gb": 1.383
+  },
+  {
+   "solve": {
+    "m": 2.0,
+    "d": 1.0,
+    "lam_um": 1.535,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 7.57,
+   "rss_gb": 1.383
+  },
+  {
+   "mesh": {
+    "m": 1.0,
+    "d": 1.0,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "elements": 15801,
+   "seconds": 0.83
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.5250000000000001,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 40.25,
+   "rss_gb": 1.396
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.53,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 37.31,
+   "rss_gb": 1.396
+  },
+  {
+   "solve": {
+    "m": 1.0,
+    "d": 1.0,
+    "lam_um": 1.535,
+    "width_ref": "bottom",
+    "rail_t": 0.8
+   },
+   "seconds": 47.36,
+   "rss_gb": 1.396
+  }
+ ]
+}
