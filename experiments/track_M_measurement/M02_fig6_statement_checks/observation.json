@@ -1,0 +1,48 @@
+{
+  "note": "post-hoc observation, written after M02 ran; not a criterion",
+  "arrow_160GHz_label": {
+    "shaft_column_px": 897.4230769230769,
+    "pixels": 52,
+    "frequency_GHz": 164.3014503396365,
+    "uncertainty_GHz": 0.477326968973747
+  },
+  "t3_by_band": {
+    "bands": [
+      {
+        "band_GHz": [
+          20,
+          50
+        ],
+        "points": 126,
+        "higher": 0,
+        "undecided": 126,
+        "lower": 0,
+        "fraction_higher": 0.0
+      },
+      {
+        "band_GHz": [
+          50,
+          100
+        ],
+        "points": 210,
+        "higher": 50,
+        "undecided": 160,
+        "lower": 0,
+        "fraction_higher": 0.23809523809523808
+      },
+      {
+        "band_GHz": [
+          100,
+          170
+        ],
+        "points": 290,
+        "higher": 290,
+        "undecided": 0,
+        "lower": 0,
+        "fraction_higher": 1.0
+      }
+    ],
+    "last_not_higher_GHz": 89.26014319809069,
+    "all_higher_from_GHz": 89.49880668257757
+  }
+}

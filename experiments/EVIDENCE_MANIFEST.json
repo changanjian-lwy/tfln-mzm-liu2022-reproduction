@@ -700,6 +700,42 @@
      "{images}"
     ]
    }
+  },
+  {
+   "id": "M02_fig6_statement_checks",
+   "dir": "experiments/track_M_measurement/M02_fig6_statement_checks",
+   "grade": "DIAGNOSTIC_ONLY",
+   "layer": "measurement statements (SC-03)",
+   "recorded_commit": "2b80199",
+   "documents": {
+    "experiments/track_M_measurement/M02_fig6_statement_checks/BOUNDARY.md": "658dec11f5301d415dde0366220d1297af5b176a71880cb0431fdf2cdc9b321b",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/INPUTS.md": "a6b184032b063823a5712e607cf1baf02dc6bcfae02c8464b753a6bf609ba529",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/RESULTS.md": "18c9d5424c5982e670e1c1b264dfe16cbd380eafdddf10d56ab96b6f944238a6"
+   },
+   "inputs": {
+    "data/digitized/liu2022/m01_curves.csv": "cdbb25e45e5bc5e8ac09c062b754d351f5097609491a9de57dc93f582a99c6d8",
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d"
+   },
+   "outputs": {
+    "experiments/track_M_measurement/M02_fig6_statement_checks/results.json": "9050d88d47d3a3c2d7eebbb7b37a504aa1d4fbdd6a6485f9a30cdaaa540a2dcf",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/t3_loss_comparison.csv": "93ed6ccdedf40a77c438ec7a15ab129b4334c521360ce1befae5a83160458889",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/m02_checks.png": "b11f7bd4067a0978ad42cac605fd95bd97061912eecd139b9ee3e30f9ed5b73a",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/observation.json": "0973c4550e57ee82996bac12eb5ad02eb9536f331f54ac73e41faadfb8bfc69c",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/OBSERVATION_posthoc.md": "17f3f004845c659392be48d3253643825fa6ec6b2b24f5076ba6539a31ea43a9"
+   },
+   "local_inputs": {
+    "p4_0.jpeg": "79198a8026bc874f525c14757dfca17e0c0ab574f720301374dfbd72feac4092"
+   },
+   "static_only": [
+    "experiments/track_M_measurement/M02_fig6_statement_checks/observation.json",
+    "experiments/track_M_measurement/M02_fig6_statement_checks/OBSERVATION_posthoc.md"
+   ],
+   "replay": {
+    "kind": "script",
+    "command": [
+     "scripts/run_m02.py"
+    ]
+   }
   }
  ]
 }

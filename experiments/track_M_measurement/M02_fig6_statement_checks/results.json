@@ -1,0 +1,128 @@
+{
+  "grade_cap": "DIAGNOSTIC_ONLY",
+  "inputs": {
+    "data/digitized/liu2022/m01_curves.csv": "cdbb25e45e5bc5e8ac09c062b754d351f5097609491a9de57dc93f582a99c6d8",
+    "data/digitized/liu2022/curves.csv": "ddf19d3509412656f58be736f78ed45f387efcd079777157e13556c48be8b52d"
+  },
+  "gate_inputs": {
+    "m01_registered": true,
+    "m01_curves_hash_matches": true,
+    "m01_criterion_2": true,
+    "m01_criterion_3": true,
+    "m01_criterion_4": {
+      "S21": true,
+      "S11": true,
+      "nm_microwave": true
+    }
+  },
+  "nonfinite_values": 0,
+  "T1": {
+    "level_dB": -6.4,
+    "claim_GHz": 160.0,
+    "points": 699,
+    "f_last_definitely_above_GHz": 163.0071599045346,
+    "f_first_definitely_below_GHz": 163.48448687350836,
+    "interval_GHz": [
+      162.52983293556085,
+      163.96181384248212
+    ],
+    "first_median_below_GHz": 163.48448687350836,
+    "verdict": "inconsistent"
+  },
+  "T2": {
+    "ng": 2.25,
+    "tolerance": "|nm-2.25| <= u_nm + 0.004",
+    "L_mm": 6.0,
+    "bands": [
+      {
+        "band_GHz": [
+          0,
+          10
+        ],
+        "points": 39,
+        "occluded": 6,
+        "match_fraction": 0.358974358974359,
+        "match_fraction_without_occluded": 0.24242424242424243,
+        "max_abs_deviation": 0.19566210045662125,
+        "max_sinc_penalty_dB": 0.0006627835956876117,
+        "verdict": "inconsistent"
+      },
+      {
+        "band_GHz": [
+          10,
+          50
+        ],
+        "points": 168,
+        "occluded": 12,
+        "match_fraction": 0.7202380952380952,
+        "match_fraction_without_occluded": 0.6987179487179487,
+        "max_abs_deviation": 0.021232876712328874,
+        "max_sinc_penalty_dB": 0.0017261599611789026,
+        "verdict": "inconsistent"
+      },
+      {
+        "band_GHz": [
+          50,
+          170
+        ],
+        "points": 505,
+        "occluded": 235,
+        "match_fraction": 0.8693069306930693,
+        "match_fraction_without_occluded": 0.7555555555555555,
+        "max_abs_deviation": 0.012557077625571011,
+        "max_sinc_penalty_dB": 0.013776423103027083,
+        "verdict": "inconsistent"
+      }
+    ]
+  },
+  "T3": {
+    "L_mm": 6.0,
+    "s11_max_plus_u_dB": -10.816438356164385,
+    "mismatch_allowance_dB": 0.3756537998036255,
+    "comparable_points": 699,
+    "unsupported_points": 0,
+    "counts_all": {
+      "higher": 340,
+      "undecided": 359,
+      "lower": 0
+    },
+    "fraction_higher_from_20GHz": 0.5431309904153354,
+    "points_from_20GHz": 626,
+    "fraction_lower_all": 0.0,
+    "verdict": "undecided",
+    "marks": [
+      {
+        "target_GHz": 50,
+        "frequency_GHz": 49.88066825775656,
+        "A_meas_dB": 2.0383561643835617,
+        "A_sim_dB": 1.939285714285714,
+        "ratio_upper_bound": 1.0510860516158331,
+        "class": "undecided"
+      },
+      {
+        "target_GHz": 100,
+        "frequency_GHz": 100.0,
+        "A_meas_dB": 4.043835616438356,
+        "A_sim_dB": 2.9035714285714285,
+        "ratio_upper_bound": 1.392710913410504,
+        "class": "higher"
+      },
+      {
+        "target_GHz": 150,
+        "frequency_GHz": 149.88066825775655,
+        "A_meas_dB": 5.391780821917808,
+        "A_sim_dB": 3.9954824411864984,
+        "ratio_upper_bound": 1.3494692821917809,
+        "class": "higher"
+      },
+      {
+        "target_GHz": 160,
+        "frequency_GHz": 159.90453460620526,
+        "A_meas_dB": 6.049315068493151,
+        "A_sim_dB": 4.196343334469826,
+        "ratio_upper_bound": 1.4415681907632645,
+        "class": "higher"
+      }
+    ]
+  }
+}
