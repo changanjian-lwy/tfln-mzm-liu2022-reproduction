@@ -67,15 +67,45 @@ def ln_mask(basis):
 
 
 class FieldX:
-    """E_x = -d phi/dx of a P2 potential, evaluable at arbitrary points (exact DG-P1 representation)."""
+    """E_x = -d phi/dx of a P2 potential, evaluable at arbitrary points (exact DG-P1 representation).
+
+    Point location is done here rather than with skfem's probes: its element finder falls back to testing
+    every point against every element when any point misses its 5 nearest candidates, which needs tens of
+    GB on the O02 meshes (first O02 attempt, 2026-10-05 13:37, killed). Here only the unresolved points are
+    retried with more candidates.
+    """
     def __init__(s,basis,phi):
+        from scipy.spatial import cKDTree
         from skfem import ElementDG,ElementTriP1
         s.b=basis.with_element(ElementDG(ElementTriP1()))
         s.v=s.b.project(-basis.interpolate(phi).grad[0])
+        m=basis.mesh;s.p,s.t=m.p,m.t
+        s.tree=cKDTree(np.mean(m.p[:,m.t],axis=1).T)
+        s.dofs=s.b.element_dofs          # (3, nelems), ordered like the vertices in mesh.t
+    def _bary(s,x,e):
+        """Reference coordinates (X, Y) of points x (2, n) in elements e (n,)."""
+        p0,p1,p2=(s.p[:,s.t[i,e]] for i in range(3))
+        a,b,c,d=p1[0]-p0[0],p2[0]-p0[0],p1[1]-p0[1],p2[1]-p0[1]
+        det=a*d-b*c;rx,ry=x[0]-p0[0],x[1]-p0[1]
+        return (d*rx-b*ry)/det,(-c*rx+a*ry)/det
+    def locate(s,x):
+        n=x.shape[1];elem=np.full(n,-1);todo=np.arange(n);tol=1e-10
+        for k in (5,20,80,320):
+            if todo.size==0:break
+            k=min(k,s.t.shape[1])
+            cand=s.tree.query(x[:,todo].T,k)[1].reshape(todo.size,k)
+            for j in range(k):
+                X,Y=s._bary(x[:,todo],cand[:,j])
+                ok=(X>=-tol)&(Y>=-tol)&(1-X-Y>=-tol)&(elem[todo]<0)
+                elem[todo[ok]]=cand[ok,j]
+            todo=todo[elem[todo]<0]
+        if todo.size:raise ValueError(f'{todo.size} points outside the electrostatic mesh')
+        return elem
     def at(s,pts):
         """pts: (2, ...) global coordinates -> E_x with shape pts.shape[1:]."""
-        flat=pts.reshape(2,-1)
-        return (s.b.probes(flat)@s.v).reshape(pts.shape[1:])
+        x=pts.reshape(2,-1);e=s.locate(x);X,Y=s._bary(x,e)
+        v=s.v[s.dofs[:,e]]
+        return (v[0]*(1-X-Y)+v[1]*X+v[2]*Y).reshape(pts.shape[1:])
 
 
 def quad_basis(mode,intorder=6):
