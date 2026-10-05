@@ -242,7 +242,7 @@ def plot(res):
     bx.axvspan(*NM_WIDE,color='#f1f0ec',lw=0);bx.axvline(NM_STAR,color='#b9b8b2',lw=2)
     bx.plot([r[1]['nm_1.5_at_L_ext'] for r in rows],y,'o',ms=5,color=SERIES,label='nm(1.5) at L_ext (no internal inductance)')
     bx.set_yticks(y);bx.set_yticklabels([r[0] for r in rows],fontsize=7)
-    bx.grid(axis='x',color=GRID,lw=0.6);bx.set_axisbelow(True);bx.legend(loc='lower right',fontsize=8,frameon=False)
+    bx.grid(axis='x',color=GRID,lw=0.6);bx.set_axisbelow(True);bx.legend(loc='upper right',fontsize=8,frameon=False)
     bx.set_xlabel('loaded-line nm at t = 1.5 um\nline: 2.25 (Fig.2(b) star); light band 2.20-2.30')
     bx.set_title(f"(b) absolute nm per configuration (duty 0.9)\nverdict: {v['nm_1.5']['verdict']} (interval {v['nm_1.5']['interval'][0]:.3f}-{v['nm_1.5']['interval'][1]:.3f})",loc='left',fontsize=9)
     for ax in (a,bx):
